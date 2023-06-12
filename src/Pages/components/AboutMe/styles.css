@@ -1,0 +1,125 @@
+.aboutMeContainer{
+    width: 100%;
+    height: 100vh;
+
+    background: url(https://th.bing.com/th/id/R.03319c339d6f82fc283779a68bc9ef92?rik=rkQsdQN0WVwDSg&riu=http%3a%2f%2fd5qsyj6vaeh11.cloudfront.net%2fimages%2fdestinations%2fbackgrounds%2fd311_l_bg_1280x768.jpg&ehk=cOrIiwEdQSARD8GZPeJEkeUKBBqtCXLNnCoT0qwS2p4%3d&risl=&pid=ImgRaw&r=0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    display: grid;
+    place-content: center;
+}
+.gradientFigure{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    z-index: 1;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.aboutMeInfoContainer{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    z-index: 2;
+}
+.logoContainer{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.logoContainer img{
+    height: calc(100vh - 190px);
+    object-fit: cover;
+}
+.aboutMeInfo{
+    width: 90%;
+}
+.aboutMeInfo h1{
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-family: 'Libre Baskerville', 'serif';
+}
+.aboutMeInfo p{
+    padding: 0 20px 0 5px;
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Libre Baskerville', 'serif';
+}
+
+
+@media(max-width: 1190px){
+    /* About Me */
+    .aboutMeInfoContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        gap: 0;
+        place-content: center;
+    }
+    .logoContainer{
+        position: absolute;
+        top: 150px;
+        opacity: .75;
+    }
+    .aboutMeInfo{
+        width: 80%;
+        z-index: 3;
+    }
+    .aboutMeInfo h1{
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .aboutMeInfo h1 a{
+        text-decoration: underline;
+    }
+    .aboutMeInfo p{
+        padding: 0 5px 0 5px;
+        color: white;
+        text-align: justify;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:600px) {
+    /* About Me */
+    .aboutMeContainer{
+        height: 110vh;
+    }
+    .gradientFigure{
+        height: 110vh;
+    }
+    
+    .aboutMeInfoContainer{
+        height: 110vh;
+    }
+    .aboutMeInfo h1{
+        text-align: center;
+    }
+    .logoContainer{
+        opacity: .35;
+    }
+    .logoContainer img{
+        width: 100%;
+    }
+}

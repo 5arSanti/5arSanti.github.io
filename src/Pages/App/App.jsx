@@ -8,12 +8,15 @@ import { PortfolioProvider } from '../../Context';
 //Paginas
 import {Home} from "../Screens/Home";
 
+//COMPONENTES
+import {Navbar} from "../components/Navbar";
+
 //CSS
 import './App.css'
 
 const AppRoutes = () => {
     let routes = useRoutes([
-        {path: "/", element: <Home/>}
+        {path: "/", element: <Home/>},
     ]);
     return routes;
 }
@@ -22,6 +25,7 @@ const App = () => {
     return (
         <PortfolioProvider>
             <BrowserRouter>
+                <Navbar/>
                 <AppRoutes/>
             </BrowserRouter>
         </PortfolioProvider>
