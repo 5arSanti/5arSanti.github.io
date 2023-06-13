@@ -1,0 +1,36 @@
+nav{
+    font-family: "Libre Baskerville", "serif";
+
+    animation-name: navAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+nav ul li{
+    transition: transform .75s ease;
+}
+nav ul li:hover{
+    transform: scale(1.2);
+}
+.icon-responsive{
+    display: none;
+    transition: transform 1s ease;
+}
+
+@keyframes navAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 870px) {
+    .navbar .navbar-right{
+        display: none;
+    }
+    .icon-responsive{
+        display: flex;
+        align-items: center;
+    }
+}

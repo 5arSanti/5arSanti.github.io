@@ -10,9 +10,11 @@ import {Home} from "../Screens/Home";
 
 //COMPONENTES
 import {Navbar} from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 //CSS
 import './App.css'
+import { NavBarResponsive } from "../components/NavBarResponsive";
 
 const AppRoutes = () => {
     let routes = useRoutes([
@@ -26,7 +28,9 @@ const App = () => {
         <PortfolioProvider>
             <BrowserRouter>
                 <Navbar/>
+                <NavBarResponsive/>
                 <AppRoutes/>
+                <Footer/>
             </BrowserRouter>
         </PortfolioProvider>
 

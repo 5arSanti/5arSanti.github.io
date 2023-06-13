@@ -1,0 +1,19 @@
+aside{
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,.9) 50%, rgba(0,0, 0, .25) 100%);
+    width: 100%;
+    height: 100vh;
+}
+aside ul{
+    width: 70%;
+}
+aside ul li{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
