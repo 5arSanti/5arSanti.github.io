@@ -11,6 +11,7 @@ nav ul li{
 nav ul li:hover{
     transform: scale(1.2);
 }
+
 .icon-responsive{
     display: none;
     transition: transform 1s ease;

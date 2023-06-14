@@ -17,7 +17,7 @@ const NavBarResponsive = () => {
                     <HiChevronRight/>
                 </li>
                 <li className="flex gap-2 items-center cursor-pointer">
-                    <NavLink to="/">Sobre Mi</NavLink>
+                    <a href="/#about-me">Sobre Mi</a>
                     <HiChevronRight/>
                 </li>
                 <li className="flex gap-2 items-center cursor-pointer">

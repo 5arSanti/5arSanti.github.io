@@ -13,8 +13,6 @@ const PortfolioProvider = ({children}) => {
 
     const toggleNavbarMenuResponsive = () => {
         setIsNavbarMenuOpen(!isNavbarMenuOpen);
-        console.log("Menu funciona")
-        console.log(isNavbarMenuOpen);
     }
 
     return(

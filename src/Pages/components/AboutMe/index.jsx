@@ -4,7 +4,7 @@ import Logo from "../../../public/Logo-Profesional-Santiago-V3.png";
 
 const AboutMe = () => {
     return(
-        <main className="relative">
+        <section id="home" className="relative">
             <section className="aboutMeContainer">
                 <div className="aboutMeInfoContainer">
                     <figure className="logoContainer">
@@ -17,7 +17,7 @@ const AboutMe = () => {
                 </div>
             </section>
             <figure className="gradientFigure"></figure>
-        </main>
+        </section>
     );
 }
 

@@ -41,11 +41,13 @@ const Navbar = () => {
 
             <ul className="navbar-right flex gap-6 text-sm">
                 <li className="flex gap-1 items-center cursor-pointer">
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/">
+                        <a href="#home">Home</a>
+                    </NavLink>
                     <HiChevronRight/>
                 </li>
                 <li className="flex gap-1 items-center cursor-pointer">
-                    <NavLink to="/">Sobre Mi</NavLink>
+                    <a href="#about-me">Sobre Mi</a>
                     <HiChevronRight/>
                 </li>
                 <li className="flex gap-1 items-center cursor-pointer">
