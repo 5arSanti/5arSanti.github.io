@@ -2,7 +2,7 @@ nav{
     font-family: "Libre Baskerville", "serif";
 
     animation-name: navAnimation;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-timing-function: ease;
 }
 nav ul li{

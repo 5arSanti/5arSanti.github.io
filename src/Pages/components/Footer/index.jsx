@@ -1,24 +1,11 @@
+import { IconsList } from "../IconsList";
 import "./styles.css";
 
 const Footer = () => {
     return (
         <footer>
             <div className="footerIcons">
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3669/3669739.png" alt=""></img>
-                </a>
-                <a target="_blank" rel="noreferrer" href="https://github.com/5arSanti">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png " alt=""></img>
-                </a>
-                <a target="_blank" rel="noreferrer" href="https://twitter.com/5ar_santi">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt=""></img>
-                </a>
-                <a target="_blank" rel="noreferrer" href="https://www.deviantart.com/santiari1">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3669/3669921.png " alt=""></img>
-                </a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@5ar_santi-illustrations140">
-                <img src="https://cdn-icons-png.flaticon.com/512/3669/3669688.png" alt=""></img>
-                </a>
+                <IconsList/>
             </div>
             <div className="footerInfo">
                 <h2>By <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">5arSanti</a></h2>

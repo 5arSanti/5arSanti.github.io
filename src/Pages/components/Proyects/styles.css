@@ -1,0 +1,108 @@
+:root{
+    --proyects-background: #140715;
+    --button-color: white;
+}
+.proyects{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--proyects-background);
+    box-sizing: border-box;
+
+    gap: 20px;
+}
+.proyects-title{
+    width: 90%;
+    color: white;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+}
+.proyects-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.proyects-container div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.proyects-container div img{
+    position: absolute;
+    top: -1%;
+    height: 102%;
+    object-fit: cover;
+
+    filter: contrast(.9);
+    transition: .75s ease;
+}
+.proyects-illustrations-Web:hover img{
+    filter: contrast(1.2);
+    transform: scale(1.1);
+}
+
+.proyect-info{
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0, .4);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.proyect-info h1{
+    width: 80%;
+    padding: 10px;
+
+    color: white;
+    border-bottom: 1px solid white;
+
+    font-size: 24px;
+    text-align: center;
+}
+
+.proyect-info button{
+    height: 50px;
+    width: 150px;
+    border: 1px solid var(--button-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .75s ease;
+}
+.proyect-info button:hover{
+    background-color: black;
+    border: 0px solid black;
+    -webkit-transition: background-color .75s ease;
+    -ms-transition: background-color .75s ease;
+    transition: background-color .75s ease;
+}
+
+@media (max-width:913px){
+    .proyects-container{
+        width: 90%;
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+    }
+    .proyects-container div img{
+        width: 100%;
+    }
+}

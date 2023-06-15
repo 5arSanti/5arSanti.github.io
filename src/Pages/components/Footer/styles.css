@@ -9,16 +9,8 @@ footer{
 
     font-family: "Libre Baskerville", "serif";
 }
-.footerIcons{
-    display: flex;
+.footerIcons .icons{
     flex-direction: column;
-    gap: 20px;
-}
-.footerIcons img{
-    width: 30px;
-    height: 30px;
-    -webkit-filter: invert(1) hue-rotate(180deg) contrast(2);
-	filter: invert(1) hue-rotate(180deg) contrast(2); 
 }
 .footerInfo{
     margin-left: 50px;
@@ -47,10 +39,8 @@ footer{
         flex-direction: column;
         padding: 0;
     }
-    .footerIcons{
+    .footerIcons .icons{
         flex-direction: row;
-        gap: 20px;
-        padding: 15px 0 15px 0;
     }
     .footerInfo{
         margin-top: 20px;

@@ -51,7 +51,7 @@ const Navbar = () => {
                     <HiChevronRight/>
                 </li>
                 <li className="flex gap-1 items-center cursor-pointer">
-                    <NavLink to="/">Proyectos</NavLink>
+                    <a href="#proyects">Proyectos</a>
                     <HiChevronRight/>
                 </li>
                 <li className="flex gap-1 items-center cursor-pointer">

@@ -1,9 +1,9 @@
-
+import { IconsList } from "../IconsList";
 import "./styles.css"
 
 const AllInfoAbboutMe = () => {
     return (
-        <section id="about-me">
+        <section id="about-me" className="about-me">
             <div className="about-me-container">
                 <div className="">
                     <img className="w-full" src="https://images.pexels.com/photos/11843706/pexels-photo-11843706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen AboutMe" />
@@ -21,6 +21,8 @@ const AllInfoAbboutMe = () => {
                         corporativos, edición y animación de videos con Adobe Premiere. Comprometido con brindar resultados 
                         de alta capacidad y eficiencia.
                     </p>
+                    <IconsList/>
+
                 </div>
             </div>
         </section>
