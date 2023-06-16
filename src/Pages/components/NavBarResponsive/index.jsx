@@ -9,15 +9,6 @@ import "./styles.css"
 const NavBarResponsive = () => {
     const context = React.useContext(PortfolioContext); 
 
-    if(!context.isNavbarMenuOpen){
-        setTimeout(() =>{
-            context.setNavbarTimer(true);
-        }, 750);
-    }
-    else{
-        context.setNavbarTimer(false);
-    }
-
     return(
             <aside className={`${context.isNavbarMenuOpen ? "menu-open" : ""} z-10`} 
                 hidden={context.navbarTimer}
