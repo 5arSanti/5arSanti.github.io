@@ -1,19 +1,19 @@
 :root{
-    --proyects-background: #140715;
+    --projects-background: #140715;
     --button-color: white;
 }
-.proyects{
+.projects{
     width: 100%;
     height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--proyects-background);
+    background: var(--projects-background);
     box-sizing: border-box;
 
     gap: 20px;
 }
-.proyects-title{
+.projects-title{
     width: 90%;
     color: white;
     margin-top: 20px;
@@ -22,14 +22,14 @@
     padding: 10px;
     text-align: center;
 }
-.proyects-container{
+.projects-container{
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
-.proyects-container div{
+.projects-container div{
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -39,7 +39,7 @@
     position: relative;
 }
 
-.proyects-container div img{
+.projects-container div img{
     position: absolute;
     top: -1%;
     height: 102%;
@@ -48,12 +48,12 @@
     filter: contrast(.9);
     transition: .75s ease;
 }
-.proyects-illustrations-Web:hover img{
+.projects-illustrations-Web:hover img{
     filter: contrast(1.2);
     transform: scale(1.1);
 }
 
-.proyect-info{
+.project-info{
     width: 100%;
     height: 100%;
 
@@ -66,7 +66,7 @@
     align-items: center;
     z-index: 1;
 }
-.proyect-info h1{
+.project-info h1{
     width: 80%;
     padding: 10px;
 
@@ -77,7 +77,7 @@
     text-align: center;
 }
 
-.proyect-info button{
+.project-info button{
     height: 50px;
     width: 150px;
     border: 1px solid var(--button-color);
@@ -88,7 +88,7 @@
 
     transition: .75s ease;
 }
-.proyect-info button:hover{
+.project-info button:hover{
     background-color: black;
     border: 0px solid black;
     -webkit-transition: background-color .75s ease;
@@ -97,12 +97,12 @@
 }
 
 @media (max-width:913px){
-    .proyects-container{
+    .projects-container{
         width: 90%;
         grid-template-columns: 1fr;
         margin-bottom: 30px;
     }
-    .proyects-container div img{
+    .projects-container div img{
         width: 100%;
     }
 }

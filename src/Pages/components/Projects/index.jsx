@@ -6,13 +6,13 @@ import Portada2 from "../../../public/Portada-Web.png";
 import "./styles.css"
 import { HiChevronRight } from "react-icons/hi2";
 
-const Proyects = () => {
+const Projects = () => {
     return(
-        <section className="proyects" id="proyects">
-            <h1 className="proyects-title">Proyectos</h1>
-            <div className="proyects-container">
-                <div className="proyects-illustrations-Web">
-                    <div className="proyect-info">
+        <section className="projects" id="projects">
+            <h1 className="projects-title">Proyectos</h1>
+            <div className="projects-container">
+                <div className="projects-illustrations-Web">
+                    <div className="project-info">
                         <h1>Ilustraciones</h1>
                         <Link>
                             <button>
@@ -22,8 +22,8 @@ const Proyects = () => {
                     </div>
                     <img src={Portada1} alt=""/>
                 </div>
-                <div className="proyects-illustrations-Web">
-                    <div className="proyect-info">
+                <div className="projects-illustrations-Web">
+                    <div className="project-info">
                         <h1>Paginas Web</h1>
                         <Link>
                             <button>
@@ -38,4 +38,4 @@ const Proyects = () => {
         </section>
     );
 }
-export { Proyects };
+export { Projects };

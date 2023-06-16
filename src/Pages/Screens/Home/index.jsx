@@ -1,13 +1,13 @@
 import { AboutMe } from "../../components/AboutMe";
 import { AllInfoAbboutMe } from "../../components/AllInfoAboutMe";
-import { Proyects } from "../../components/Proyects";
+import { Projects } from "../../components/Projects";
 
 const Home = () => {
     return(
         <>
             <AboutMe/>
             <AllInfoAbboutMe/>
-            <Proyects/>
+            <Projects/>
         </>
     );
 }
