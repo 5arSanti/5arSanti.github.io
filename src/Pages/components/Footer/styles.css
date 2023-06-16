@@ -37,7 +37,7 @@ footer{
 @media(max-width: 913px){
     footer{
         flex-direction: column;
-        padding: 0;
+        padding: 10px 0 0 0;
     }
     .footerIcons .icons{
         flex-direction: row;
@@ -53,6 +53,6 @@ footer{
         margin: 0 0 10px 0;
     }
     .footerInfo p{
-        text-align: center;
+        text-align: justify;
     }    
 }
