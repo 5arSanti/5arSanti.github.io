@@ -10,9 +10,21 @@ const PortfolioProvider = ({children}) => {
 
     //Navbar
     const [isNavbarMenuOpen, setIsNavbarMenuOpen] = React.useState(false);
+    const [navbarTimer, setNavbarTimer] = React.useState(true);
 
     const toggleNavbarMenuResponsive = () => {
-        setIsNavbarMenuOpen(!isNavbarMenuOpen);
+        if(!isNavbarMenuOpen){
+            setNavbarTimer(false);
+            setTimeout(() => {
+                setIsNavbarMenuOpen(true);
+            },1)
+        }
+        else{
+            setIsNavbarMenuOpen(false);
+            setTimeout(() =>{
+                setNavbarTimer(true);
+            }, 751);
+        }
     }
 
     return(
@@ -21,6 +33,8 @@ const PortfolioProvider = ({children}) => {
                 isNavbarMenuOpen,
                 setIsNavbarMenuOpen,
                 toggleNavbarMenuResponsive,
+                navbarTimer,
+                setNavbarTimer,
 
             }}
         >

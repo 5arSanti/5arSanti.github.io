@@ -9,8 +9,19 @@ import "./styles.css"
 const NavBarResponsive = () => {
     const context = React.useContext(PortfolioContext); 
 
+    if(!context.isNavbarMenuOpen){
+        setTimeout(() =>{
+            context.setNavbarTimer(true);
+        }, 750);
+    }
+    else{
+        context.setNavbarTimer(false);
+    }
+
     return(
-            <aside className={`${context.isNavbarMenuOpen ? "flex" : "hidden"} z-10`}>
+            <aside className={`${context.isNavbarMenuOpen ? "menu-open" : ""} z-10`} 
+                hidden={context.navbarTimer}
+            >
                 <ul className="flex flex-col gap-6 text-sm">
                     <li className="flex gap-2 items-center cursor-pointer">
                         <NavLink to="/">Home</NavLink>
