@@ -14,7 +14,7 @@ import { PortfolioContext } from "../../../Context";
 const Navbar = () => {
     const context = React.useContext(PortfolioContext);
 
-    const renderView = () => {
+    const renderIconView = () => {
         if(!context.isNavbarMenuOpen){
             return(
                 <HiBars3BottomRight className="h-6 w-6"/>
@@ -36,7 +36,7 @@ const Navbar = () => {
             </ul>
             
             <ul className="icon-responsive cursor-pointer" onClick={() => {context.toggleNavbarMenuResponsive()}}>
-                <li>{renderView()}</li>
+                <li>{renderIconView()}</li>
             </ul>
 
             <ul className="navbar-right flex gap-6 text-sm">
@@ -51,7 +51,7 @@ const Navbar = () => {
                     <HiChevronRight/>
                 </li>
                 <li className="flex gap-1 items-center cursor-pointer">
-                    <a href="#proyects">Proyectos</a>
+                    <a href="#projects">Proyectos</a>
                     <HiChevronRight/>
                 </li>
                 <li className="flex gap-1 items-center cursor-pointer">
