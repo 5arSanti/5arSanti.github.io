@@ -23,6 +23,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transition: transform .75s ease;
+}
+.about-me-container div:nth-child(1):hover{
+    transform: scale(1.05);
 }
 .about-me-info-container{
     width: 90%;

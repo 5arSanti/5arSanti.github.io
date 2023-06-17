@@ -11,8 +11,7 @@ const NavBarResponsive = () => {
 
     return(
             <aside className={`${context.isNavbarMenuOpen ? "menu-open" : ""} z-10`} 
-                hidden={context.navbarTimer}
-            >
+                hidden={context.navbarTimer}>
                 <ul className="flex flex-col gap-6 text-sm">
                     <li className="flex gap-2 items-center cursor-pointer">
                         <NavLink to="/">Home</NavLink>
@@ -27,7 +26,7 @@ const NavBarResponsive = () => {
                         <HiChevronRight/>
                     </li>
                     <li className="flex gap-2 items-center cursor-pointer">
-                        <NavLink to="/">Habilidades</NavLink>
+                        <a href="#skills">Habilidades</a>
                         <HiChevronRight/>
                     </li>
                     <li className="flex gap-2 items-center cursor-pointer">

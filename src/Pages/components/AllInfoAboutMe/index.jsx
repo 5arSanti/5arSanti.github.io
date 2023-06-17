@@ -5,7 +5,7 @@ const AllInfoAbboutMe = () => {
     return (
         <section id="about-me" className="about-me">
             <div className="about-me-container">
-                <div className="">
+                <div>
                     <img className="w-full" src="https://images.pexels.com/photos/11843706/pexels-photo-11843706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen AboutMe" />
                 </div>
                 <div className="about-me-info-container">

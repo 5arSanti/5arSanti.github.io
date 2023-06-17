@@ -55,7 +55,7 @@ const Navbar = () => {
                     <HiChevronRight/>
                 </li>
                 <li className="flex gap-1 items-center cursor-pointer">
-                    <NavLink to="/">Habilidades</NavLink>
+                    <a href="#skills">Habilidades</a>
                     <HiChevronRight/>
                 </li>
                 <li className="flex gap-1 items-center cursor-pointer">

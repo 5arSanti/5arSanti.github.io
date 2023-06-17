@@ -1,7 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { skills } from "../utils/skillsList.js"
+
 export const PortfolioContext = React.createContext();
+
 
 const PortfolioProvider = ({children}) => {
     PortfolioProvider.propTypes = {
@@ -27,6 +30,14 @@ const PortfolioProvider = ({children}) => {
         }
     }
 
+    //Skills
+    const [items, setItems] = React.useState([]);
+
+    React.useEffect(() => {
+        setItems(skills);
+    }, []);
+
+
     return(
         <PortfolioContext.Provider
             value={{
@@ -35,6 +46,8 @@ const PortfolioProvider = ({children}) => {
                 toggleNavbarMenuResponsive,
                 navbarTimer,
                 setNavbarTimer,
+
+                items,
 
             }}
         >
