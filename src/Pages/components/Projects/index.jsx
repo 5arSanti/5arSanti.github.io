@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
-import Portada1 from "../../../public/Portada-Ilustraciones.png";
-import Portada2 from "../../../public/Portada-Web.png";
+import Portada1 from "/Portada-Ilustraciones.png";
+import Portada2 from "/Portada-Web.png";
 
 import "./styles.css"
 import { HiChevronRight } from "react-icons/hi2";

@@ -7,6 +7,7 @@ import { HiXMark } from "react-icons/hi2"
 
 import "./styles.css"
 import { PortfolioContext } from "../../../Context";
+import { DownloadCV } from "../DownloadCV";
 
 
 
@@ -58,9 +59,8 @@ const Navbar = () => {
                     <a href="#skills">Habilidades</a>
                     <HiChevronRight/>
                 </li>
-                <li className="flex gap-1 items-center cursor-pointer">
-                    <NavLink to="/">Descargar CV</NavLink>
-                    <HiChevronRight/>
+                <li className="nav-button flex gap-1 items-center cursor-pointer">
+                    <DownloadCV/>
                 </li>
             </ul>
         </nav>

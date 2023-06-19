@@ -8,7 +8,7 @@ nav{
 nav ul li{
     transition: transform .75s ease;
 }
-nav ul li:hover{
+nav ul li:hover:not(.nav-button){
     transform: scale(1.2);
 }
 

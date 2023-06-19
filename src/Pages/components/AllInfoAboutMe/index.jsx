@@ -1,3 +1,4 @@
+import { DownloadCV } from "../DownloadCV";
 import { IconsList } from "../IconsList";
 import "./styles.css"
 
@@ -21,8 +22,8 @@ const AllInfoAbboutMe = () => {
                         corporativos, edición y animación de videos con Adobe Premiere. Comprometido con brindar resultados 
                         de alta capacidad y eficiencia.
                     </p>
+                    <DownloadCV/>
                     <IconsList/>
-
                 </div>
             </div>
         </section>

@@ -31,9 +31,12 @@
 .about-me-info-container{
     width: 90%;
     color: white;
+
+    display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
+
     height: 80%;
 }
 .about-me-info-container h1{
@@ -48,6 +51,11 @@
     color: white;
     padding: 10px;
     text-align: justify;
+}
+.about-me-info-container .cv-button{
+    margin: 20px 0 10px 10px;
+    border: 1px solid white;
+    width: 230px;
 }
 
 @media(max-width: 913px) {

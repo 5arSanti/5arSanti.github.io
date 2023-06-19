@@ -1,6 +1,6 @@
 import "./styles.css";
-import Logo from "../../../public/Logo-Profesional-Santiago-V3.png";
-
+import Logo from "/Logo-Profesional-Santiago-V3.png";
+import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 
 const AboutMe = () => {
     return(
@@ -11,7 +11,12 @@ const AboutMe = () => {
                         <img src={Logo} alt="Logo"></img>
                     </figure>
                     <div className="aboutMeInfo">
-                        <h1 className="text-white font-bold">Hola! soy <a className="underline" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">Santiago Arias</a></h1>
+                        <h1 className="text-white font-bold flex gap-2">Hola! soy 
+                            <a className="underline flex items-center gap-2" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">
+                                Santiago Arias
+                                <HiArrowTopRightOnSquare className="text-md"/>
+                            </a>
+                        </h1>
                         <p>Frontend Developer, ilustrador digital y Diseñador UX/UI en Colombia.</p>
                     </div>
                 </div>
