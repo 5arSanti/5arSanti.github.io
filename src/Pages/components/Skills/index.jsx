@@ -19,6 +19,7 @@ const Skills = () => {
                     />
                 ))}
             </div>
+            <div className="gradient-skills"></div>
         </section>
     );
 }

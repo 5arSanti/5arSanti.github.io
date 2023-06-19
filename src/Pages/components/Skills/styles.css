@@ -6,13 +6,19 @@
 }
 .skills{
     width: 100%;
-    height: 110vh;
+    height: 120vh;
+    position: relative;
+
     background: var(--skills-background);
+    background-image: url("https://tryon.kivisense.com/img/intro-bg.1a0af2ef.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
     
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
     gap: 30px;
 }
@@ -25,12 +31,14 @@
     align-items: center;
 
     color: black;
-    background-color: white;
     font-size: 32px;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     text-align: center;
+
+    z-index: 1;
 }
 .skills-title h1{
+    color: white;
     font-family: "Libre Baskerville", "serif";
 }
 .skills-container{
@@ -40,13 +48,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+
+    z-index: 1;
+}
+
+.gradient-skills{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(215,215,215,1) 0%, rgba(0,0,0,0) 40%);
 }
 
 
 @media (max-width: 1100px){
     .skills{
+        height: auto;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
+
+        padding: 20px 0 20px 0;
     }
     .skills-title{
         width: 100%;
@@ -58,5 +80,8 @@
         padding: 20px;
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    .gradient-skills{
+        background: linear-gradient(0deg, rgba(215,215,215,1) 0%, rgba(0,0,0,0) 40%);
     }
 }
