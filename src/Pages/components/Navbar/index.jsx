@@ -1,13 +1,12 @@
 import React from "react";
 import {NavLink} from "react-router-dom"
 
-import {HiChevronRight} from "react-icons/hi2";
 import { HiBars3BottomRight } from "react-icons/hi2"
 import { HiXMark } from "react-icons/hi2"
 
 import "./styles.css"
 import { PortfolioContext } from "../../../Context";
-import { DownloadCV } from "../DownloadCV";
+import { NavOptions } from "../NavOptions";
 
 
 
@@ -31,7 +30,7 @@ const Navbar = () => {
     return (
         <nav className="navbar w-full h-16 fixed top-0 z-20 bg-none flex justify-between items-center px-10 text-white font-bold">
             <ul className="flex">
-                <li>
+                <li className="animacion">
                     <NavLink to="/">Santiago Arias</NavLink>
                 </li>
             </ul>
@@ -40,29 +39,34 @@ const Navbar = () => {
                 <li>{renderIconView()}</li>
             </ul>
 
-            <ul className="navbar-right flex gap-6 text-sm">
-                <li className="flex gap-1 items-center cursor-pointer">
+            <div className="navbar-right">
+                <NavOptions/>
+                {/* <li className="animacion flex gap-1 items-center cursor-pointer">
                     <NavLink to="/">
                         <a href="#home">Home</a>
                     </NavLink>
                     <HiChevronRight/>
                 </li>
-                <li className="flex gap-1 items-center cursor-pointer">
+                <li className="animacion flex gap-1 items-center cursor-pointer">
                     <a href="#about-me">Sobre Mi</a>
                     <HiChevronRight/>
                 </li>
-                <li className="flex gap-1 items-center cursor-pointer">
+                <li className="animacion flex gap-1 items-center cursor-pointer">
                     <a href="#projects">Proyectos</a>
                     <HiChevronRight/>
                 </li>
-                <li className="flex gap-1 items-center cursor-pointer">
+                <li className="animacion flex gap-1 items-center cursor-pointer">
                     <a href="#skills">Habilidades</a>
+                    <HiChevronRight/>
+                </li>
+                <li className="animacion flex gap-1 items-center cursor-pointer">
+                    <a href="#contact-me">Contacto</a>
                     <HiChevronRight/>
                 </li>
                 <li className="nav-button flex gap-1 items-center cursor-pointer">
                     <DownloadCV/>
-                </li>
-            </ul>
+                </li> */}
+            </div>
         </nav>
     );
 }

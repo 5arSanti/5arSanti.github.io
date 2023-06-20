@@ -28,3 +28,21 @@ body{
 .scrollable-cards::-webkit-scrollbar-thumb:hover {
     background-color: #747474;
 }
+
+
+.animacion{
+    position: relative;
+}
+.animacion::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width .5s ease;
+}
+.animacion:hover::after {
+    width: 100%;
+}

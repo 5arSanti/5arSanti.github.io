@@ -1,0 +1,6 @@
+ul{
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    line-height: 20px;
+}

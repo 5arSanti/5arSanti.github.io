@@ -18,4 +18,4 @@ const DownloadCV = () =>{
         </button>
     );
 }
-export { DownloadCV };  
+export { DownloadCV };

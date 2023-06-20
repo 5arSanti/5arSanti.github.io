@@ -8,13 +8,14 @@ nav{
 nav ul li{
     transition: transform .75s ease;
 }
-nav ul li:hover:not(.nav-button){
-    transform: scale(1.2);
-}
 
 .icon-responsive{
     display: none;
     transition: transform 1s ease;
+}
+
+.navbar-right ul{
+    flex-direction: row;
 }
 
 @keyframes navAnimation{
@@ -26,7 +27,7 @@ nav ul li:hover:not(.nav-button){
     }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 950px) {
     .navbar .navbar-right{
         display: none;
     }

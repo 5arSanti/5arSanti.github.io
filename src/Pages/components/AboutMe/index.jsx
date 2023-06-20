@@ -12,7 +12,7 @@ const AboutMe = () => {
                     </figure>
                     <div className="aboutMeInfo">
                         <h1 className="text-white font-bold flex gap-2">Hola! soy 
-                            <a className="underline flex items-center gap-2" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">
+                            <a className="flex items-center gap-2 animacion" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">
                                 Santiago Arias
                                 <HiArrowTopRightOnSquare className="text-md"/>
                             </a>
