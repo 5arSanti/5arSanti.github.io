@@ -11,7 +11,7 @@ const AboutMe = () => {
                         <img src={Logo} alt="Logo"></img>
                     </figure>
                     <div className="aboutMeInfo">
-                        <h1 className="text-white font-bold">Hola! soy 
+                        <h1 className="text-white font-bold">Hola! Soy 
                             <span className="ml-2">
                                 <a className="gap-2 animacion" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">
                                     Santiago Arias <HiArrowTopRightOnSquare className="text-md inline-block"/>

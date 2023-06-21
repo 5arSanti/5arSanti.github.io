@@ -3,14 +3,16 @@ import { PortfolioContext } from "../../../Context";
 
 const Illustrations = () => {
     const context = React.useContext(PortfolioContext);
-
-    context.setIsHomeActive(false);
-    context.setIsIllustrationsActive(true);
-    context.setIsWebPagesActive(false);
-
+    React.useEffect(() => {
+        context.setIsHomeActive(false);
+        context.setIsIllustrationsActive(true);
+        context.setIsWebPagesActive(false);
+    }, [context]);
 
     return(
-        <div>ILUSTRACIONES</div>
+        <>
+            <div>ILUSTRACIONES</div>
+        </>
     );
 }
 export { Illustrations };

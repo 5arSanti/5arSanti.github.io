@@ -10,13 +10,14 @@ import { Skills } from "../../components/Home/Skills";
 
 const Home = () => {
     const context = React.useContext(PortfolioContext);
-
-    context.setIsHomeActive(true);
-    context.setIsIllustrationsActive(false);
-    context.setIsWebPagesActive(false);
+    React.useEffect(() => {
+        context.setIsHomeActive(true);
+        context.setIsIllustrationsActive(false);
+        context.setIsWebPagesActive(false);
+    }, [context]);
 
     return(
-        <>
+        <>  
             <AboutMe/>
             <AllInfoAbboutMe/>
             <Projects/>

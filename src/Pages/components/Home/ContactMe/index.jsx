@@ -9,7 +9,7 @@ const ContactMe = () => {
             <div className="contact-me-container">
                 <div className="contact-me-info">
                     <div className="contact-me-emails">
-                        <h2>Correos:</h2>
+                        <h2>Correo:</h2>
                         <p className="animacion">
                             <a href="mailto:santiari05@hotmail.com">
                                 santiari05@hotmail.com 
@@ -34,7 +34,7 @@ const ContactMe = () => {
                 </div>
             </div>
             <div className="contact-me-title">
-                <h1>Contactame</h1>
+                <h1>Cont&aacute;ctame</h1>
             </div>
         </section>
     );
