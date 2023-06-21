@@ -11,11 +11,12 @@ const AboutMe = () => {
                         <img src={Logo} alt="Logo"></img>
                     </figure>
                     <div className="aboutMeInfo">
-                        <h1 className="text-white font-bold flex gap-2">Hola! soy 
-                            <a className="flex items-center gap-2 animacion" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">
-                                Santiago Arias
-                                <HiArrowTopRightOnSquare className="text-md"/>
-                            </a>
+                        <h1 className="text-white font-bold">Hola! soy 
+                            <span className="ml-2">
+                                <a className="gap-2 animacion" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">
+                                    Santiago Arias <HiArrowTopRightOnSquare className="text-md inline-block"/>
+                                </a>
+                            </span>
                         </h1>
                         <p>Frontend Developer, ilustrador digital y Diseñador UX/UI en Colombia.</p>
                     </div>

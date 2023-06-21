@@ -1,17 +1,27 @@
-import { AboutMe } from "../../components/AboutMe";
-import { AllInfoAbboutMe } from "../../components/AllInfoAboutMe";
-import { ContactMe } from "../../components/ContactMe";
-import { Projects } from "../../components/Projects";
-import { Skills } from "../../components/Skills";
+import React from "react";
+
+import { PortfolioContext } from "../../../Context";
+
+import { AboutMe } from "../../components/Home/AboutMe";
+import { AllInfoAbboutMe } from "../../components/Home/AllInfoAboutMe";
+import { ContactMe } from "../../components/Home/ContactMe";
+import { Projects } from "../../components/Home/Projects";
+import { Skills } from "../../components/Home/Skills";
 
 const Home = () => {
+    const context = React.useContext(PortfolioContext);
+
+    context.setIsHomeActive(true);
+    context.setIsIllustrationsActive(false);
+    context.setIsWebPagesActive(false);
+
     return(
         <>
             <AboutMe/>
             <AllInfoAbboutMe/>
             <Projects/>
             <Skills/>
-            <ContactMe/>
+            <ContactMe/>    
         </>
     );
 }

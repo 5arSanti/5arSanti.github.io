@@ -12,7 +12,7 @@
     width: 70%;
     height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 .contact-me-info{
@@ -31,7 +31,7 @@
     font-size: 18px;
     margin-top: 15px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .contact-me-emails p a{
     display: flex;
@@ -71,7 +71,7 @@
         text-align: start;
     }
     .contact-me-emails p, .contact-me-phone p{
-        justify-content: start;
+        justify-content: flex-start;
     }
 
     .contact-me-title{

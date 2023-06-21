@@ -1,4 +1,4 @@
-import { IconsList } from "../IconsList";
+import { IconsList } from "../Home/IconsList";
 import "./styles.css";
 
 const Footer = () => {

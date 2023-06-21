@@ -1,4 +1,4 @@
-import { DownloadCV } from "../DownloadCV";
+import { DownloadCV } from "../../DownloadCV";
 import { IconsList } from "../IconsList";
 import "./styles.css"
 

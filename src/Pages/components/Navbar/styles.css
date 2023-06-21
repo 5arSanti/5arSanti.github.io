@@ -17,6 +17,13 @@ nav ul li{
 .navbar-right ul{
     flex-direction: row;
 }
+.close-button{
+    height: 28px;
+    width: 28px;
+    padding: 4px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 6px;
+}
 
 @keyframes navAnimation{
     0%{

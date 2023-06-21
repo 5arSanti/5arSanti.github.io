@@ -1,5 +1,5 @@
 import React from "react";
-import { PortfolioContext } from "../../../Context";
+import { PortfolioContext } from "../../../../Context";
 import "./styles.css";
 import { Skill } from "../Skill";
 
