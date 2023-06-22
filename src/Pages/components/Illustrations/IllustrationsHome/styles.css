@@ -1,0 +1,156 @@
+:root{
+    --background-width: 80%;
+}
+.illustrations-home{
+    width: 100%;
+    height: 80vh;
+
+    background-color: black;
+}
+.illustrations-home-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.illustrations-home-title-container{
+    position: relative;
+    width: var(--background-width);
+    height: 100%;
+}
+.illustrations-home-title{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+}
+.illustrations-home-title h1{
+    color: white;
+    font-family: "Libre Baskerville", "serif";
+    font-size: 32px;
+    border-left: 3px solid white;
+    margin-left: 100px;
+    padding-left: 25px;
+}
+
+.illustrations-home-background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("/Portada-Ilustraciones.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.illustrations-home-icons-container{
+    width: calc(100% - var(--background-width));
+    height: 100%;
+
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,8,15,1) 50%);
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.illustrations-home-icons-container a{
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.illustrations-home-icons-container img{
+    width: 75%;
+    object-fit: cover;
+
+    -webkit-filter: invert(1) hue-rotate(180deg) contrast(2);
+	filter: invert(1) hue-rotate(180deg) contrast(2); 
+
+    transition: transform .5s ease;
+}
+.illustrations-home-icons-container a:hover img{
+    transform: scale(1.15);
+}
+.illustrations-home-icons-container p{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.illustrations-home-icons-container a:hover .animacion::after {
+    width: 100%;
+}
+
+@media (max-width: 950px){
+    .illustrations-home-container{
+        flex-direction: column;
+        position: relative;
+    }
+    .illustrations-home-title-container{
+        width: 100%;
+        height: 100%;
+    }
+    .illustrations-home-icons-container{
+        width: 100%;
+        height: 125px;
+
+        border: 0;
+
+        flex-direction: row;
+        gap: 15px;
+        background: transparent;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+    .illustrations-home-icons-container a{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    .illustrations-home-title{
+        justify-content: center;
+    }
+    .illustrations-home-title h1{
+        font-size: 24px;
+        margin-left: 0;
+    }
+    .illustrations-home-icons-container{
+        height: 100px;
+    }
+    .illustrations-home-icons-container a{
+        width: 50px;
+        height: 50px;
+    }
+    .illustrations-home-icons-container p{
+        display: none;
+    }
+}
