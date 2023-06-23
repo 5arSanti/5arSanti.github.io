@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { skills } from "../utils/skillsList.js"
+import { skills } from "../utils/skillsList.js";
+import { illustrations } from "../utils/illustrationsList.js"
 
 export const PortfolioContext = React.createContext();
 
@@ -40,10 +41,18 @@ const PortfolioProvider = ({children}) => {
     }
 
     //Skills
-    const [items, setItems] = React.useState([]);
+    const [skillsCard, setSkillsCard] = React.useState([]);
 
     React.useEffect(() => {
-        setItems(skills);
+        setSkillsCard(skills);
+    }, []);
+
+    //Ilustraciones
+    const [illustrationsCard, setIllustrationsCard] = React.useState([]);
+
+    React.useEffect(() => {
+        const reversedIllustrations = [...illustrations].reverse();
+        setIllustrationsCard(reversedIllustrations);
     }, []);
 
 
@@ -64,7 +73,8 @@ const PortfolioProvider = ({children}) => {
                 navbarTimer,
                 setNavbarTimer,
 
-                items,
+                skillsCard,
+                illustrationsCard,
 
 
 

@@ -43,11 +43,11 @@ const NavOptions = () => {
             return(
                 <ul className="navbar-right flex gap-6 text-sm">
                     <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <NavLink to="/">Home</NavLink>
+                        <a href="#illustrations-home">Home</a>
                         <HiChevronRight/>
                     </li>
                     <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#illustrations-home">Ilustraciones</a>
+                        <a href="#illustrations">Ilustraciones</a>
                         <HiChevronRight/>
                     </li>
                     <li className="animacion flex gap-1 items-center cursor-pointer">

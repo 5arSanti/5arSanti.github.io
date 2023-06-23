@@ -12,7 +12,7 @@ const Skills = () => {
                 <h1>Habilidades</h1>
             </div>
             <div className="skills-container">
-                {context.items?.map(item => (
+                {context.skillsCard?.map(item => (
                     <Skill
                         key={item.id}
                         data={item}

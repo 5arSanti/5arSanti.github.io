@@ -1,7 +1,7 @@
 import React from "react";
 import { PortfolioContext } from "../../../Context";
 import { IllustrationsHome } from "../../components/Illustrations/IllustrationsHome";
-
+import { IllustrationsGrid } from  "../../components/Illustrations/IllustrationsGrid"
 
 const Illustrations = () => {
     const context = React.useContext(PortfolioContext);
@@ -14,6 +14,7 @@ const Illustrations = () => {
     return(
         <>
             <IllustrationsHome/>
+            <IllustrationsGrid/>
         </>
     );
 }
