@@ -1,5 +1,6 @@
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import "./styles.css"
+
 const IllustrationsHome = () => {
     return (
         <section className="illustrations-home" id="illustrations-home">

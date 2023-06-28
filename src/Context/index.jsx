@@ -55,6 +55,11 @@ const PortfolioProvider = ({children}) => {
         setIllustrationsCard(reversedIllustrations);
     }, []);
 
+    const [isMouseInCard, setIsMouseInCard] = React.useState(null);
+    const handleMouseEnter = (index) => setIsMouseInCard(index);
+    const handleMouseOver = () => setIsMouseInCard(null);
+    
+
 
     return(
         <PortfolioContext.Provider
@@ -75,6 +80,9 @@ const PortfolioProvider = ({children}) => {
 
                 skillsCard,
                 illustrationsCard,
+                isMouseInCard,
+                handleMouseEnter,
+                handleMouseOver,
 
 
 

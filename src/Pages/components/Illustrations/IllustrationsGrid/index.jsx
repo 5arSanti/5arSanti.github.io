@@ -10,7 +10,7 @@ const IllustrationsGrid = () => {
     return(
         <section className="illustrations" id="illustrations">
             <div className="illustrations-container">
-                {context.illustrationsCard?.reverse().map(item => (
+                {context.illustrationsCard?.reverse().map((item) => (
                     <IllustrationCard
                         key={item.id}
                         data={item}
