@@ -1,3 +1,6 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -68,10 +71,11 @@ const PortfolioProvider = ({children}) => {
 
 
     React.useEffect(()=> {
+        const apiKey = import.meta.env.API_KEY;
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': 'f398d6f9ebmsh8a25ce537b8d773p12eddfjsn63c97481e808',
+                'X-RapidAPI-Key': apiKey,
                 'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
             }
         };
