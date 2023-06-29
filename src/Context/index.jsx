@@ -61,6 +61,32 @@ const PortfolioProvider = ({children}) => {
     
 
 
+    //-------------------------
+    //API
+    const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCD7cKAQQNzzYQeZ7Pm7-fwg&part=snippet%2Cid&order=date&maxResults=3';
+    const [videos, setVideos] = React.useState([]);
+
+
+    React.useEffect(()=> {
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'f398d6f9ebmsh8a25ce537b8d773p12eddfjsn63c97481e808',
+                'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
+            }
+        };
+        const fetchVideos = async () => {
+            try {
+                const response = await fetch(API, options);
+                const data = await response.json();
+                setVideos(data.items);
+            } catch (error) {
+                console.error(error);
+            }
+        } 
+        fetchVideos();
+    }, [])
+
     return(
         <PortfolioContext.Provider
             value={{
@@ -83,6 +109,8 @@ const PortfolioProvider = ({children}) => {
                 isMouseInCard,
                 handleMouseEnter,
                 handleMouseOver,
+
+                videos,
 
 
 
