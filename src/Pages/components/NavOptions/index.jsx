@@ -47,19 +47,11 @@ const NavOptions = () => {
                         <HiChevronRight/>
                     </li>
                     <li className="animacion flex gap-1 items-center cursor-pointer">
+                        <a href="#time-lapses">Time lapses</a>
+                        <HiChevronRight/>
+                    </li>
+                    <li className="animacion flex gap-1 items-center cursor-pointer">
                         <a href="#illustrations">Ilustraciones</a>
-                        <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#projects">Proyectos</a>
-                        <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#skills">Habilidades</a>
-                        <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#contact-me">Contacto</a>
                         <HiChevronRight/>
                     </li>
                     <li className="nav-button flex gap-1 items-center cursor-pointer">

@@ -1,0 +1,67 @@
+.video-card{
+    flex: 0 0 100%;
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-card-info{
+    width: 90%;
+    border-radius: 10px;
+    
+    background-color: rgba(28, 28, 28, .75);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    
+    box-sizing: border-box;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.yt-reproducer{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.yt-reproducer iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: opacity .3s ease;
+}
+.yt-reproducer iframe:hover {
+    opacity: .9;
+}
+
+.video-card-info p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 5px;
+}
+.video-card-info p a{
+    font-weight: bold;
+    border-left: 1px solid white;
+    padding-left: 15px;
+}
+
+
+@media (max-width:800px){
+    .video-card-info{
+        width: 100%;
+    }
+}
+@media (max-width: 500px){
+    .video-card-info p a{
+        font-size: 14px;
+    }
+}

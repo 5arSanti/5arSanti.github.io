@@ -2,7 +2,7 @@ import React from "react";
 import { PortfolioContext } from "../../../Context";
 import { IllustrationsHome } from "../../components/Illustrations/IllustrationsHome";
 import { IllustrationsGrid } from  "../../components/Illustrations/IllustrationsGrid"
-import { ChannelAPI } from "../../components/Illustrations/ChannelAPI";
+import { VideosGrid } from "../../components/Illustrations/VideosGrid";
 
 const Illustrations = () => {
     const context = React.useContext(PortfolioContext);
@@ -15,7 +15,7 @@ const Illustrations = () => {
     return(
         <>
             <IllustrationsHome/>
-            <ChannelAPI/>
+            <VideosGrid/>
             <IllustrationsGrid/>
         </>
     );

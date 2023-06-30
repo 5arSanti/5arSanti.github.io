@@ -1,0 +1,125 @@
+.videos{
+    width: 100%;
+    color: white;
+
+    background: rgb(18,0,39);
+    background: linear-gradient(60deg, rgba(18,0,39,1) 20%, rgba(0,0,0,1) 100%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    padding: 30px 0;
+}
+.videos h1{
+    width: 90%;
+    height: 50px;
+
+    border-left: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    font-family: "Libre Baskerville", "serif";
+    font-size: 32px;
+}
+
+.videos-container{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.previous-button, .next-button{
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-card-container{
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+.video-card-container-carrousel{
+    height: 100%;   
+    width: 100%;
+    display: flex;
+    align-items: start;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.ml-0{
+    margin-left: 0;
+}
+.ml-200{
+    margin-left: -200%;
+}
+.ml-400{
+    margin-left: -400%;
+}
+
+
+
+
+@media (max-width:800px){
+    .videos{
+        gap: 20px;
+    }
+    .videos h1{
+        font-size: 28px;
+    }
+    .videos-container{
+        gap: 0px;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 500px){
+    .videos-container{
+        position: relative;
+    }
+    .previous-button, .next-button{
+        position: absolute;
+        border-radius: 0;
+        
+        width: 25px;
+        height: 50px;
+
+        top: calc(50% - 25px);
+    }
+    .previous-button{
+        left: 0px;
+    }
+    .next-button{
+        right: 0px;
+    }
+}
