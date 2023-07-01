@@ -13,6 +13,12 @@ const PortfolioProvider = ({children}) => {
         children: PropTypes.node.isRequired,
     }
 
+    //Loading and Error
+    const [loading, setLoading] = React.useState(true);
+    const [error, setError] = React.useState(false);
+
+
+
 
     //Cambios del navbar dependiendo del path
     const [isHomeActive, setIsHomeActive] = React.useState(false);
@@ -80,8 +86,11 @@ const PortfolioProvider = ({children}) => {
                 const response = await fetch(API, options);
                 const data = await response.json();
                 setVideos(data.items);
-            } catch (error) {
-                console.error(error);
+                await setLoading(false);
+            } 
+            catch (error) {
+                setError(true);
+                console.error(error);             
             }
         } 
         fetchVideos();
@@ -90,6 +99,9 @@ const PortfolioProvider = ({children}) => {
     return(
         <PortfolioContext.Provider
             value={{
+                loading,
+                error,
+
                 isHomeActive,
                 setIsHomeActive,
                 isIllustrationsActive,

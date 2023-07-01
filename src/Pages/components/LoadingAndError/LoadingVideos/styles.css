@@ -1,0 +1,69 @@
+.loading-video-card{
+    flex: 0 0 100%;
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading-video-card-info{
+    width: 90%;
+    border-radius: 10px;
+    
+    background-color: rgba(28, 28, 28, .75);
+    
+    box-sizing: border-box;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.yt-reproducer{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.loading-animation-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.loading-animation{
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.10));
+    background-size: 400% 400%;
+    animation: loadingAnimation 2s ease-in-out infinite;
+    
+    animation: loading 2s ease infinite;
+}
+.loading-video-card-info p{
+    width: 100%;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 5px;
+
+    border-radius: 5px;
+}
+@keyframes loading{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width:800px){
+    .loading-video-card-info{
+        width: 100%;
+    }
+}
