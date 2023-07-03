@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import { skills } from "../utils/skillsList.js";
 import { illustrations } from "../utils/illustrationsList.js"
+import { webPagesList } from "../utils/WebPagesList.js";
 
 export const PortfolioContext = React.createContext();
 
@@ -66,6 +67,12 @@ const PortfolioProvider = ({children}) => {
     const handleMouseOver = () => setIsMouseInCard(null);
     
 
+    //WebPages
+    const [webPagesCard, setWebPagesCard] = React.useState([]);
+    React.useEffect(() => {
+        const reversedWebPages = [...webPagesList].reverse();
+        setWebPagesCard(reversedWebPages);
+    }, []);
 
     //-------------------------
     //API
@@ -121,6 +128,8 @@ const PortfolioProvider = ({children}) => {
                 isMouseInCard,
                 handleMouseEnter,
                 handleMouseOver,
+
+                webPagesCard,
 
                 videos,
 

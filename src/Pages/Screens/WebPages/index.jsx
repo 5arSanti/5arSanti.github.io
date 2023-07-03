@@ -1,5 +1,7 @@
 import React from "react";
 import { PortfolioContext } from "../../../Context";
+import { WebPagesHome } from "../../components/WebPages/WebPagesHome";
+import { WebPagesGrid } from "../../components/WebPages/WebPagesGrid";
 
 const WebPages = () => {
     const context = React.useContext(PortfolioContext);
@@ -11,7 +13,8 @@ const WebPages = () => {
 
     return(
         <>
-            <div>Paginas WEB</div>
+            <WebPagesHome/>
+            <WebPagesGrid/>
         </>
     );
 }

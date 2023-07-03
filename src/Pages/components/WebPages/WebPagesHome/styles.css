@@ -1,0 +1,137 @@
+:root{
+    --background-width: 80%;
+}
+.web-pages-home{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("/Portada-Web.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.web-pages-home-container{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.web-pages-home-title-container{
+    width: var(--background-width);
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.web-pages-home-title-container h1{
+    color: white;
+    font-family: "Libre Baskerville", "serif";
+    font-size: 32px;
+    border-left: 3px solid white;
+    margin-left: 100px;
+    padding-left: 25px;
+}
+
+
+
+
+.web-pages-home-icons-container{
+    width: calc(100% - var(--background-width));
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.web-pages-home-icons-container a{
+    width: 125px;
+    height: 125px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.web-pages-home-icons-container img{
+    width: 75%;
+    object-fit: cover;
+
+    -webkit-filter: invert(1) hue-rotate(180deg) contrast(2);
+	filter: invert(1) hue-rotate(180deg) contrast(2); 
+
+    transition: transform .5s ease;
+}
+.web-pages-home-icons-container a:hover img{
+    transform: scale(1.15);
+}
+.web-pages-home-icons-container p{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.web-pages-home-icons-container a:hover .animacion::after {
+    width: 100%;
+}
+
+@media (max-width: 950px){
+    .web-pages-home-container{
+        flex-direction: column;
+        position: relative;
+    }
+    .web-pages-home-title-container{
+        width: 100%;
+        height: 100%;
+    }
+    .web-pages-home-icons-container{
+        width: 100%;
+        height: 125px;
+
+        border: 0;
+
+        flex-direction: row;
+        gap: 15px;
+        background: transparent;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+    .web-pages-home-icons-container a{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    .web-pages-home-title-container{
+        justify-content: center;
+    }
+    .web-pages-home-title-container h1{
+        font-size: 24px;
+        margin-left: 0;
+    }
+    .web-pages-home-icons-container{
+        height: 100px;
+    }
+    .web-pages-home-icons-container a{
+        width: 50px;
+        height: 50px;
+    }
+    .web-pages-home-icons-container p{
+        display: none;
+    }
+}
