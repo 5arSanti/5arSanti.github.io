@@ -24,7 +24,7 @@ const AppRoutes = () => {
         {path: "/ilustraciones", element: <Illustrations/>},
         {path: "/paginas-web", element: <WebPages/>}
     ]);
-
+    
     return routes;
 }
 

@@ -47,32 +47,36 @@ const PortfolioProvider = ({children}) => {
         }
     }
 
-    //Skills
-    const [skillsCard, setSkillsCard] = React.useState([]);
+
+    //Llamado de los arrays
+    const [skillsCard, setSkillsCard] = React.useState([]);    //Skills
+    const [illustrationsCard, setIllustrationsCard] = React.useState([]);    //Ilustraciones
+    const [webPagesCard, setWebPagesCard] = React.useState([]);    //WebPages
 
     React.useEffect(() => {
-        setSkillsCard(skills);
-    }, []);
+        const setArrays = () => {
+            try{
+                //Skills
+                setSkillsCard(skills);
 
-    //Ilustraciones
-    const [illustrationsCard, setIllustrationsCard] = React.useState([]);
+                //Ilustraciones
+                const reversedIllustrations = [...illustrations].reverse();
+                setIllustrationsCard(reversedIllustrations);
 
-    React.useEffect(() => {
-        const reversedIllustrations = [...illustrations].reverse();
-        setIllustrationsCard(reversedIllustrations);
+                //WebPages
+                const reversedWebPages = [...webPagesList].reverse();
+                setWebPagesCard(reversedWebPages);
+            }
+            catch (error){
+                alert(error);
+            }
+        }
+        setArrays();
     }, []);
 
     const [isMouseInCard, setIsMouseInCard] = React.useState(null);
     const handleMouseEnter = (index) => setIsMouseInCard(index);
     const handleMouseOver = () => setIsMouseInCard(null);
-    
-
-    //WebPages
-    const [webPagesCard, setWebPagesCard] = React.useState([]);
-    React.useEffect(() => {
-        const reversedWebPages = [...webPagesList].reverse();
-        setWebPagesCard(reversedWebPages);
-    }, []);
 
     //-------------------------
     //API
@@ -103,6 +107,8 @@ const PortfolioProvider = ({children}) => {
         fetchVideos();
     }, [])
 
+
+    
     return(
         <PortfolioContext.Provider
             value={{
