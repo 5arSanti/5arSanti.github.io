@@ -7,7 +7,6 @@
     align-items: center;
 
     background: #000000;
-    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,8,15,1) 50%);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(18,0,39,1) 50%);
 }
 

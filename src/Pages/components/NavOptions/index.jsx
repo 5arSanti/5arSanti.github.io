@@ -3,7 +3,6 @@ import React from "react";
 import { HiChevronRight } from "react-icons/hi2";
 import { DownloadCV } from "../DownloadCV";
 import { PortfolioContext } from "../../../Context";
-import { NavLink } from "react-router-dom";
 
 
 const NavOptions = () => {
@@ -64,23 +63,15 @@ const NavOptions = () => {
             return(
                 <ul className="navbar-right flex gap-6 text-sm">
                     <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <NavLink to="/">Home</NavLink>
+                        <a href="#web-pages-home">Home</a>
                         <HiChevronRight/>
                     </li>
                     <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#about-me">Paginas web</a>
+                        <a href="#web-pages">Paginas web</a>
                         <HiChevronRight/>
                     </li>
                     <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#projects">Proyectos</a>
-                        <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#skills">Habilidades</a>
-                        <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#contact-me">Contacto</a>
+                        <a href="#projects">Placeholder</a>
                         <HiChevronRight/>
                     </li>
                     <li className="nav-button flex gap-1 items-center cursor-pointer">
