@@ -108,6 +108,15 @@ const PortfolioProvider = ({children}) => {
     }, [])
 
 
+
+    //Boton de ver mas y ver menos
+    const [moreInfoButton, setMoreInfoButton] = React.useState("hidden-info");
+    const handleMoreInfoButton = () => {
+        switch(moreInfoButton){
+            case "hidden-info": setMoreInfoButton("expanded-info");break;
+            case "expanded-info": setMoreInfoButton("hidden-info");break;
+        }
+    };
     
     return(
         <PortfolioContext.Provider
@@ -138,6 +147,9 @@ const PortfolioProvider = ({children}) => {
                 webPagesCard,
 
                 videos,
+
+                handleMoreInfoButton,
+                moreInfoButton,
 
 
 

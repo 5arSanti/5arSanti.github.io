@@ -7,11 +7,24 @@ import "./styles.css";
 const WebPagesGrid = () => {
     const context = React.useContext(PortfolioContext);
 
+    const renderView = () => {
+        if (context.moreInfoButton === "hidden-info"){
+            return(
+                <button className="web-pages-see-more-button" onClick={context.handleMoreInfoButton}>Ver Mas</button>
+            );   
+        }
+        else{
+            return(
+                <button className="web-pages-see-more-button" onClick={context.handleMoreInfoButton}>Ver Menos</button>
+            );   
+        }
+    }
+
     return(
         <section className="web-pages" id="web-pages">
             <div className="web-pages-container">
                 <h1>Paginas Web</h1>
-                <div className="web-pages-grid-container">
+                <div className={`web-pages-grid-container ${context.moreInfoButton}`}>
                     {context.webPagesCard?.map((item) => (
                         <WebPagesCard
                             key={item.id}
@@ -19,8 +32,10 @@ const WebPagesGrid = () => {
                         />
                     ))}
                 </div>
+                <div className="web-pages-button-container">
+                    {renderView()}
+                </div>
             </div>
-
         </section>
 
     );
