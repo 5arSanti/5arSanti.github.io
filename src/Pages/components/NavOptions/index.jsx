@@ -71,7 +71,7 @@ const NavOptions = () => {
                         <HiChevronRight/>
                     </li>
                     <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#projects">Placeholder</a>
+                        <a href="#front-mentor">Frontend Mentor</a>
                         <HiChevronRight/>
                     </li>
                     <li className="nav-button flex gap-1 items-center cursor-pointer">

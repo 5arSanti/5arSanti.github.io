@@ -5,7 +5,7 @@ const WebPagesCard = (data) => {
     return(
         <div className="web-pages-card">
             <div className="web-pages-card-image-and-name">
-                <a target="_blank" rel="noreferrer noopener" href={data.data?.homeLink}>
+                <a target="_blank" rel="noreferrer noopener" href={data.link}>
                     <img src={data.data?.image} alt={data.data?.name}/>
                 </a>
                 <p>{data.data?.name}</p>

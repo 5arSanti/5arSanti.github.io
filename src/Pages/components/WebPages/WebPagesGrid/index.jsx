@@ -8,14 +8,14 @@ const WebPagesGrid = () => {
     const context = React.useContext(PortfolioContext);
 
     const renderView = () => {
-        if (context.moreInfoButton === "hidden-info"){
+        if (context.moreInfo1Button === "hidden-info"){
             return(
-                <button className="web-pages-see-more-button" onClick={context.handleMoreInfoButton}>Ver Mas</button>
+                <button className="web-pages-see-more-button" onClick={context.handleMoreInfo1Button}>Ver Mas</button>
             );   
         }
         else{
             return(
-                <button className="web-pages-see-more-button" onClick={context.handleMoreInfoButton}>Ver Menos</button>
+                <button className="web-pages-see-more-button" onClick={context.handleMoreInfo1Button}>Ver Menos</button>
             );   
         }
     }
@@ -24,11 +24,12 @@ const WebPagesGrid = () => {
         <section className="web-pages" id="web-pages">
             <div className="web-pages-container">
                 <h1>Paginas Web</h1>
-                <div className={`web-pages-grid-container ${context.moreInfoButton}`}>
+                <div className={`web-pages-grid-container ${context.moreInfo1Button}`}>
                     {context.webPagesCard?.map((item) => (
                         <WebPagesCard
                             key={item.id}
                             data={item}
+                            link={item.homeLink}
                         />
                     ))}
                 </div>

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { skills } from "../utils/skillsList.js";
 import { illustrations } from "../utils/illustrationsList.js"
 import { webPagesList } from "../utils/WebPagesList.js";
+import { frontMentorList } from "../utils/frontMentorList.js";
 
 export const PortfolioContext = React.createContext();
 
@@ -52,6 +53,7 @@ const PortfolioProvider = ({children}) => {
     const [skillsCard, setSkillsCard] = React.useState([]);    //Skills
     const [illustrationsCard, setIllustrationsCard] = React.useState([]);    //Ilustraciones
     const [webPagesCard, setWebPagesCard] = React.useState([]);    //WebPages
+    const [frontMentorCard, setFrontMentorCard] = React.useState([]);    //WebPages
 
     React.useEffect(() => {
         const setArrays = () => {
@@ -66,6 +68,10 @@ const PortfolioProvider = ({children}) => {
                 //WebPages
                 const reversedWebPages = [...webPagesList].reverse();
                 setWebPagesCard(reversedWebPages);
+
+                //Frontend Mentor Projects
+                const reversedFrontMentor = [...frontMentorList].reverse();
+                setFrontMentorCard(reversedFrontMentor);
             }
             catch (error){
                 alert(error);
@@ -93,28 +99,37 @@ const PortfolioProvider = ({children}) => {
             }
         };
         const fetchVideos = async () => {
-            try {
-                const response = await fetch(API, options);
-                const data = await response.json();
-                setVideos(data.items);
-                await setLoading(false);
-            } 
-            catch (error) {
-                setError(true);
-                console.error(error);             
+            if (isIllustrationsActive){
+                try {
+                    const response = await fetch(API, options);
+                    const data = await response.json();
+                    setVideos(data.items);
+                    await setLoading(false);
+                } 
+                catch (error) {
+                    setError(true);
+                    console.error(error);             
+                }
             }
         } 
         fetchVideos();
-    }, [])
+    }, [isIllustrationsActive])
 
 
 
     //Boton de ver mas y ver menos
-    const [moreInfoButton, setMoreInfoButton] = React.useState("hidden-info");
-    const handleMoreInfoButton = () => {
-        switch(moreInfoButton){
-            case "hidden-info": setMoreInfoButton("expanded-info");break;
-            case "expanded-info": setMoreInfoButton("hidden-info");break;
+    const [moreInfo1Button, setMoreInfo1Button] = React.useState("hidden-info");
+    const handleMoreInfo1Button = () => {
+        switch(moreInfo1Button){
+            case "hidden-info": setMoreInfo1Button("expanded-info");break;
+            case "expanded-info": setMoreInfo1Button("hidden-info");break;
+        }
+    };
+    const [moreInfo2Button, setMoreInfo2Button] = React.useState("hidden-info");
+    const handleMoreInfo2Button = () => {
+        switch(moreInfo2Button){
+            case "hidden-info": setMoreInfo2Button("expanded-info");break;
+            case "expanded-info": setMoreInfo2Button("hidden-info");break;
         }
     };
     
@@ -145,11 +160,14 @@ const PortfolioProvider = ({children}) => {
                 handleMouseOver,
 
                 webPagesCard,
+                frontMentorCard,
 
                 videos,
 
-                handleMoreInfoButton,
-                moreInfoButton,
+                handleMoreInfo1Button,
+                moreInfo1Button,
+                handleMoreInfo2Button,
+                moreInfo2Button,
 
 
 
