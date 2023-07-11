@@ -39,3 +39,15 @@
 .skill-info p:nth-child(2){
     font-size: 14px;
 }
+
+@media (max-width: 500px){
+    .skill-logo{
+        width: 75px !important;
+    }
+    .skill-info p:nth-child(1){
+        font-size: 16px;
+    }
+    .skill-info p:nth-child(2){
+        font-size: 12px;
+    }
+}

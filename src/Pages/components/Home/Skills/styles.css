@@ -77,3 +77,8 @@
         background: linear-gradient(0deg, rgba(215,215,215,1) 0%, rgba(0,0,0,0) 40%);
     }
 }
+@media (max-width: 500px){
+    .skills-container{
+        width: 100%;
+    }
+}

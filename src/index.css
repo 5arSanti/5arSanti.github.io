@@ -23,6 +23,8 @@ body{
     color: white;
     font-family: "Libre Baskerville", "serif";
     font-size: 32px;
+    text-align: center;
+    padding: 0 5px;
 }
 
 
@@ -69,5 +71,10 @@ body{
 @media (max-width: 800px){
     .titulo{
         font-size: 28px;
+    }
+}
+@media (max-width: 500px){
+    .titulo{
+        font-size: 22px;
     }
 }
