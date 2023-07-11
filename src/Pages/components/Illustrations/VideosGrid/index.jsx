@@ -31,7 +31,7 @@ const VideosGrid = () => {
 
     return(
         <div className="videos" id="time-lapses">
-            <h1>Time lapses</h1>
+            <h1 className="titulo">Time lapses</h1>
             <div className="videos-container">
                 <button className="previous-button" onClick={() => handlePreviousVideo()}><HiChevronLeft/></button>
                 <div className="video-card-container">

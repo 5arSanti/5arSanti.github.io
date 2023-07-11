@@ -52,7 +52,7 @@ export const webPagesList = [
         id: 8,
         name: "Animationland",
         image: "https://i.imgur.com/kWodtKz.png",
-        repo: "https://github.com/5arSanti/Curso-Practico-de-Maquetacion-en-CSS",
+        repo: "https://github.com/5arSanti/Curso-de-Animaciones-con-CSS",
         homeLink: "https://5arsanti.github.io/Curso-de-Animaciones-con-CSS/",
     },
     {

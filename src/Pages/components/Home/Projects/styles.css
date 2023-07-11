@@ -1,9 +1,5 @@
 :root{
-    /* --projects-background: #140715; */
-    /* --projects-background: black; */
-    /* --projects-background: linear-gradient(-70deg, rgba(0,0,0,1) 0%, rgba(34,12,35,1) 80%); */
     --projects-background: linear-gradient(70deg, rgba(18,0,39,1) 15%, rgba(0,0,0,1) 100%);
-
     --button-color: white;
 }
 .projects{
@@ -17,14 +13,6 @@
     box-sizing: border-box;
 
     gap: 30px;
-}
-.projects-title{
-    width: 90%;
-    color: white;
-    border-bottom: 1px solid white;
-    font-size: 32px;
-    padding: 10px;
-    text-align: left;
 }
 .projects-container{
     width: 95%;
@@ -104,9 +92,5 @@
 @media (max-width:913px){
     .projects-container{
         width: 90%;
-    }
-    .projects-title{
-        font-size: 28px;
-        text-align: center;
     }
 }

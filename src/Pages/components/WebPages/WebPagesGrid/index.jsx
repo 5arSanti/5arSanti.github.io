@@ -23,7 +23,7 @@ const WebPagesGrid = () => {
     return(
         <section className="web-pages" id="web-pages">
             <div className="web-pages-container">
-                <h1>Paginas Web</h1>
+                <h1 className="titulo">Paginas Web</h1>
                 <div className={`web-pages-grid-container ${context.moreInfo1Button}`}>
                     {context.webPagesCard?.map((item) => (
                         <WebPagesCard

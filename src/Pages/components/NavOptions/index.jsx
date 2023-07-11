@@ -12,26 +12,26 @@ const NavOptions = () => {
         if (context.isHomeActive){
             return(
                 <ul className="navbar-right flex gap-6 text-sm">
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="/">Home</a>
+                    <a href="/" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Home</p>
                         <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#about-me">Sobre Mi</a>
+                    </a>
+                    <a href="#about-me" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Sobre Mi</p>
                         <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#projects">Proyectos</a>
+                    </a>
+                    <a href="#projects" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Proyectos</p>
                         <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#skills">Habilidades</a>
+                    </a>
+                    <a href="#skills" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Habilidades</p>
                         <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#contact-me">Contacto</a>
+                    </a>
+                    <a href="#contact-me" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Contacto</p>
                         <HiChevronRight/>
-                    </li>
+                    </a>
                     <li className="nav-button flex gap-1 items-center cursor-pointer">
                         <DownloadCV/>
                     </li>
@@ -41,18 +41,18 @@ const NavOptions = () => {
         else if (context.isIllustrationsActive){
             return(
                 <ul className="navbar-right flex gap-6 text-sm">
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#illustrations-home">Home</a>
+                    <a href="#illustrations-home" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Home</p>
                         <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#time-lapses">Time lapses</a>
+                    </a>
+                    <a href="#time-lapses" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Time lapses</p>
                         <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#illustrations">Ilustraciones</a>
+                    </a>
+                    <a href="#illustrations" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Ilustraciones</p>
                         <HiChevronRight/>
-                    </li>
+                    </a>
                     <li className="nav-button flex gap-1 items-center cursor-pointer">
                         <DownloadCV/>
                     </li>
@@ -62,18 +62,18 @@ const NavOptions = () => {
         else if (context.isWebPagesActive){
             return(
                 <ul className="navbar-right flex gap-6 text-sm">
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#web-pages-home">Home</a>
+                    <a href="#web-pages-home" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Home</p>
                         <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#web-pages">Paginas web</a>
+                    </a>
+                    <a href="#web-pages" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Paginas web</p>
                         <HiChevronRight/>
-                    </li>
-                    <li className="animacion flex gap-1 items-center cursor-pointer">
-                        <a href="#front-mentor">Frontend Mentor</a>
+                    </a>
+                    <a href="#front-mentor" className="animacion flex gap-1 items-center cursor-pointer">
+                        <p>Frontend Mentor</p>
                         <HiChevronRight/>
-                    </li>
+                    </a>
                     <li className="nav-button flex gap-1 items-center cursor-pointer">
                         <DownloadCV/>
                     </li>

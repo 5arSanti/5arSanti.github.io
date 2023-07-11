@@ -9,7 +9,7 @@ import { HiChevronRight } from "react-icons/hi2";
 const Projects = () => {
     return(
         <section className="projects" id="projects">
-            <h1 className="projects-title">Proyectos</h1>
+            <h1 className="titulo">Proyectos</h1>
             <div className="projects-container">
                 <div className="projects-illustrations-Web">
                     <div className="project-info">

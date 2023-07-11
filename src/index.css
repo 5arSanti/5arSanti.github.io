@@ -8,6 +8,24 @@ body{
     font-family: "Libre Baskerville", "serif";
 }
 
+.titulo{
+    width: 90%;
+    height: 60px;
+    box-sizing: border-box;
+    margin: 0 15px;
+
+    border-left: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    font-family: "Libre Baskerville", "serif";
+    font-size: 32px;
+}
+
+
 .scrollable-cards {
 	overflow-y: scroll;
     overflow-x: hidden;
@@ -45,4 +63,11 @@ body{
 }
 .animacion:hover::after {
     width: 100%;
+}
+
+
+@media (max-width: 800px){
+    .titulo{
+        font-size: 28px;
+    }
 }

@@ -19,20 +19,6 @@
     position: relative;
     gap: 30px;
 }
-.web-pages-container h1{
-    width: 90%;
-    height: 50px;
-
-    border-left: 1px solid white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    color: white;
-    font-family: "Libre Baskerville", "serif";
-    font-size: 32px;
-}
 .web-pages-grid-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -43,7 +29,7 @@
     padding-bottom: 60px;
 }
 .hidden-info{
-    max-height: 800px;
+    max-height: 900px;
     overflow: hidden;
 }
 .expanded-info{
@@ -78,11 +64,4 @@
 .web-pages-see-more-button:hover{
     background: rgba(0,0,0,1);
     border: 1px solid black;
-}
-
-
-@media (max-width:800px){
-    .web-pages-container h1{
-        font-size: 28px;
-    }
 }

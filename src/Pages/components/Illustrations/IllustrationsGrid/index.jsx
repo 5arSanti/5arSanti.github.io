@@ -9,6 +9,7 @@ const IllustrationsGrid = () => {
 
     return(
         <section className="illustrations" id="illustrations">
+            <h1 className="titulo">Ilustraciones</h1>
             <div className="illustrations-container">
                 {context.illustrationsCard?.map((item) => (
                     <IllustrationCard

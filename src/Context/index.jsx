@@ -99,18 +99,20 @@ const PortfolioProvider = ({children}) => {
             }
         };
         const fetchVideos = async () => {
-            if (isIllustrationsActive){
-                try {
-                    const response = await fetch(API, options);
-                    const data = await response.json();
-                    setVideos(data.items);
+        
+            try {
+                const response = await fetch(API, options);
+                const data = await response.json();
+                setVideos(data.items);
+                if (isIllustrationsActive){
                     await setLoading(false);
-                } 
-                catch (error) {
-                    setError(true);
-                    console.error(error);             
                 }
+            } 
+            catch (error) {
+                setError(true);
+                console.error(error);             
             }
+        
         } 
         fetchVideos();
     }, [isIllustrationsActive])

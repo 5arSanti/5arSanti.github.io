@@ -12,20 +12,6 @@
 
     padding: 30px 0;
 }
-.videos h1{
-    width: 90%;
-    height: 50px;
-
-    border-left: 1px solid white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    color: white;
-    font-family: "Libre Baskerville", "serif";
-    font-size: 32px;
-}
 
 .videos-container{
     width: 100%;
@@ -102,9 +88,6 @@
 @media (max-width:800px){
     .videos{
         gap: 20px;
-    }
-    .videos h1{
-        font-size: 28px;
     }
     .videos-container{
         gap: 0px;
