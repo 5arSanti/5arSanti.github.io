@@ -55,9 +55,8 @@
     border-radius: 5px;
     z-index: 1;
 
-    transition: all 0.5s ease;
+    transition: background 0.5s ease;
 }
 .front-mentor-see-more-button:hover{
     background: rgba(0,0,0,1);
-    border: 1px solid black;
 }

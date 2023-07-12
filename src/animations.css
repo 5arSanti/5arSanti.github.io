@@ -1,0 +1,99 @@
+:root{
+    --icons-duration-time: 1.5s;
+}
+
+/* Animaciones */
+.animacion-logo{
+    animation-name: logoAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+@keyframes logoAnimation{
+    0%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.animacion-texto{
+    opacity: 0;
+    animation-name: animacion-texto;
+    animation-duration: 1.5s;
+    animation-delay: 0.75s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes animacion-texto{
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.animacion-titulos{
+    animation-name: animacion-titulos;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+@keyframes animacion-titulos{
+    0%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    25%{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+}
+
+
+/* ICONOS */
+.animacion-iconos a{
+    opacity: 0;
+    animation-name: animacion-iconos;
+    animation-duration: var(--icons-duration-time);
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.animacion-iconos a:nth-child(2){
+    animation-delay: calc(1s * .75); 
+}
+.animacion-iconos a:nth-child(3){
+    animation-delay: calc(1s * 1.5); 
+}
+@keyframes animacion-iconos{
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes animacion-iconos-responsive{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media(max-width: 950px){
+    .animacion-iconos a{
+        animation-name: animacion-iconos-responsive;
+    }
+}

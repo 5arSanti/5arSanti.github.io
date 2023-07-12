@@ -8,9 +8,9 @@ const AboutMe = () => {
             <section className="aboutMeContainer">
                 <div className="aboutMeInfoContainer">
                     <figure className="logoContainer">
-                        <img src={Logo} alt="Logo"></img>
+                        <img className="animacion-logo" src={Logo} alt="Logo"></img>
                     </figure>
-                    <div className="aboutMeInfo">
+                    <div className="aboutMeInfo animacion-texto">
                         <h1 className="text-white font-bold">Hola! Soy 
                             <span className="ml-2">
                                 <a className="gap-2 animacion" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/santiago-ariasb/">
