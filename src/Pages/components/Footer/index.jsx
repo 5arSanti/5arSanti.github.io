@@ -1,15 +1,43 @@
 import { IconsList } from "../Home/IconsList";
+import logo from "/Logo-Profesional-Santiago-V3.png";
 import "./styles.css";
+import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer>
-            <div className="footerIcons">
-                <IconsList/>
+        <footer className="footer">
+            <div>
+                <div className="footer-info">
+                    <Link to="/">
+                        <p className="animacion">Santiago Arias</p>    
+                    </Link>
+
+                    <Link to="/" className="footer-info-image-container">
+                        <img src={logo} alt="Logo" />
+                    </Link>
+
+                    <a href="mailto:santiari05@hotmail.com">
+                        <p className="animacion">
+                            santiari05@hotmail.com 
+                            <HiOutlineArrowTopRightOnSquare className="text-sm inline-block ml-2"/>
+                        </p>  
+                    </a>
+
+                </div>
+                <div className="footer-repo-container">
+                    <a className="animacion" target="_blank" rel="noreferrer noopener" href="https://github.com/5arSanti/5arSanti.github.io">
+                        Repositorio de GitHub 
+                        <HiOutlineArrowTopRightOnSquare className="text-sm inline-block ml-2"/>
+                    </a>
+                </div>
             </div>
-            <div className="footerInfo">
-                <h2>By <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">5arSanti</a></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim atque voluptate vel quos sapiente accusamus, quisquam commodi delectus, perspiciatis, cumque maiores facilis quibusdam eos libero eveniet unde expedita alias. Hic?</p>
+
+            <div className="footer-copy-container">
+                <p>&copy; 2023 Santiago Arias</p>
+                <div className="footer-icons">
+                    <IconsList/>
+                </div>
             </div>
         </footer>
     );
