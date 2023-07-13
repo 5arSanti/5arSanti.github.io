@@ -5,13 +5,13 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 const AboutMe = () => {
     return(
         <section id="home" className="relative bg-black">
-            <section className="aboutMeContainer">
-                <div className="aboutMeInfoContainer">
-                    <figure className="logoContainer">
+            <div className="about-me-home-container">
+                <div className="about-me-home-info-container">
+                    <figure className="logo-container">
                         <img className="animacion-logo" src={Logo} alt="Logo"></img>
                     </figure>
-                    <div className="aboutMeInfo animacion-texto">
-                        <h1 className="text-white font-bold">Hola! Soy 
+                    <div className="about-me-home-info animacion-texto">
+                        <h1>Hola! Soy 
                             <span className="ml-2">
                                 <a className="gap-2 animacion" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/santiago-ariasb/">
                                     Santiago Arias <HiArrowTopRightOnSquare className="text-md inline-block"/>
@@ -21,8 +21,8 @@ const AboutMe = () => {
                         <p>Frontend Developer, ilustrador digital y Diseñador UX/UI en Colombia.</p>
                     </div>
                 </div>
-            </section>
-            <figure className="gradientFigure"></figure>
+            </div>
+            <figure className="about-me-home-gradient-figure"></figure>
         </section>
     );
 }
