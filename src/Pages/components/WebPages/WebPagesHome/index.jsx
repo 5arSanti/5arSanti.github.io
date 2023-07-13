@@ -12,7 +12,7 @@ const WebPagesHome = () => {
                 
                 <div className="web-pages-home-icons-container animacion-iconos">
                     <a target="_blank" rel="noreferrer noopener" href="https://github.com/5arSanti">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png"></img>
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHubIcon"></img>
                         <p className="animacion">GitHub <HiArrowTopRightOnSquare className="text-sm"/></p>
                     </a>
                 </div>

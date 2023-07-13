@@ -12,9 +12,8 @@
 
     z-index: 1;
 
-    background-color: rgba(17, 0, 45, 1);
-    opacity: .75;
-    transition: opacity .5s ease;
+    background: rgba(17, 0, 45, 0.5);
+    transition: background 0.20s ease;
 
     -webkit-box-shadow: 7.5px 7.5px 20px -5px rgba(0,0,0,1);
     -moz-box-shadow: 7.5px 7.5px 20px -5px rgba(0,0,0,1);
@@ -42,6 +41,6 @@
 
 @media (hover: hover){
     .top-button:hover{
-        opacity: 1;
+        background: rgba(17, 0, 45, 1);
     }
 }

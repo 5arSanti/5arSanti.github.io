@@ -13,7 +13,7 @@ const DownloadCV = () =>{
     }
 
     return(
-        <button className="cv-button" onClick={() => handleDounwload()}>
+        <button className="cv-button" type="button" onClick={() => handleDounwload()}>
             Descargar CV <HiArrowDownTray className="text-md"/>
         </button>
     );

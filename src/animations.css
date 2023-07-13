@@ -18,17 +18,17 @@
 }
 
 
-.animacion-logo{
-    animation-name: logoAnimation;
+.animacion-logo{    
+    transform: translateY(30px);
+    opacity: 0;
+
+    animation-name: animacion-logo;
     animation-duration: 1.5s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-@keyframes logoAnimation{
-    0%{
-        transform: translateY(30px);
-        opacity: 0;
-    }
+@keyframes animacion-logo{
     100%{
         transform: translate(0px);
         opacity: 1;
@@ -37,6 +37,8 @@
 
 .animacion-texto{
     opacity: 0;
+    transform: translateY(30px);
+
     animation-name: animacion-texto;
     animation-duration: 1.5s;
     animation-delay: 0.75s;
@@ -45,9 +47,6 @@
     animation-fill-mode: forwards;
 }
 @keyframes animacion-texto{
-    0%{
-        transform: translateY(30px);
-    }
     100%{
         transform: translateY(0px);
         opacity: 1;
@@ -55,19 +54,19 @@
 }
 
 .animacion-titulos{
+    opacity: 0;
+    transform: translateX(-30px);
+
     animation-name: animacion-titulos;
     animation-duration: 2s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 @keyframes animacion-titulos{
-    0%{
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    25%{
-        transform: translateX(-30px);
-        opacity: 0;
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
 
@@ -75,6 +74,7 @@
 /* ICONOS */
 .animacion-iconos a{
     opacity: 0;
+
     animation-name: animacion-iconos;
     animation-duration: var(--icons-duration-time);
     animation-timing-function: ease;
@@ -89,31 +89,39 @@
 }
 @keyframes animacion-iconos{
     0%{
-        opacity: 0;
         transform: translateX(30px);
     }
     100%{
         opacity: 1;
+        transform: translateX(0px);
     }
 }
 @keyframes animacion-iconos-responsive{
     0%{
-        opacity: 0;
         transform: translateY(30px);
     }
     100%{
         opacity: 1;
+        transform: translateY(0px);
     }
 }
 
 .animacion-top-button{
     opacity: 0;
-    animation-name: animacion-iconos-responsive;
+    transform: translateY(30px);
+
+    animation-name: animacion-top-button;
     animation-duration: 1s;
     animation-delay: 1.5s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+@keyframes animacion-top-button{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 

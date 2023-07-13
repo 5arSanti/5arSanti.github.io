@@ -4,7 +4,7 @@
 
     gap: 5px;
     align-items: center;
-    background-color: rgba(255,255,255, .9);
+    background-color: rgba(255,255,255, .9) !important;
     color: black;
     padding: 5px 10px;
 
@@ -16,7 +16,7 @@
 
 @media (hover: hover){
     .cv-button:hover{
-        background-color: black;
+        background-color: black !important;
         color: white;
     }
 }

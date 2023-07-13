@@ -33,7 +33,7 @@ const VideosGrid = () => {
         <div className="videos" id="time-lapses">
             <h1 className="titulo">Time lapses</h1>
             <div className="videos-container">
-                <button className="previous-button" onClick={() => handlePreviousVideo()}><HiChevronLeft/></button>
+                <button className="previous-button" title="Ver anterior video" onClick={() => handlePreviousVideo()}><HiChevronLeft/></button>
                 <div className="video-card-container">
                     <div className={`video-card-container-carrousel ${indexOfVideo}`}>
                         {context.loading && (
@@ -56,7 +56,7 @@ const VideosGrid = () => {
                         ))}
                     </div>
                 </div>
-                <button className="next-button" onClick={() => handleNextVideo()}><HiChevronRight/></button>
+                <button className="next-button" title="Ver siguiente video" onClick={() => handleNextVideo()}><HiChevronRight/></button>
             </div>
 
         </div>

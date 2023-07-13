@@ -10,12 +10,12 @@ const FrontMentorGrid = () => {
     const renderView = () => {
         if (context.moreInfo2Button === "hidden-info"){
             return(
-                <button className="front-mentor-see-more-button" onClick={context.handleMoreInfo2Button}>Ver Mas</button>
+                <button className="front-mentor-see-more-button" title="Ver mas contenido" onClick={context.handleMoreInfo2Button}>Ver Mas</button>
             );   
         }
         else{
             return(
-                <button className="front-mentor-see-more-button" onClick={context.handleMoreInfo2Button}>Ver Menos</button>
+                <button className="front-mentor-see-more-button" title="Ver menos contenido" onClick={context.handleMoreInfo2Button}>Ver Menos</button>
             );   
         }
     }

@@ -15,7 +15,7 @@ const Projects = () => {
                     <div className="project-info">
                         <h1>Ilustraciones</h1>
                         <Link to="ilustraciones">
-                            <button>
+                            <button type="button">
                                 Ver mas <HiChevronRight className="text-white ml-1"/>
                             </button>
                         </Link>
@@ -26,7 +26,7 @@ const Projects = () => {
                     <div className="project-info">
                         <h1>Paginas Web</h1>
                         <Link to="paginas-web">
-                            <button>
+                            <button type="button">
                                 Ver mas <HiChevronRight className="text-white ml-1"/>
                             </button>
                         </Link>

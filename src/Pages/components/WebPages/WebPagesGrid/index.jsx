@@ -10,12 +10,12 @@ const WebPagesGrid = () => {
     const renderView = () => {
         if (context.moreInfo1Button === "hidden-info"){
             return(
-                <button className="web-pages-see-more-button" onClick={context.handleMoreInfo1Button}>Ver Mas</button>
+                <button className="web-pages-see-more-button" title="Ver mas contenido" onClick={context.handleMoreInfo1Button}>Ver Mas</button>
             );   
         }
         else{
             return(
-                <button className="web-pages-see-more-button" onClick={context.handleMoreInfo1Button}>Ver Menos</button>
+                <button className="web-pages-see-more-button" title="Ver menos contenido" onClick={context.handleMoreInfo1Button}>Ver Menos</button>
             );   
         }
     }
