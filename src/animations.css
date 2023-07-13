@@ -3,6 +3,21 @@
 }
 
 /* Animaciones */
+.animacion-nav{
+    animation-name: navAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+}
+@keyframes navAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 .animacion-logo{
     animation-name: logoAnimation;
     animation-duration: 1.5s;
@@ -97,3 +112,4 @@
         animation-name: animacion-iconos-responsive;
     }
 }
+

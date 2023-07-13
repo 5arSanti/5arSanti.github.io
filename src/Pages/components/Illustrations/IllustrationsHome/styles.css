@@ -91,9 +91,7 @@
 
     transition: transform .5s ease;
 }
-.illustrations-home-icons-container a:hover img{
-    transform: scale(1.15);
-}
+
 .illustrations-home-icons-container p{
     color: white;
     display: flex;
@@ -102,9 +100,6 @@
     gap: 3px;
 }
 
-.illustrations-home-icons-container a:hover .animacion::after {
-    width: 100%;
-}
 
 @media (max-width: 950px){
     .illustrations-home-container{
@@ -153,5 +148,14 @@
     }
     .illustrations-home-icons-container p{
         display: none;
+    }
+}
+
+@media (hover: hover){
+    .illustrations-home-icons-container a:hover img{
+        transform: scale(1.15);
+    }
+    .illustrations-home-icons-container a:hover .animacion::after {
+        width: 100%;
     }
 }

@@ -1,10 +1,3 @@
-nav{
-    font-family: "Libre Baskerville", "serif";
-
-    animation-name: navAnimation;
-    animation-duration: 5s;
-    animation-timing-function: ease;
-}
 nav ul li{
     transition: transform .75s ease;
 }
@@ -25,14 +18,7 @@ nav ul li{
     border-radius: 6px;
 }
 
-@keyframes navAnimation{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 
 @media (max-width: 950px) {
     .navbar .navbar-right{

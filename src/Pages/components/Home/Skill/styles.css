@@ -17,9 +17,7 @@
 
     transition: transform .5s ease;
 }
-.skill-container:hover{
-    transform: scale(1.05);
-}
+
 .skill-logo{
     width: 75px !important;
     display: flex;
@@ -55,5 +53,11 @@
     }
     .skill-info p:nth-child(2){
         font-size: 12px;
+    }
+}
+
+@media (hover: hover) {
+    .skill-container:hover{
+        transform: scale(1.05);
     }
 }

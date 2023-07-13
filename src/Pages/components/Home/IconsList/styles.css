@@ -16,6 +16,9 @@
     transition: transform .5s ease;
 }
 
-.icons a:hover img{
-    transform: scale(1.1);
+
+@media (hover: hover) {
+    .icons a:hover img{
+        transform: scale(1.1);
+    }
 }

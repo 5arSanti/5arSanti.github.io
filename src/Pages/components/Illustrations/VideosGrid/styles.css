@@ -39,9 +39,6 @@
 
     transition: background .1s ease;
 }
-.previous-button:hover, .next-button:hover{
-    background: rgba(255, 255, 255, 0.4);
-}
 
 .video-card-container{
     width: 100%;
@@ -112,5 +109,11 @@
     }
     .next-button{
         right: 0px;
+    }
+}
+
+@media (hover: hover){
+    .previous-button:hover, .next-button:hover{
+        background: rgba(255, 255, 255, 0.4);
     }
 }

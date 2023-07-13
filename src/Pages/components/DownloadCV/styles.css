@@ -13,7 +13,10 @@
 
     transition: .5s ease;
 }
-.cv-button:hover{
-    background-color: black;
-    color: white;
+
+@media (hover: hover){
+    .cv-button:hover{
+        background-color: black;
+        color: white;
+    }
 }

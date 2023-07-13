@@ -34,9 +34,7 @@
 
     transition: transform 0.5s ease;
 }
-.web-pages-card-image-and-name:hover img{
-    transform: scale(1.05);
-}
+
 .web-pages-card-image-and-name p{
     width: 100%;
     z-index: 1;
@@ -80,10 +78,6 @@
     transition: transform .5s ease;
 }
 
-.web-pages-card-icons a:hover img{
-    transform: scale(1.1);
-}
-
 
 @media (max-width: 950px){ 
     .web-pages-card{
@@ -114,5 +108,14 @@
     .web-pages-card-icons a{
         width: 10%;
         height: 10%;
+    }
+}
+
+@media (hover: hover){
+    .web-pages-card-image-and-name:hover img{
+        transform: scale(1.05);
+    }
+    .web-pages-card-icons a:hover img{
+        transform: scale(1.1);
     }
 }

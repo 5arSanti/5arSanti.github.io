@@ -28,7 +28,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="navbar w-full h-16 fixed top-0 z-20 bg-none flex justify-between items-center px-10 text-white font-bold">
+        <nav className="navbar animacion-nav w-full h-16 fixed top-0 z-20 bg-none flex justify-between items-center px-10 text-white font-bold">
             <ul className="flex">
                 <NavLink to="/">
                     <li className="animacion">

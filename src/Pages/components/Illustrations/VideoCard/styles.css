@@ -38,9 +38,6 @@
 
     transition: opacity .3s ease;
 }
-.yt-reproducer iframe:hover {
-    opacity: .9;
-}
 
 .video-card-info p{
     width: 100%;
@@ -63,5 +60,11 @@
 @media (max-width: 500px){
     .video-card-info p a{
         font-size: 14px;
+    }
+}
+
+@media (hover: hover){
+    .yt-reproducer iframe:hover {
+        opacity: .9;
     }
 }

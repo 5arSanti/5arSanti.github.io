@@ -40,10 +40,7 @@
 	visibility: 0;
 	transition: opacity .2s ease-out, visibility 0.2s ease-out;
 }
-.background-illustration-card-info:hover{
-	opacity: 1;
-	visibility: 1;
-}
+
 .illustration-card-info{
 	width: 100%;
 	height: 50px;
@@ -72,9 +69,7 @@
 	cursor: pointer;
 	transition: transform 0.5s ease;
 }
-.illustration-card-icons a:hover{
-	transform: scale(1.1);
-}
+
 .illustration-card-icons a img{
 	width: 100%;
 	height: 100%;
@@ -132,5 +127,16 @@
 @media (max-width: 500px){
 	.illustration-card-info-responsive p{
 		font-size: 14px;
+	}
+}
+
+
+@media (hover: hover) {
+	.background-illustration-card-info:hover{
+		opacity: 1;
+		visibility: 1;
+	}
+	.illustration-card-icons a:hover{
+		transform: scale(1.1);
 	}
 }

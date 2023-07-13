@@ -41,10 +41,7 @@
     filter: contrast(.9);
     transition: .75s ease;
 }
-.projects-illustrations-Web:hover img{
-    filter: contrast(1.2);
-    transform: scale(1.1);
-}
+
 
 .project-info{
     width: 100%;
@@ -92,5 +89,19 @@
 @media (max-width:913px){
     .projects-container{
         width: 90%;
+    }
+}
+
+@media (hover: hover) {
+    .projects-illustrations-Web:hover img{
+        filter: contrast(1.2);
+        transform: scale(1.1);
+    }
+    .project-info button:hover{
+        background-color: black;
+        border: 0px solid black;
+        -webkit-transition: background-color .75s ease;
+        -ms-transition: background-color .75s ease;
+        transition: background-color .75s ease;
     }
 }

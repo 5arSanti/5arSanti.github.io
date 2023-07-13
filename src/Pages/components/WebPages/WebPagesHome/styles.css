@@ -71,9 +71,7 @@
 
     transition: transform .5s ease;
 }
-.web-pages-home-icons-container a:hover img{
-    transform: scale(1.15);
-}
+
 .web-pages-home-icons-container p{
     color: white;
     display: flex;
@@ -82,9 +80,6 @@
     gap: 3px;
 }
 
-.web-pages-home-icons-container a:hover .animacion::after {
-    width: 100%;
-}
 
 @media (max-width: 950px){
     .web-pages-home-container{
@@ -133,5 +128,14 @@
     }
     .web-pages-home-icons-container p{
         display: none;
+    }
+}
+
+@media (hover: hover){
+    .web-pages-home-icons-container a:hover img{
+        transform: scale(1.15);
+    }
+    .web-pages-home-icons-container a:hover .animacion::after {
+        width: 100%;
     }
 }

@@ -170,9 +170,6 @@ const PortfolioProvider = ({children}) => {
                 moreInfo1Button,
                 handleMoreInfo2Button,
                 moreInfo2Button,
-
-
-
             }}
         >
             {children}

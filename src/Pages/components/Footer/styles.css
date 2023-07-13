@@ -42,9 +42,7 @@
     opacity: .5;
     transition: opacity .25s ease;
 }
-.footer-info-image-container:hover img{
-    opacity: 1;
-}
+
 
 .footer-repo-container{
     width: 100%;
@@ -118,5 +116,11 @@
         flex-direction: column;
         justify-content: center;
         gap: 10px;
+    }
+}
+
+@media (hover: hover) {
+    .footer-info-image-container:hover img{
+        opacity: 1;
     }
 }

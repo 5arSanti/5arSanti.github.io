@@ -61,6 +61,10 @@
 
     transition: background 0.5s ease;
 }
-.web-pages-see-more-button:hover{
-    background: rgba(0,0,0,1);
+
+
+@media (hover: hover){
+    .web-pages-see-more-button:hover{
+        background: rgba(0,0,0,1);
+    }
 }

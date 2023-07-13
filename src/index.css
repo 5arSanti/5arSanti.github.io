@@ -45,9 +45,6 @@ body{
     background-color: #5E5E5E;
     border-radius: 0px;
 }
-.scrollable-cards::-webkit-scrollbar-thumb:hover {
-    background-color: #747474;
-}
 
 
 .animacion{
@@ -63,9 +60,7 @@ body{
     background-color: white;
     transition: width .5s ease;
 }
-.animacion:hover::after {
-    width: 100%;
-}
+
 
 
 @media (max-width: 800px){
@@ -79,3 +74,11 @@ body{
     }
 }
 
+@media (hover: hover) {
+    .scrollable-cards::-webkit-scrollbar-thumb:hover {
+        background-color: #747474;
+    }
+    .animacion:hover::after {
+        width: 100%;
+    }
+}
