@@ -106,6 +106,16 @@
     }
 }
 
+.animacion-top-button{
+    opacity: 0;
+    animation-name: animacion-iconos-responsive;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 
 @media(max-width: 950px){
     .animacion-iconos a{

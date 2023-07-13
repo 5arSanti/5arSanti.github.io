@@ -13,6 +13,7 @@ import { WebPages } from "../Screens/WebPages";
 import {Navbar} from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { NavBarResponsive } from "../components/NavBarResponsive";
+import { TopButton } from "../components/TopButton";
 
 //CSS
 import './App.css'
@@ -32,9 +33,11 @@ const App = () => {
     return (
         <PortfolioProvider>
             <BrowserRouter>
+                <section id="top"></section>
                 <Navbar/>
                 <NavBarResponsive/>
                 <AppRoutes/>
+                <TopButton/>
                 <Footer/>
             </BrowserRouter>
         </PortfolioProvider>

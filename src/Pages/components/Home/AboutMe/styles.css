@@ -72,7 +72,7 @@
 }
 
 
-@media(max-width: 1190px){
+@media(max-width: 950px){
     /* About Me */
     .about-me-home-info-container{
         display: flex;

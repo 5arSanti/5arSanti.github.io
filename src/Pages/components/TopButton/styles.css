@@ -1,0 +1,50 @@
+.top-button{
+    /* width: 50px;
+    height: 50px; */
+    
+    padding: 15px;
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    right: 35px;
+    bottom: 25px;
+
+    z-index: 1;
+
+    background-color: rgba(17, 0, 45, 1);
+    opacity: .75;
+    transition: opacity .5s ease;
+
+    box-shadow: 7.5px 7.5px 20px -5px rgba(0,0,0,1);
+    -webkit-box-shadow: 7.5px 7.5px 20px -5px rgba(0,0,0,1);
+    -moz-box-shadow: 7.5px 7.5px 20px -5px rgba(0,0,0,1);
+}
+.top-button svg{
+    color: white;
+    font-size: 22px;
+}
+
+@media (max-width: 1000px){
+    .top-button svg{
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px){
+    .top-button{
+        right: 30px;
+        bottom: 20px;
+    }
+    .top-button svg{
+        font-size: 18px;
+    }
+}
+
+@media (hover: hover){
+    .top-button:hover{
+        opacity: 1;
+    }
+}
