@@ -3,7 +3,7 @@ import "./styles.css";
 
 const TopButton = () => {
     return(
-        <a href="#top" className="top-button animacion-top-button">
+        <a href="#top" aria-label="Top" className="top-button animacion-top-button">
             <HiChevronDoubleUp/>
         </a>
     );

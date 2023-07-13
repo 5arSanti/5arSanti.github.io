@@ -7,7 +7,7 @@ const IconsList = () => {
                 <img src="https://cdn-icons-png.flaticon.com/512/3669/3669739.png" alt="LinkedinIcon"></img>
             </a>
             <a target="_blank" rel="noreferrer" href="https://github.com/5arSanti">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png"></img>
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHubIcon"></img>
             </a>
             <a target="_blank" rel="noreferrer" href="https://www.deviantart.com/santiari1">
                 <img src="https://cdn-icons-png.flaticon.com/512/3669/3669921.png" alt="DeviantArtIcon"></img>

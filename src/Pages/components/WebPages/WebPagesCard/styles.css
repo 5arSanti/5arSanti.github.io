@@ -14,9 +14,9 @@
     justify-self: center;
     justify-content: center;
 
-    box-shadow: 20px 20px 31px 0px rgba(0,0,0,0.53);
     -webkit-box-shadow: 20px 20px 31px 0px rgba(0,0,0,0.53);
     -moz-box-shadow: 20px 20px 31px 0px rgba(0,0,0,0.53);
+    box-shadow: 20px 20px 31px 0px rgba(0,0,0,0.53);
 }
 .web-pages-card-image-and-name{
     width: var(--ImgNameWidth);

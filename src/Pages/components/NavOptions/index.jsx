@@ -11,7 +11,7 @@ const NavOptions = () => {
     const RenderView = () => {
         if (context.isHomeActive){
             return(
-                <ul className="navbar-right flex gap-6 text-sm">
+                <div className="navbar-right flex gap-6 text-sm">
                     <a href="/" className="animacion flex gap-1 items-center cursor-pointer">
                         <p>Home</p>
                         <HiChevronRight/>
@@ -32,15 +32,15 @@ const NavOptions = () => {
                         <p>Contacto</p>
                         <HiChevronRight/>
                     </a>
-                    <li className="nav-button flex gap-1 items-center cursor-pointer">
+                    <div className="nav-button flex gap-1 items-center cursor-pointer">
                         <DownloadCV/>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             );
         }
         else if (context.isIllustrationsActive){
             return(
-                <ul className="navbar-right flex gap-6 text-sm">
+                <div className="navbar-right flex gap-6 text-sm">
                     <a href="#illustrations-home" className="animacion flex gap-1 items-center cursor-pointer">
                         <p>Home</p>
                         <HiChevronRight/>
@@ -53,15 +53,15 @@ const NavOptions = () => {
                         <p>Ilustraciones</p>
                         <HiChevronRight/>
                     </a>
-                    <li className="nav-button flex gap-1 items-center cursor-pointer">
+                    <div className="nav-button flex gap-1 items-center cursor-pointer">
                         <DownloadCV/>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             );
         }
         else if (context.isWebPagesActive){
             return(
-                <ul className="navbar-right flex gap-6 text-sm">
+                <div className="navbar-right flex gap-6 text-sm">
                     <a href="#web-pages-home" className="animacion flex gap-1 items-center cursor-pointer">
                         <p>Home</p>
                         <HiChevronRight/>
@@ -74,10 +74,10 @@ const NavOptions = () => {
                         <p>Frontend Mentor</p>
                         <HiChevronRight/>
                     </a>
-                    <li className="nav-button flex gap-1 items-center cursor-pointer">
+                    <div className="nav-button flex gap-1 items-center cursor-pointer">
                         <DownloadCV/>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             );
         }
     }
