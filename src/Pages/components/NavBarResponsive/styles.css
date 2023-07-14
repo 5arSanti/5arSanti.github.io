@@ -21,14 +21,14 @@ aside{
     transform: translateX(0);
 }
 
-aside ul{
+aside .navbar-right{
     width: 80%;
     border-left: 1px solid white;
     padding: 5px 0 5px 30px;
 
     flex-direction: column;
 }
-aside ul li{
+aside .navbar-right a{
     display: flex;
     justify-content: space-between;
     width: 150px;

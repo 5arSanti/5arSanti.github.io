@@ -1,5 +1,6 @@
 //React
-import {useRoutes, BrowserRouter} from "react-router-dom";
+import React from "react";
+import {useRoutes, BrowserRouter, useLocation} from "react-router-dom";
 
 //Context
 import { PortfolioProvider } from '../../Context';
@@ -18,6 +19,14 @@ import { TopButton } from "../components/TopButton";
 //CSS
 import './App.css'
 
+const Wrapper = ({children}) => {
+    const location = useLocation();
+    React.useLayoutEffect(() => {
+        document.documentElement.scrollTo(0, 0)
+    }, [location.pathname]);
+
+    return children;
+}
 
 const AppRoutes = () => {
     let routes = useRoutes([
@@ -32,13 +41,15 @@ const AppRoutes = () => {
 const App = () => {
     return (
         <PortfolioProvider>
-            <BrowserRouter>
-                <section id="top"></section>
-                <Navbar/>
-                <NavBarResponsive/>
-                <AppRoutes/>
-                <TopButton/>
-                <Footer/>
+            <BrowserRouter basename="/">
+                <Wrapper>
+                    <section id="top"></section>
+                    <Navbar/>
+                    <NavBarResponsive/>
+                    <AppRoutes/>
+                    <TopButton/>
+                    <Footer/>
+                </Wrapper>
             </BrowserRouter>
         </PortfolioProvider>
 
