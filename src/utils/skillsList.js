@@ -17,31 +17,31 @@ export const skills = [
     {
         id: 1,
         name: "Krita",
-        experience: year - 2019,
+        experience: year - 2020,
         image: kritaImg,
     },
     {
         id: 2,
         name: "Illustrator",
-        experience: year - 2021,
+        experience: year - 2022,
         image: illustratorImg,
     },
     {
         id: 3,
         name: "HTML",
-        experience: year - 2020,
+        experience: year - 2021,
         image: htmlImg,
     },
     {
         id: 4,
         name: "CSS",
-        experience: year - 2020,
+        experience: year - 2021,
         image: cssImg,
     },
     {
         id: 5,
         name: "JavaScript",
-        experience: year - 2020,
+        experience: year - 2022,
         image: javaScriptImg,
     },
     {
@@ -59,7 +59,7 @@ export const skills = [
     {
         id: 8,
         name: "Python",
-        experience: year - 2020,
+        experience: year - 2021,
         image: pythonImg,
     },
     {
