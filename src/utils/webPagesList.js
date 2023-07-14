@@ -60,6 +60,6 @@ export const webPagesList = [
         name: "Portafolio Profesional",
         image: "https://i.imgur.com/6nCsDWt.png",
         repo: "https://github.com/5arSanti/5arSanti.github.io",
-        homeLink: "",
+        homeLink: "https://5arsanti.github.io/",
     },
 ]

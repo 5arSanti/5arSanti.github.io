@@ -4,11 +4,11 @@ import "./styles.css";
 const DownloadCV = () =>{
     const handleDounwload = () => {
         // const pdfUrl = "public/Portada-Ilustraciones.png";
-        const pdfUrl = "/placeholder.txt";
+        const pdfUrl = "/Santiago-Arias-CV.pdf";
         const link = document.createElement("a");
 
         link.href = pdfUrl;
-        link.download = "placeholder";
+        link.download = "Santiago Arias CV";
         link.click();
     }
 
