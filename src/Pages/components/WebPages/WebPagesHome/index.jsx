@@ -1,6 +1,6 @@
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 
-import "./Styles.css";
+import "./styles.css";
 
 const WebPagesHome = () => {
     return(
