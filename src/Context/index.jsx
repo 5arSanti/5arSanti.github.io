@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import { skills } from "../utils/skillsList.js";
 import { illustrations } from "../utils/illustrationsList.js"
-import { webPagesList } from "../utils/WebPagesList.js";
+import { webPagesList } from "../utils/webPagesList.js";
 import { frontMentorList } from "../utils/frontMentorList.js";
 
 export const PortfolioContext = React.createContext();
