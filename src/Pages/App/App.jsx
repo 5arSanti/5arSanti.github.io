@@ -1,6 +1,6 @@
 //React
 import React from "react";
-import {useRoutes, BrowserRouter, useLocation} from "react-router-dom";
+import {useRoutes, useLocation, HashRouter} from "react-router-dom";
 
 //Context
 import { PortfolioProvider } from '../../Context';
@@ -41,7 +41,7 @@ const AppRoutes = () => {
 const App = () => {
     return (
         <PortfolioProvider>
-            <BrowserRouter basename="/">
+            <HashRouter>
                 <Wrapper>
                     <section id="top"></section>
                     <Navbar/>
@@ -50,7 +50,7 @@ const App = () => {
                     <TopButton/>
                     <Footer/>
                 </Wrapper>
-            </BrowserRouter>
+            </HashRouter>
         </PortfolioProvider>
 
     );
