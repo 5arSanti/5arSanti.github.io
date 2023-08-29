@@ -35,4 +35,13 @@ export const illustrations = [
         pixiv: "https://www.pixiv.net/en/artworks/106851454",
         size: "big",
     },
+    {
+        id: 5,
+        name: "Herrscher of Sentience",
+        image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da69dd39-50a4-4d6c-8947-8d66979f7287/dg7akxm-e93a0efb-b481-45a8-9607-7ad67c8c50a3.png/v1/fill/w_1280,h_720,q_80,strp/herrscher_of_sentience_by_santiari1_dg7akxm-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZGE2OWRkMzktNTBhNC00ZDZjLTg5NDctOGQ2Njk3OWY3Mjg3XC9kZzdha3htLWU5M2EwZWZiLWI0ODEtNDVhOC05NjA3LTdhZDY3YzhjNTBhMy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.XqcwnT5iG7akB0DAe-eZsPx_5VpRFAfvlNLoMOAwHCY",
+        timeLapse: "",
+        deviantArt: "https://www.deviantart.com/santiari1/art/Herrscher-of-Sentience-979709818",
+        pixiv: "https://www.pixiv.net/en/artworks/111283460",
+        size: "big",
+    },
 ]
