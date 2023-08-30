@@ -15,7 +15,7 @@ const IconsList = () => {
             <a target="_blank" rel="noreferrer" href="https://twitter.com/5ar_santi">
                 <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="TwitterIcon"></img>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@5ar_santi-illustrations140">
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@5ar_santi">
                 <img src="https://cdn-icons-png.flaticon.com/512/3669/3669688.png" alt="YouTubeIcon"></img>
             </a>
         </div>
