@@ -26,9 +26,9 @@ const FrontMentorGrid = () => {
             <div className="front-mentor-container">
                 <Title>Proyectos de Frontend Mentor</Title>
                 <div className={`front-mentor-grid-container ${context.moreInfo2Button}`}>
-                    {context.frontMentorCard?.map((item) => (
+                    {context.frontMentorCard?.map((item, index) => (
                         <WebPagesCard
-                            key={item.id}
+                            key={index}
                             data={item}
                             link={item.mentorLink}
                         />
