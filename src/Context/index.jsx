@@ -6,13 +6,12 @@ import { illustrations } from "../utils/illustrationsList.js"
 import { webPagesList } from "../utils/webPagesList.js";
 import { frontMentorList } from "../utils/frontMentorList.js";
 
+
 export const PortfolioContext = React.createContext();
-
-
 
 const PortfolioProvider = ({children}) => {
     PortfolioProvider.propTypes = {
-        children: PropTypes.node.isRequired,
+        children: PropTypes.any.isRequired,
     }
 
     //Loading and Error
@@ -73,8 +72,8 @@ const PortfolioProvider = ({children}) => {
                 const reversedFrontMentor = [...frontMentorList].reverse();
                 setFrontMentorCard(reversedFrontMentor);
             }
-            catch (error){
-                alert(error);
+            catch (err){
+                alert(err);
             }
         }
         setArrays();
@@ -109,10 +108,8 @@ const PortfolioProvider = ({children}) => {
                 }
             } 
             catch (error) {
-                setError(true);
-                console.error(error);             
+                setError(true);          
             }
-        
         } 
         fetchVideos();
     }, [isIllustrationsActive])

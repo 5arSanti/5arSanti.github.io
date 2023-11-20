@@ -1,6 +1,7 @@
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 
 import "./styles.css";
+import { IconLinksCard } from "../../IconLinksCard";
 
 const WebPagesHome = () => {
     return(
@@ -11,10 +12,11 @@ const WebPagesHome = () => {
                 </div>
                 
                 <div className="web-pages-home-icons-container animacion-iconos">
-                    <a target="_blank" rel="noreferrer noopener" href="https://github.com/5arSanti">
-                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHubIcon"></img>
-                        <p className="animacion">GitHub <HiArrowTopRightOnSquare className="text-sm"/></p>
-                    </a>
+                    <IconLinksCard
+                        link={"https://github.com/5arSanti"}
+                        imgUri={"https://cdn-icons-png.flaticon.com/512/733/733609.png"}
+                        name={"GitHub"}
+                    />
                 </div>
             </div>
         </section>

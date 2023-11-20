@@ -3,6 +3,7 @@ import { PortfolioContext } from "../../../../Context";
 import { WebPagesCard } from "../WebPagesCard";
 
 import "./styles.css";
+import { Title } from "../../Title";
 
 const FrontMentorGrid = () => {
     const context = React.useContext(PortfolioContext);
@@ -23,7 +24,7 @@ const FrontMentorGrid = () => {
     return(
         <section className="front-mentor" id="front-mentor">
             <div className="front-mentor-container">
-                <h1 className="titulo">Proyectos de Frontend Mentor </h1>
+                <Title>Proyectos de Frontend Mentor</Title>
                 <div className={`front-mentor-grid-container ${context.moreInfo2Button}`}>
                     {context.frontMentorCard?.map((item) => (
                         <WebPagesCard

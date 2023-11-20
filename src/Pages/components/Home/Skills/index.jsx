@@ -2,6 +2,7 @@ import React from "react";
 import { PortfolioContext } from "../../../../Context";
 import "./styles.css";
 import { Skill } from "../Skill";
+import { Title } from "../../Title";
 
 const Skills = () => {
     const context = React.useContext(PortfolioContext);
@@ -9,12 +10,12 @@ const Skills = () => {
     return (
         <section className="skills" id="skills">
             <div className="skills-title">
-                <h1 className="titulo">Habilidades</h1>
+                <Title>Habilidades</Title>
             </div>
             <div className="skills-container">
-                {context.skillsCard?.map(item => (
+                {context.skillsCard?.map((item, index) => (
                     <Skill
-                        key={item.id}
+                        key={index}
                         data={item}
                     />
                 ))}

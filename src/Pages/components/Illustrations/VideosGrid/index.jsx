@@ -8,6 +8,7 @@ import "./styles.css";
 
 import { LoadingVideos } from "../../LoadingAndError/LoadingVideos";
 import { Error } from "../../LoadingAndError/Error";
+import { Title } from "../../Title";
 
 const VideosGrid = () => {
     const context = React.useContext(PortfolioContext);
@@ -31,7 +32,7 @@ const VideosGrid = () => {
 
     return(
         <div className="videos" id="time-lapses">
-            <h1 className="titulo">Time lapses</h1>
+            <Title>Time lapses</Title>
             <div className="videos-container">
                 <button className="previous-button" title="Ver anterior video" onClick={() => handlePreviousVideo()}><HiChevronLeft/></button>
                 <div className="video-card-container">

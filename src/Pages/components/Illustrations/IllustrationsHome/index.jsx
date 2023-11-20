@@ -1,5 +1,6 @@
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import "./styles.css"
+import { IconLinksCard } from "../../IconLinksCard";
 
 const IllustrationsHome = () => {
     return (
@@ -13,18 +14,21 @@ const IllustrationsHome = () => {
                 </div>
                 
                 <div className="illustrations-home-icons-container animacion-iconos">
-                    <a target="_blank" rel="noreferrer noopener" href="https://www.deviantart.com/santiari1">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3669/3669921.png" alt="DeviantArtIcon"></img>
-                        <p className="animacion">DeviantArt <HiArrowTopRightOnSquare className="text-sm"/></p>
-                    </a>
-                    <a target="_blank" rel="noreferrer noopener" href="https://www.pixiv.net/en/users/74363297">
-                        <img src="https://clipground.com/images/pixiv-logo-3.png" alt="PixivIcon"></img>
-                        <p className="animacion">Pixiv <HiArrowTopRightOnSquare className="text-sm"/></p>
-                    </a>
-                    <a target="_blank" rel="noreferrer noopener" href="https://www.youtube.com/@5ar_santi">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3669/3669688.png" alt="YouTubeIcon"></img>
-                        <p className="animacion">YouTube <HiArrowTopRightOnSquare className="text-sm"/></p>
-                    </a>
+                    <IconLinksCard
+                        link={"https://www.deviantart.com/santiari1"}
+                        imgUri={"https://cdn-icons-png.flaticon.com/512/3669/3669921.png"}
+                        name={"DeviantArt"}
+                    />
+                    <IconLinksCard
+                        link={"https://www.pixiv.net/en/users/74363297"}
+                        imgUri={"https://clipground.com/images/pixiv-logo-3.png"}
+                        name={"Pixiv"}
+                    />
+                    <IconLinksCard
+                        link={"https://www.youtube.com/@5ar_santi"}
+                        imgUri={"https://cdn-icons-png.flaticon.com/512/3669/3669688.png"}
+                        name={"YouTube"}
+                    />
                 </div>
             </div>
         </section>

@@ -2,6 +2,7 @@ import "./styles.css";
 import { IconsList } from "../IconsList";
 
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
+import { Title } from "../../Title";
 
 const ContactMe = () => {
     return(

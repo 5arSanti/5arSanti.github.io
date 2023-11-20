@@ -3,6 +3,7 @@ import { PortfolioContext } from "../../../../Context";
 import { WebPagesCard } from "../WebPagesCard";
 
 import "./styles.css";
+import { Title } from "../../Title";
 
 const WebPagesGrid = () => {
     const context = React.useContext(PortfolioContext);
@@ -23,11 +24,11 @@ const WebPagesGrid = () => {
     return(
         <section className="web-pages" id="web-pages">
             <div className="web-pages-container">
-                <h1 className="titulo">Paginas Web</h1>
+                <Title>P&aacute;ginas Web</Title>
                 <div className={`web-pages-grid-container ${context.moreInfo1Button}`}>
-                    {context.webPagesCard?.map((item) => (
+                    {context.webPagesCard?.map((item, index) => (
                         <WebPagesCard
-                            key={item.id}
+                            key={index}
                             data={item}
                             link={item.homeLink}
                         />

@@ -1,0 +1,29 @@
+.title{
+    width: 90%;
+    height: 60px;
+    box-sizing: border-box;
+    margin: 0 15px;
+
+    border-left: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    font-family: "Libre Baskerville", "serif";
+    font-size: 32px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+@media (max-width: 800px){
+    .title{
+        font-size: 28px;
+    }
+}
+@media (max-width: 500px){
+    .title{
+        font-size: 22px;
+    }
+}
