@@ -10,7 +10,7 @@ const ContactMe = () => {
             <div className="contact-me-container">
                 <div className="contact-me-info">
                     <div className="contact-me-emails">
-                        <h2>Correo:</h2>
+                        <h2>Mail:</h2>
                         <p className="animacion">
                             <a href="mailto:santiari05@hotmail.com">
                                 santiari05@hotmail.com 
@@ -25,17 +25,17 @@ const ContactMe = () => {
                         </p>
                     </div>
                     <div className="contact-me-phone">
-                        <h2>Celular:</h2>
+                        <h2>Number:</h2>
                         <p>+57 314 401 3931</p>
                     </div>
                     <div className="contact-me-icons">
-                        <h2>Redes Sociales:</h2>
+                        <h2>Social Media:</h2>
                         <IconsList/>
                     </div>
                 </div>
             </div>
             <div className="contact-me-title">
-                <h1>Cont&aacute;ctame</h1>
+                <h1>Contact Me</h1>
             </div>
         </section>
     );

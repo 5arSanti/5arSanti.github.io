@@ -10,7 +10,7 @@ const ProjectsCard = ({title, link, image}) => {
                 <h1>{title}</h1>
                 <Link to={link}>
                     <button type="button">
-                        Ver mas <HiChevronRight className="text-white ml-1"/>
+                        See more <HiChevronRight className="text-white ml-1"/>
                     </button>
                 </Link>
             </div>

@@ -8,7 +8,7 @@ const IllustrationsHome = () => {
             <div className="illustrations-home-container">
                 <div className="illustrations-home-title-container">
                     <div className="illustrations-home-title">
-                        <h1 className="animacion-titulos">ILUSTRACIONES</h1>
+                        <h1 className="animacion-titulos">ILLUSTRATIONS</h1>
                     </div>
                     <div className="illustrations-home-background"></div>
                 </div>

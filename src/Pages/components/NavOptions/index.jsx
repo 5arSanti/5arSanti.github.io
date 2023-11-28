@@ -18,19 +18,19 @@ const NavOptions = () => {
                         <HiChevronRight/>
                     </HashLink>
                     <HashLink to="/#about-me" className="animacion flex gap-1 items-center cursor-pointer">
-                        <p>Sobre Mi</p>
+                        <p>About Me</p>
                         <HiChevronRight/>
                     </HashLink>
                     <HashLink to="/#projects" className="animacion flex gap-1 items-center cursor-pointer">
-                        <p>Proyectos</p>
+                        <p>Projects</p>
                         <HiChevronRight/>
                     </HashLink>
                     <HashLink to="/#skills" className="animacion flex gap-1 items-center cursor-pointer">
-                        <p>Habilidades</p>
+                        <p>Skills</p>
                         <HiChevronRight/>
                     </HashLink>
                     <HashLink to="/#contact-me" className="animacion flex gap-1 items-center cursor-pointer">
-                        <p>Contacto</p>
+                        <p>Contact Me</p>
                         <HiChevronRight/>
                     </HashLink>
                     <div className="nav-button flex gap-1 items-center cursor-pointer">
@@ -47,11 +47,11 @@ const NavOptions = () => {
                         <HiChevronRight/>
                     </HashLink>
                     <HashLink to="/ilustraciones/#time-lapses" className="animacion flex gap-1 items-center cursor-pointer">
-                        <p>Time lapses</p>
+                        <p>Time Lapses</p>
                         <HiChevronRight/>
                     </HashLink>
                     <HashLink to="/ilustraciones/#illustrations" className="animacion flex gap-1 items-center cursor-pointer">
-                        <p>Ilustraciones</p>
+                        <p>Illustrations</p>
                         <HiChevronRight/>
                     </HashLink>
                     <div className="nav-button flex gap-1 items-center cursor-pointer">
@@ -68,7 +68,7 @@ const NavOptions = () => {
                         <HiChevronRight/>
                     </HashLink>
                     <HashLink to="/paginas-web/#web-pages" className="animacion flex gap-1 items-center cursor-pointer">
-                        <p>Paginas web</p>
+                        <p>Web Pages</p>
                         <HiChevronRight/>
                     </HashLink>
                     <HashLink to="/paginas-web/#front-mentor" className="animacion flex gap-1 items-center cursor-pointer">

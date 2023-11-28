@@ -15,18 +15,20 @@ const AllInfoAbboutMe = () => {
                     <img className="w-full" src="https://images.pexels.com/photos/11843706/pexels-photo-11843706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen AboutMe" />
                 </div>
                 <div className="about-me-info-container">
-                    <h1>Sobre M&iacute;</h1>
+                    <h1>About Me</h1>
                     <p>
-                        Soy un desarrollador Front End Junior y Diseñador UX/UI; con gran capacidad creativa, 
-                        y habilidad en diseño visual, con conocimiento en lenguajes 
-                        de programación como: JavaScript, Python, C++, Java, HTML, CSS, y algunos frameworks 
-                        o librerias como ReactJS y TailwindCSS, al igual que desarrollo y mantenimiento de c&oacute;digos 
-                        en aplicaciones y programas inform&aacute;ticos.
-                        <br/>
-                        <br/>
-                        Cuento con {expTime} años de experiencia como Ilustrador digital, diseñador de p&aacute;ginas web, logotipos 
-                        corporativos, animaci&oacute;n 2D y edici&oacute;n de videos con Adobe Premiere. Comprometido con brindar resultados 
-                        de alta capacidad y eficiencia.
+                        I am a Junior FullStack Developer and UX/UI Designer; with great creative capacity, 
+                        and skill in visual design, with knowledge in programming languages such as: 
+                        JavaScript, PHP, Python, HTML, CSS, and some frameworks or libraries like ExpressJS, 
+                        ReactJS and React Native, as well as in the NodeJS runtime environment, also in 
+                        development and maintenance of codes in computer applications and programs.
+
+                        <br /> 
+                        <br />
+                        
+                        I have 3 years of experience as a Digital Illustrator using the Krita tool, with experience 
+                        in designing web pages and corporate logos. Committed to providing high-capacity and 
+                        efficient results.
                     </p>
                     <DownloadCV/>
                     <IconsList/>

@@ -9,16 +9,16 @@ import "./styles.css";
 const Projects = () => {
     return(
         <section className="projects" id="projects">
-            <Title>Proyectos</Title>
+            <Title>Projects</Title>
 
             <div className="projects-container">
                 <ProjectsCard
-                    title={"Ilustraciones"}
+                    title={"Illustrations"}
                     link={"ilustraciones"}
                     image={Portada1}
                 />
                 <ProjectsCard
-                    title={"Desarrollo Web"}
+                    title={"Web Development"}
                     link={"paginas-web"}
                     image={Portada2}
                 />

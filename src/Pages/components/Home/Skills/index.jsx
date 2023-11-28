@@ -10,7 +10,7 @@ const Skills = () => {
     return (
         <section className="skills" id="skills">
             <div className="skills-title">
-                <Title>Habilidades</Title>
+                <Title>Skills</Title>
             </div>
             <div className="skills-container">
                 {context.skillsCard?.map((item, index) => (

@@ -8,7 +8,7 @@ const WebPagesHome = () => {
         <section className="web-pages-home" id="web-pages-home">
             <div className="web-pages-home-container">
                 <div className="web-pages-home-title-container">
-                    <h1 className="animacion-titulos">PAGINAS WEB</h1>
+                    <h1 className="animacion-titulos">WEB DEVELOPMENT</h1>
                 </div>
                 
                 <div className="web-pages-home-icons-container animacion-iconos">

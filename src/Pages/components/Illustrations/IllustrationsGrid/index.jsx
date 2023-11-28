@@ -10,7 +10,7 @@ const IllustrationsGrid = () => {
 
     return(
         <section className="illustrations" id="illustrations">
-            <Title>Ilustraciones</Title>
+            <Title>Illustrations</Title>
             <div className="illustrations-container">
                 {context.illustrationsCard?.map((item, index) => (
                     <IllustrationCard

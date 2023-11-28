@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-repo-container">
                     <a className="animacion" target="_blank" rel="noreferrer noopener" href="https://github.com/5arSanti/5arSanti.github.io">
-                        Repositorio de GitHub 
+                        GitHub Repository 
                         <HiOutlineArrowTopRightOnSquare className="text-sm inline-block ml-2"/>
                     </a>
                 </div>

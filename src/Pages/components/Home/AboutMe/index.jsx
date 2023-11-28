@@ -11,14 +11,14 @@ const AboutMe = () => {
                         <img className="animacion-logo" src={Logo} alt="Logo"></img>
                     </figure>
                     <div className="about-me-home-info animacion-texto">
-                        <h1>Hola! Soy 
+                        <h1>Hi! I&apos;m 
                             <span className="ml-2">
                                 <a className="gap-2 animacion" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/santiago-ariasb/">
                                     Santiago Arias <HiArrowTopRightOnSquare className="text-md inline-block"/>
                                 </a>
                             </span>
                         </h1>
-                        <p>Frontend Developer, ilustrador digital y Diseñador UX/UI en Colombia.</p>
+                        <p>Frontend Developer, ilustrador digital y Diseñador UX/UI in Colombia.</p>
                     </div>
                 </div>
             </div>

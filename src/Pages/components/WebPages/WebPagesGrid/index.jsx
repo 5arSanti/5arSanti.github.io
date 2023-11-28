@@ -11,12 +11,12 @@ const WebPagesGrid = () => {
     const renderView = () => {
         if (context.moreInfo1Button === "hidden-info"){
             return(
-                <button className="web-pages-see-more-button" title="Ver mas contenido" onClick={context.handleMoreInfo1Button}>Ver Mas</button>
+                <button className="web-pages-see-more-button" title="Ver mas contenido" onClick={context.handleMoreInfo1Button}>See More</button>
             );   
         }
         else{
             return(
-                <button className="web-pages-see-more-button" title="Ver menos contenido" onClick={context.handleMoreInfo1Button}>Ver Menos</button>
+                <button className="web-pages-see-more-button" title="Ver menos contenido" onClick={context.handleMoreInfo1Button}>See Less</button>
             );   
         }
     }
@@ -24,7 +24,7 @@ const WebPagesGrid = () => {
     return(
         <section className="web-pages" id="web-pages">
             <div className="web-pages-container">
-                <Title>P&aacute;ginas Web</Title>
+                <Title>Web Pages</Title>
                 <div className={`web-pages-grid-container ${context.moreInfo1Button}`}>
                     {context.webPagesCard?.map((item, index) => (
                         <WebPagesCard
