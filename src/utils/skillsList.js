@@ -5,7 +5,7 @@ export const skills = [
     {
         name: "Krita",
         experience: year - 2020,
-        image: "https://topbestalternative.com/wp-content/uploads/2019/09/krita-logo-600x600.png",
+        image: "/krita-logo.png",
     },
     {
         name: "Illustrator",
@@ -28,14 +28,19 @@ export const skills = [
         image: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
     },
     {
+        name: "NodeJS",
+        experience: year - 2022,
+        image: "https://th.bing.com/th/id/R.38c3a911493bf29320caa2cb901e0ecb?rik=Pr5cKHu40c8q7w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fnodejs-logo-png-node-js-on-dark-background-1843.png&ehk=8hzNCqqjl75a6u2B8slEau3ZMGb8GE1kG%2bW%2fzNsfNp8%3d&risl=&pid=ImgRaw&r=0",
+    },
+    {
         name: "ReactJS",
         experience: year - 2022,
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
     },
     {
-        name: "NodeJS",
+        name: "React Native",
         experience: year - 2022,
-        image: "https://th.bing.com/th/id/R.38c3a911493bf29320caa2cb901e0ecb?rik=Pr5cKHu40c8q7w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fnodejs-logo-png-node-js-on-dark-background-1843.png&ehk=8hzNCqqjl75a6u2B8slEau3ZMGb8GE1kG%2bW%2fzNsfNp8%3d&risl=&pid=ImgRaw&r=0",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
     },
     {
         name: "ExpressJS",
@@ -51,5 +56,10 @@ export const skills = [
         name: "Python",
         experience: year - 2022,
         image: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
+    },
+    {
+        name: "Git",
+        experience: year - 2022,
+        image: "https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png",
     },
 ]
