@@ -1,23 +1,23 @@
 # Santiago Arias Professional Portfolio
 
-### Introducción
-Hola, me llamo Santiago y soy un Frontend Developer, DIseñador UX/UI, e Ilustrador Digital. En este portafolio profesional quiero presentarles los proyectos en los que he trabajado, así como las habilidades que he adquirido a lo largo de mi carrera. Mi objetivo es aprender y ofrecer soluciones creativas, eficientes y de calidad a las necesidades de mis clientes, utilizando las tecnologías más actuales y las mejores prácticas del sector.
+### Introduction
+Hi, my name is Santiago and I am a FullStack Developer, Digital Illustrator and UX/UI Designer. In this professional portfolio I want to present the projects I have worked on, as well as the skills I have acquired throughout my career. My goal is to learn and offer creative, efficient and quality solutions to the needs of my clients, using the most current technologies and best practices in the sector.
 
 ![![Portafolio Profesional](Portafolio Profesional "Portafolio Profesional")](https://i.imgur.com/6nCsDWt.png "Portafolio Profesional")
 
 ------------
 
-### Tecnologias
-Este proyecto fue realizado mediante la herramienta de frontend **ViteJS** junto a  **ReactJS** una librearia de **JavaScript** donde se usaron tecnologias de esta misma como el lenguaje JSX, el proveedor de contexto, estados, efectos, etc.
-Asi mismo, se utilizo **HTML**, **CSS Vanilla**, **JavaScript** y **TailwindCSS**.
+### Tech
+This project was carried out using the **ViteJS** frontend tool together with **ReactJS**, a **JavaScript** library where its technologies were used such as the JSX language, the context provider, states, effects, etc
+Likewise, **HTML**, **Vanilla CSS**, **JavaScript** and **TailwindCSS** were used.
 
 ------------
 
-### Soporte
-- ###### Correos:
+### Support
+- ###### Mail:
 - santiari05@hotmail.com
 - 05illarsanti@gmail.com
-- ###### Telefono:
+- ###### Number:
 - +57 314 401 3931
 
 ![![Santiago Arias Logo](Santiago Arias Logo "Santiago Arias Logo")](./public/Logo-Profesional-Santiago-V3.png "Santiago Arias Logo")

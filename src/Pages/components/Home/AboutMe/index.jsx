@@ -18,7 +18,7 @@ const AboutMe = () => {
                                 </a>
                             </span>
                         </h1>
-                        <p>Frontend Developer, ilustrador digital y Diseñador UX/UI in Colombia.</p>
+                        <p>FullStack Developer, Digital Illustrator and UX/UI Designer in Colombia</p>
                     </div>
                 </div>
             </div>
