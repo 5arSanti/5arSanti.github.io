@@ -8,7 +8,7 @@ Hi, my name is Santiago and I am a FullStack Developer, Digital Illustrator and 
 ------------
 
 ### Tech
-This project was carried out using the **ViteJS** frontend tool together with **ReactJS**, a **JavaScript** library where its technologies were used such as the JSX language, the context provider, states, effects, etc
+This project was carried out using the **ViteJS** frontend tool together with **ReactJS**, a **JavaScript** library where its technologies were used such as the JSX language, the context provider, states, effects, etc.
 Likewise, **HTML**, **Vanilla CSS**, **JavaScript** and **TailwindCSS** were used.
 
 ------------
