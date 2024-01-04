@@ -1,23 +1,5 @@
 export const webPagesList = [
     {
-        name: "Professional Portfolio V1",
-        image: "https://i.imgur.com/bmY9wK6.png",
-        repo: "https://github.com/5arSanti/PortafolioV1-Santiago-Arias",
-        homeLink: "https://5arsanti.github.io/PortafolioV1-Santiago-Arias/",
-    },
-    {
-        name: "Yard Sale Shop",
-        image: "https://i.imgur.com/HZ0yXma.png",
-        repo: "https://github.com/5arSanti/Curso_Practico_FrontEnd_Platzi",
-        homeLink: "https://5arsanti.github.io/Curso_Practico_FrontEnd_Platzi/",
-    },
-    {
-        name: "Async landing Portfolio",
-        image: "https://i.imgur.com/SaNTTE2.png",
-        repo: "https://github.com/5arSanti/async-landing",
-        homeLink: "https://5arsanti.github.io/async-landing/",
-    },
-    {
         name: "TODO Machine",
         image: "http://imagizer.imageshack.com/img922/4475/f3L6wk.png",
         repo: "https://github.com/5arSanti/Curso-de-React-js",
@@ -52,5 +34,29 @@ export const webPagesList = [
         image: "https://i.imgur.com/6nCsDWt.png",
         repo: "https://github.com/5arSanti/5arSanti.github.io",
         homeLink: "https://5arsanti.github.io/",
+    },
+    {
+        name: "Buscador de Empleo - SPE",
+        image: "https://i.imgur.com/HtfXabV.png",
+        repo: "https://github.com/5arSanti/buscador-de-empleo",
+        homeLink: "",
+    },
+    {
+        name: "Bodega de Archivos - SPE",
+        image: "https://i.imgur.com/1cPfaJS.png",
+        repo: "https://github.com/5arSanti/Bodega",
+        homeLink: "",
+    },
+    {
+        name: "Data Empleo - SPE",
+        image: "https://i.imgur.com/zy91WFx.png",
+        repo: "https://github.com/5arSanti/data-empleo",
+        homeLink: "",
+    },
+    {
+        name: "Cameras Frontend",
+        image: "https://i.imgur.com/nKToOWW.png",
+        repo: "https://github.com/5arSanti/camaras-front",
+        homeLink: "https://5arsanti.github.io/camaras-front/",
     },
 ]
