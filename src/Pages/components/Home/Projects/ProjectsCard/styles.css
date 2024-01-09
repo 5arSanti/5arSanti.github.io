@@ -38,7 +38,7 @@
     z-index: 1;
 
     background: rgba(0,0,0, 1);
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, transparent 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, transparent 100%);
     background-size: 250% auto;
     background-position: 200% auto;
 
@@ -106,12 +106,11 @@
     color: #FFF;
 }
 
-
-.scroll-animation img{
+.projects-card-container:hover img{
     filter: contrast(1.2);
     transform: scale(1.1);
 }
-.scroll-animation .project-info {
+.projects-card-container:hover .project-info {
     background-position: 40%;
 }
 
@@ -121,17 +120,22 @@
     .projects-container{
         width: 90%;
     }
+
+    .project-info{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .title-and-info-container span h1{
+        font-size: 28px;
+    }
+    .title-and-info-container p{
+        text-align: center;
+    }
 }
 
 @media (hover: hover) {
-    .projects-card-container:hover img{
-        filter: contrast(1.2);
-        transform: scale(1.1);
-    }
-    .projects-card-container:hover .project-info {
-        background-position: 40%;
-    }
-
     .project-info a:hover{
         background-color: #FFF;
         border: 0px solid #FFF;
@@ -143,6 +147,4 @@
     .project-info a:hover svg{
         color: #000;
     }
-
-
 }
