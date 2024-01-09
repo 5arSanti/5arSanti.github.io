@@ -1,11 +1,16 @@
 .projects-card-container{
     width: 100%;
-    height: 90vh;
+    height: 95vh;
+
     overflow: hidden;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     position: relative;
+
+    border-radius: 25px;
 }
 
 .projects-card-container img{
@@ -24,44 +29,93 @@
     width: 100%;
     height: 100%;
 
-    background: rgba(0,0,0, .4);
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 50px;
 
     justify-content: center;
     align-items: center;
     z-index: 1;
-}
-.project-info h1{
-    width: 80%;
-    padding: 10px;
 
+    background: rgba(0,0,0, 1);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, transparent 100%);
+    background-size: 250% auto;
+    background-position: 200% auto;
+
+    transition: background 0.75s ease;
+}
+
+.title-and-info-container {
+    width: 70%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    justify-self: center;
+    justify-content: center;
+}
+
+.title-and-info-container span {
+    display: flex;
+    gap: 15px;
+
+    align-items: center;
+}
+.title-and-info-container span svg{
+    color: #FFF;
+    width: 45px;
+    height: 45px;
+}
+.title-and-info-container span h1{
     color: white;
-    border-bottom: 1px solid white;
 
-    font-size: 24px;
-    text-align: center;
+    font-size: 32px;
+    text-align: start;
 }
 
-.project-info button{
-    height: 50px;
-    width: 150px;
+.title-and-info-container p{
+    color: white;
+
+    font-size: 16px;
+    text-align: start;
+}
+
+.project-info a{
+    height: 100px;
+    width: 100px;
+
+    border-radius: 100%;
+
     border: 1px solid var(--button-color);
     color: white;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     transition: .75s ease;
+
+    justify-self: center;
 }
-.project-info button:hover{
-    background-color: black;
-    border: 0px solid black;
-    -webkit-transition: background-color .75s ease;
-    -ms-transition: background-color .75s ease;
-    transition: background-color .75s ease;
+
+.project-info a svg{
+    width: 25px;
+    height: 25px;
+
+    color: #FFF;
 }
+
+
+.scroll-animation img{
+    filter: contrast(1.2);
+    transform: scale(1.1);
+}
+.scroll-animation .project-info {
+    background-position: 40%;
+}
+
+
 
 @media (max-width:913px){
     .projects-container{
@@ -74,11 +128,21 @@
         filter: contrast(1.2);
         transform: scale(1.1);
     }
-    .project-info button:hover{
-        background-color: black;
-        border: 0px solid black;
+    .projects-card-container:hover .project-info {
+        background-position: 40%;
+    }
+
+    .project-info a:hover{
+        background-color: #FFF;
+        border: 0px solid #FFF;
         -webkit-transition: background-color .75s ease;
         -ms-transition: background-color .75s ease;
         transition: background-color .75s ease;
     }
+
+    .project-info a:hover svg{
+        color: #000;
+    }
+
+
 }
