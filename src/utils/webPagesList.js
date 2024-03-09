@@ -36,24 +36,6 @@ export const webPagesList = [
         homeLink: "https://5arsanti.github.io/",
     },
     {
-        name: "Buscador de Empleo - SPE",
-        image: "https://i.imgur.com/HtfXabV.png",
-        repo: "https://github.com/5arSanti/buscador-de-empleo",
-        homeLink: "",
-    },
-    {
-        name: "Bodega de Archivos - SPE",
-        image: "https://i.imgur.com/1cPfaJS.png",
-        repo: "https://github.com/5arSanti/Bodega",
-        homeLink: "",
-    },
-    {
-        name: "Data Empleo - SPE",
-        image: "https://i.imgur.com/zy91WFx.png",
-        repo: "https://github.com/5arSanti/data-empleo",
-        homeLink: "",
-    },
-    {
         name: "Cameras Frontend",
         image: "https://i.imgur.com/nKToOWW.png",
         repo: "https://github.com/5arSanti/camaras-front",
