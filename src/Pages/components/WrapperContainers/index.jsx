@@ -1,6 +1,6 @@
 import "./styles.css";
 
-const WrapperContainer1 = ({children, flexDirection = "row", padding = 20, gap = 15, justifyContent="start", alignItems="center"}) => {
+const WrapperContainer1 = ({children, flexDirection = "column", padding = 20, gap = 15, justifyContent="start", alignItems="center"}) => {
     return(
         <div className="wrapper-container1 shadow-style border-left-style" style={{
             flexDirection: flexDirection,
@@ -14,7 +14,7 @@ const WrapperContainer1 = ({children, flexDirection = "row", padding = 20, gap =
     );
 }
 
-const WrapperContainer2 = ({children, flexDirection = "row", padding = 20, paddingVertical=null, gap = 15, justifyContent="start", alignItems="center", className=""}) => {
+const WrapperContainer2 = ({children, flexDirection = "column", padding = 20, paddingVertical=null, gap = 15, justifyContent="start", alignItems="center", className=""}) => {
     return(
         <div className={`wrapper-container2 ${className}`} style={{
             flexDirection: flexDirection,
@@ -30,7 +30,7 @@ const WrapperContainer2 = ({children, flexDirection = "row", padding = 20, paddi
     );
 }
 
-const WrapperContainer3 = ({children, flexDirection = "row", padding = 20, paddingVertical=null, gap = 15, justifyContent="start", alignItems="center", className=""}) => {
+const WrapperContainer3 = ({children, flexDirection = "column", padding = 20, paddingVertical=null, gap = 15, justifyContent="start", alignItems="center", className=""}) => {
     return(
         <div className={`wrapper-container3 border-left-style shadow-style ${className}`} style={{
             flexDirection: flexDirection,
@@ -46,7 +46,7 @@ const WrapperContainer3 = ({children, flexDirection = "row", padding = 20, paddi
     );
 }
 
-const WrapperContainer4 = ({children, flexDirection = "row", padding = 20, paddingVertical=50, paddingHorizontal=30, gap = 15, justifyContent="start", alignItems="start"}) => {
+const WrapperContainer4 = ({children, flexDirection = "column", padding = 20, paddingVertical=50, paddingHorizontal=30, gap = 15, justifyContent="start", alignItems="start"}) => {
     return(
         <div className="wrapper-container4" style={{
             flexDirection: flexDirection,

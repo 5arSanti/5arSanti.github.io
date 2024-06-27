@@ -26,7 +26,7 @@ const AllInfoAbboutMe = () => {
                         <br /> 
                         <br />
                         
-                        I have 3 years of experience as a Digital Illustrator using the Krita tool, with experience 
+                        I have {expTime} years of experience as a Digital Illustrator using the Krita tool, with experience 
                         in designing web pages and corporate logos. Committed to providing high-capacity and 
                         efficient results.
                     </p>
