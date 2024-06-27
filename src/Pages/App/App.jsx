@@ -1,16 +1,17 @@
-//React
+// Dependencies
 import React from "react";
 import {useRoutes, useLocation, HashRouter} from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 //Context
 import { PortfolioProvider } from '../../Context';
 
-//Paginas
+// Pages
 import { HomeScreen } from "../Screens/HomeScreen";
 import { IllustrationsScreen } from "../Screens/Illustrations";
 import { DevelopmentScreen } from "../Screens/DevelopmentScreen";
 
-//COMPONENTES
+// Components
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { NavBarResponsive } from "../components/NavBarResponsive";
@@ -18,6 +19,8 @@ import { TopButton } from "../components/TopButton";
 
 //CSS
 import './App.css'
+import 'react-toastify/dist/ReactToastify.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Wrapper = ({children}) => {
     const location = useLocation();
@@ -48,6 +51,7 @@ const App = () => {
                     <AppRoutes/>
                     <TopButton/>
                     <Footer/>
+                    <ToastContainer/>
                 </Wrapper>
             </HashRouter>
         </PortfolioProvider>

@@ -2,11 +2,11 @@ import React from "react";
 
 import { PortfolioContext } from "../../../Context";
 
-import { AboutMe } from "../../components/Home/AboutMe";
-import { AllInfoAbboutMe } from "../../components/Home/AllInfoAboutMe";
-import { ContactMe } from "../../components/Home/ContactMe";
-import { Projects } from "../../components/Home/Projects";
-import { Skills } from "../../components/Home/Skills";
+import { AboutMe } from "../../components/ScreenHome/AboutMe";
+import { AllInfoAbboutMe } from "../../components/ScreenHome/AllInfoAboutMe";
+import { ContactMe } from "../../components/ScreenHome/ContactMe";
+import { Projects } from "../../components/ScreenHome/Projects";
+import { Skills } from "../../components/ScreenHome/Skills";
 
 const HomeScreen = () => {
     const context = React.useContext(PortfolioContext);

@@ -1,18 +1,10 @@
 import { HiArrowDownTray } from "react-icons/hi2"
 import "./styles.css";
+import { handleDownloadCV } from "../../../utils/handleDownload";
 
 const DownloadCV = () =>{
-    const handleDounwload = () => {
-        const pdfUrl = "/Santiago-Arias-CV.pdf";
-        const link = document.createElement("a");
-
-        link.href = pdfUrl;
-        link.download = "Santiago Arias CV";
-        link.click();
-    }
-
     return(
-        <button className="cv-button" type="button" onClick={() => handleDounwload()}>
+        <button className="cv-button" type="button" onClick={handleDownloadCV}>
             Download CV <HiArrowDownTray className="text-md"/>
         </button>
     );

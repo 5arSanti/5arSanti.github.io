@@ -1,8 +1,8 @@
 import React from "react";
 import { PortfolioContext } from "../../../Context";
-import { WebPagesHome } from "../../components/WebPages/WebPagesHome";
-import { WebPagesGrid } from "../../components/WebPages/WebPagesGrid";
-import { FrontMentorGrid } from "../../components/WebPages/FrontMentorGrid";
+import { WebPagesHome } from "../../components/ScreenDevelopment/WebPagesHome";
+import { WebPagesGrid } from "../../components/ScreenDevelopment/WebPagesGrid";
+import { FrontMentorGrid } from "../../components/ScreenDevelopment/FrontMentorGrid";
 
 const DevelopmentScreen = () => {
     const context = React.useContext(PortfolioContext);

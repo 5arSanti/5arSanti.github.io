@@ -1,10 +1,12 @@
-import { IconsList } from "../Home/IconsList";
+import { IconsList } from "../ScreenHome/IconsList";
 import logo from "/Logo-Profesional-Santiago-V3.png";
 import "./styles.css";
 import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+    const date = new Date();
+
     return (
         <footer className="footer">
             <div>
@@ -34,7 +36,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-copy-container">
-                <p>&copy; 2023 Santiago Arias</p>
+                <p>&copy; {date.getFullYear()} Santiago Arias</p>
                 <div className="footer-icons">
                     <IconsList/>
                 </div>

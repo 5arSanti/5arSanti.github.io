@@ -1,8 +1,8 @@
 import React from "react";
 import { PortfolioContext } from "../../../Context";
-import { IllustrationsHome } from "../../components/Illustrations/IllustrationsHome";
-import { IllustrationsGrid } from  "../../components/Illustrations/IllustrationsGrid"
-import { VideosGrid } from "../../components/Illustrations/VideosGrid";
+import { IllustrationsHome } from "../../components/ScreenIllustrations/IllustrationsHome";
+import { IllustrationsGrid } from  "../../components/ScreenIllustrations/IllustrationsGrid"
+import { VideosGrid } from "../../components/ScreenIllustrations/VideosGrid";
 
 const IllustrationsScreen = () => {
     const context = React.useContext(PortfolioContext);

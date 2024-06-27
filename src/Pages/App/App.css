@@ -18,3 +18,86 @@
 html {
     scroll-behavior: smooth;
 }
+
+p, span, div, h2, h1 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Libre Baskerville", "serif" !important;
+
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: transparent;
+}
+button {
+    border: none;
+}
+
+
+.border-left-style {
+    border: none !important;
+    border-left: 1px solid var(--gov-accesibility-card) !important;
+}
+
+.shadow-style {
+    transition: all 0.15s ease !important;
+}
+.shadow-style:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25) !important;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25) !important;
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25) !important;
+}
+
+
+.scrollable-cards {
+	overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.scrollable-cards::-webkit-scrollbar {
+    width: 13px;
+  }
+
+.scrollable-cards::-webkit-scrollbar-track {
+    background: #373737;
+}
+
+.scrollable-cards::-webkit-scrollbar-thumb {
+    background-color: #5E5E5E;
+    border-radius: 0px;
+}
+
+
+.animacion{
+    position: relative;
+}
+.animacion::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width .5s ease;
+}
+
+
+@media (hover: hover) {
+    .scrollable-cards::-webkit-scrollbar-thumb:hover {
+        background-color: #747474;
+    }
+    .animacion:hover::after {
+        width: 100%;
+    }
+}
