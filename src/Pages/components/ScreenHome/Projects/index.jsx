@@ -8,13 +8,14 @@ import { IoMdColorPalette } from "react-icons/io";
 import { MdWeb } from "react-icons/md";
 
 import "./styles.css";
+import { SectionWrapper, WrapperContainer2 } from "../../WrapperContainers";
 
 const Projects = () => {
     return(
-        <section className="projects" id="projects">
-            <Title>Projects</Title>
+        <SectionWrapper id="projects">
+            <WrapperContainer2>
+                <Title>Projects</Title>
 
-            <div className="projects-container">
                 <ProjectsCard
                     title={"Illustrations"}
                     link={"ilustraciones"}
@@ -29,8 +30,9 @@ const Projects = () => {
                     text={"FullStack and FrontEnd projects created with JS and other tools."}
                     icon={<MdWeb/>}
                 />
-            </div>
-        </section>
+
+            </WrapperContainer2>
+        </SectionWrapper>
     );
 }
 export { Projects };

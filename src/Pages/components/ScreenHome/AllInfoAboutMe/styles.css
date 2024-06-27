@@ -1,82 +1,12 @@
-.about-me{
-    width: 100%;
-    height: 110vh;
-    background: black;
-}
-.about-me-container{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 30px 0 30px;
-}
-.about-me-container div:not(.icons){
-    height: 80%;
-    display: flex;
-    gap: 10px;
-}
-.about-me-container div:nth-child(1){
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.about-me-image {
+    object-fit: contain;
+    height: 500px;
+
+    border-radius: 30px;
     overflow: hidden;
-    transition: transform .75s ease;
-}
 
-.about-me-info-container{
-    width: 90%;
-    color: white;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
-    height: 80%;
+    transition: all 0.3s ease;
 }
-.about-me-info-container h1{
-    width: 100%;
-    color: white;
-    border-bottom: 1px solid white;
-    font-size: 32px;
-    padding: 10px;
-}
-.about-me-info-container p{
-    width: 100%;
-    color: white;
-    padding: 10px;
-    text-align: justify;
-}
-.about-me-info-container .cv-button{
-    margin: 20px 0 10px 10px;
-    width: 230px;
-}
-
-@media(max-width: 913px) {
-    .about-me-container{
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-    .about-me-info-container{
-        width: 100%;
-        margin-bottom: 70px;
-    }
-}
-
-@media (max-width: 500px){
-    .about-me-info-container h1{
-        font-size: 28px;
-    }
-    .about-me-info-container p{
-        font-size: 12px;
-    }
-}
-
-@media (hover: hover){
-    .about-me-container div:nth-child(1):hover{
-        transform: scale(1.05);
-    }
+.about-me-image:hover {
+    transform: scale(1.05);
 }

@@ -1,4 +1,4 @@
-export const illustrations = [
+const illustrationsList = [
     {
         name: "Original Illustration",
         image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da69dd39-50a4-4d6c-8947-8d66979f7287/deh9u35-e4875c8f-68ca-423d-9bfe-4e9bf8c89ac2.png/v1/fill/w_1280,h_1642,q_80,strp/original_ilustration_by_santiari1_deh9u35-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTY0MiIsInBhdGgiOiJcL2ZcL2RhNjlkZDM5LTUwYTQtNGQ2Yy04OTQ3LThkNjY5NzlmNzI4N1wvZGVoOXUzNS1lNDg3NWM4Zi02OGNhLTQyM2QtOWJmZS00ZTliZjhjODlhYzIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.v1FN63B3Np5HNq-kd9G1RqDm8lWGjnhwhjOzMJOdGRs",
@@ -40,3 +40,7 @@ export const illustrations = [
         size: "big",
     },
 ]
+
+const illustrations = illustrationsList.reverse();
+
+export { illustrations }

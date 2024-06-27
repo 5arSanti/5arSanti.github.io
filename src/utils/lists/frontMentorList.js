@@ -1,4 +1,4 @@
-export const frontMentorList = [
+const frontMentor = [
     {
         name: "QR code component",
         image: "https://i.imgur.com/LMgfCLO.png",
@@ -7,3 +7,7 @@ export const frontMentorList = [
         mentorLink: "https://www.frontendmentor.io/solutions/responsive-qr-page-with-flexbox-ZD5WWADAol",
     },
 ]
+
+const frontMentorList = frontMentor.reverse();
+
+export { frontMentorList }

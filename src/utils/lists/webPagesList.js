@@ -1,4 +1,4 @@
-export const webPagesList = [
+const webPagesList = [
     {
         name: "TODO Machine",
         image: "http://imagizer.imageshack.com/img922/4475/f3L6wk.png",
@@ -42,3 +42,7 @@ export const webPagesList = [
         homeLink: "https://5arsanti.github.io/camaras-front/",
     },
 ]
+
+const webPages = webPagesList.reverse();
+
+export { webPages }

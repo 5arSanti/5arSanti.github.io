@@ -21,6 +21,8 @@ import { TopButton } from "../components/TopButton";
 import './App.css'
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Wrapper = ({children}) => {
     const location = useLocation();

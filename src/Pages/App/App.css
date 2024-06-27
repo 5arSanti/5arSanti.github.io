@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root{
+    --main-body-color: #E6EFFD;
+    --main-title-color: #FF567E;
+    --light-gray-color: rgba(236,236,236,0.7);
+    --black-to-white-color: #000000;
+    --white-to-black-color: #FFFFFF;
+    --lines-color: #FF567E;
+    --lines-color2: #FF567E;
+    --text-color: #717171;
+    --all-info-container-color: #DAE9FF;
+
     --border-color: rgba(255,255,255, 0.5);
     --projects-background: linear-gradient(70deg, rgba(18,0,39,1) 15%, rgba(0,0,0,1) 100%);
     --button-color: white;
@@ -29,6 +39,7 @@ body {
 
     transition: all 0.2s ease;
     box-sizing: border-box;
+    background: var(--main-body-color) !important;
 }
 * {
     padding: 0;
@@ -46,7 +57,7 @@ button {
 
 .border-left-style {
     border: none !important;
-    border-left: 1px solid var(--gov-accesibility-card) !important;
+    border-left: 2px solid var(--lines-color) !important;
 }
 
 .shadow-style {

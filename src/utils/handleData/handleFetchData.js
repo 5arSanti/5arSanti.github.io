@@ -1,0 +1,36 @@
+const fetchData = async (endpoint) => {
+    try {
+        const response = await fetch(`${endpoint.uri}`, {
+            method: "GET",
+            ...endpoint.headers
+        });
+
+        if (!(response.status == 200)) {
+            throw new Error(`Error fetching ${endpoint}: ${response.statusText}`);
+        }
+    
+        return await response.json();
+    } catch (err) {
+        throw new Error(err)
+    }
+
+};
+
+const fetchAllData = async (endpoints) => {
+    try {
+        const resultsArray = await Promise.all(
+            endpoints.map(fetchData)
+        );
+    
+        const combinedResults = resultsArray.reduce((acc, result) => {
+            return { ...acc, ...result };
+        }, {});
+    
+        return combinedResults;
+    } catch (err) {
+        throw new Error(err)
+    }
+
+};
+
+export { fetchAllData };

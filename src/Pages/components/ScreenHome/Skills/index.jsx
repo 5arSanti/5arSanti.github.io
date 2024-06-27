@@ -1,27 +1,24 @@
 import React from "react";
 import { PortfolioContext } from "../../../../Context";
 import "./styles.css";
-import { Skill } from "../Skill";
+import { SkillCard } from "./SkillCard";
 import { Title } from "../../Title";
+import { SectionWrapper, WrapperContainer2 } from "../../WrapperContainers";
+import { SliderSkills } from "./SliderSkills";
 
 const Skills = () => {
     const context = React.useContext(PortfolioContext);
 
+    const { skills } = context.responseData || [];
+
     return (
-        <section className="skills" id="skills">
-            <div className="skills-title">
+        <SectionWrapper id="skills">
+            <WrapperContainer2>
                 <Title>Skills</Title>
-            </div>
-            <div className="skills-container">
-                {context.skillsCard?.map((item, index) => (
-                    <Skill
-                        key={index}
-                        data={item}
-                    />
-                ))}
-            </div>
-            <div className="gradient-skills"></div>
-        </section>
+
+                <SliderSkills array={skills}/>
+            </WrapperContainer2>
+        </SectionWrapper>
     );
 }
 export { Skills };

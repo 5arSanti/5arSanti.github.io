@@ -1,0 +1,9 @@
+.skill-logo{
+    height: 125px;
+    width: 125px;
+}
+.skill-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

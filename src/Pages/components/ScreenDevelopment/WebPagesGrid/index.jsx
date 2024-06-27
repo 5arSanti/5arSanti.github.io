@@ -8,6 +8,8 @@ import { Title } from "../../Title";
 const WebPagesGrid = () => {
     const context = React.useContext(PortfolioContext);
 
+    const { webPages } = context.responseData || [];
+
     const renderView = () => {
         if (context.moreInfo1Button === "hidden-info"){
             return(
@@ -26,7 +28,7 @@ const WebPagesGrid = () => {
             <div className="web-pages-container">
                 <Title>Web Pages</Title>
                 <div className={`web-pages-grid-container ${context.moreInfo1Button}`}>
-                    {context.webPagesCard?.map((item, index) => (
+                    {webPages?.map((item, index) => (
                         <WebPagesCard
                             key={index}
                             data={item}

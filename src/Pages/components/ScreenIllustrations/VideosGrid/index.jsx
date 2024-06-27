@@ -13,6 +13,8 @@ import { Title } from "../../Title";
 const VideosGrid = () => {
     const context = React.useContext(PortfolioContext);
 
+    const { videos } = context.responseData || [];
+
     const [indexOfVideo, setIdexOfVideo] = React.useState("ml-0");
     const handlePreviousVideo = () => {
         switch(indexOfVideo){
@@ -49,9 +51,9 @@ const VideosGrid = () => {
                                 <Error/>
                             </>
                         )}
-                        {!context.loading && context.videos?.map((item) => (
+                        {videos?.map((item, index) => (
                             <VideoCard
-                                key={item.id.videoId}
+                                key={index}
                                 data={item} 
                             />
                         ))}

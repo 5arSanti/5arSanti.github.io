@@ -6,13 +6,15 @@ import "./styles.css";
 import { Title } from "../../Title";
 
 const IllustrationsGrid = () => {
-    const context = React.useContext(PortfolioContext);     
+    const context = React.useContext(PortfolioContext);
+
+    const { illustrations } = context.responseData || [];
 
     return(
         <section className="illustrations" id="illustrations">
             <Title>Illustrations</Title>
             <div className="illustrations-container">
-                {context.illustrationsCard?.map((item, index) => (
+                {illustrations?.map((item, index) => (
                     <IllustrationCard
                         key={index}
                         data={item}

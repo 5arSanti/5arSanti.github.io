@@ -1,24 +1,31 @@
-import "./styles.css"
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa"
+import { FaDeviantart } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+import { FaYoutube } from "react-icons/fa";
 
-const IconsList = () => {
+import "./styles.css"
+import { WrapperContainer2 } from "../../WrapperContainers";
+
+const IconsList = ({color="#FFFFFF", flexDirection="row", padding=20}) => {
     return(
-        <div className="icons">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">
-                <img src="https://cdn-icons-png.flaticon.com/512/3669/3669739.png" alt="LinkedinIcon"></img>
+        <WrapperContainer2 flexDirection={flexDirection} gap={30} className="icons" padding={padding}>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">
+                <FaLinkedin fill={color}/>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/5arSanti">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHubIcon"></img>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/5arSanti">
+                <FaGithub fill={color}/>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://www.deviantart.com/santiari1">
-                <img src="https://cdn-icons-png.flaticon.com/512/3669/3669921.png" alt="DeviantArtIcon"></img>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.deviantart.com/santiari1">
+                <FaDeviantart fill={color}/>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/5ar_santi">
-                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="TwitterIcon"></img>
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/5ar_santi">
+                <BsTwitterX fill={color}/>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@5ar_santi">
-                <img src="https://cdn-icons-png.flaticon.com/512/3669/3669688.png" alt="YouTubeIcon"></img>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@5ar_santi">
+                <FaYoutube fill={color}/>
             </a>
-        </div>
+        </WrapperContainer2>
     );
 }
 export { IconsList };

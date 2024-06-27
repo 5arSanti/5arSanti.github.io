@@ -3,8 +3,10 @@ import PropTypes from "prop-types";
 
 import { skills } from "../utils/lists/skillsList.js";
 import { illustrations } from "../utils/lists/illustrationsList.js"
-import { webPagesList } from "../utils/lists/webPagesList.js";
+import { webPages } from "../utils/lists/webPagesList.js";
 import { frontMentorList } from "../utils/lists/frontMentorList.js";
+import { handleNotifications } from "../utils/handleNotifications.js";
+import { fetchAllData } from "../utils/handleData/handleFetchData.js";
 
 
 export const PortfolioContext = React.createContext();
@@ -48,72 +50,50 @@ const PortfolioProvider = ({children}) => {
     }
 
 
-    //Llamado de los arrays
-    const [skillsCard, setSkillsCard] = React.useState([]);    //Skills
-    const [illustrationsCard, setIllustrationsCard] = React.useState([]);    //Ilustraciones
-    const [webPagesCard, setWebPagesCard] = React.useState([]);    //WebPages
-    const [frontMentorCard, setFrontMentorCard] = React.useState([]);    //WebPages
-
-    React.useEffect(() => {
-        const setArrays = () => {
-            try{
-                //Skills
-                setSkillsCard(skills);
-
-                //Ilustraciones
-                const reversedIllustrations = [...illustrations].reverse();
-                setIllustrationsCard(reversedIllustrations);
-
-                //WebPages
-                const reversedWebPages = [...webPagesList].reverse();
-                setWebPagesCard(reversedWebPages);
-
-                //Frontend Mentor Projects
-                const reversedFrontMentor = [...frontMentorList].reverse();
-                setFrontMentorCard(reversedFrontMentor);
-            }
-            catch (err){
-                alert(err);
-            }
-        }
-        setArrays();
-    }, []);
-
     const [isMouseInCard, setIsMouseInCard] = React.useState(null);
     const handleMouseEnter = (index) => setIsMouseInCard(index);
     const handleMouseOver = () => setIsMouseInCard(null);
 
     //-------------------------
-    //API
-    const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCD7cKAQQNzzYQeZ7Pm7-fwg&part=snippet%2Cid&order=date&maxResults=3';
-    const [videos, setVideos] = React.useState([]);
+    //Llamado de los arrays
+    const [responseData, setResponseData] = React.useState({
+        skills,
+        illustrations,
+        webPages,
+        frontMentorList,
+    });
 
 
-    React.useEffect(()=> {
-        const options = {
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': 'f398d6f9ebmsh8a25ce537b8d773p12eddfjsn63c97481e808',
-                'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
-            }
-        };
-        const fetchVideos = async () => {
-        
-            try {
-                const response = await fetch(API, options);
-                const data = await response.json();
-                setVideos(data.items);
-                if (isIllustrationsActive){
-                    await setLoading(false);
-                }
-            } 
-            catch (error) {
-                setError(true);          
-            }
+    const fetchData = async (endpoints) => {
+        try {
+            setLoading(true);
+            const data = await fetchAllData(endpoints);
+            setResponseData((prevData) => ({
+                ...prevData,
+                data,
+            }));
         } 
-        fetchVideos();
-    }, [isIllustrationsActive])
+        catch (err) {
+            handleNotifications("error", err.message)
+        } 
+        finally {
+            setLoading(false);
+        }
+    }
 
+    //API
+    const API = 'https://youtube138.p.rapidapi.com/channel/videos/?id=UCD7cKAQQNzzYQeZ7Pm7-fwg&filter=videos_latest&hl=en&gl=US';
+
+    React.useEffect(() => {
+        const endpoints = [
+            {
+                uri: API,
+                headers: {'x-rapidapi-key': '**f398d6f9ebmsh8a25ce537b8d773p12eddfjsn63c97481e808**', 'x-rapidapi-host': 'youtube138.p.rapidapi.com'}
+            },
+        ];
+
+        fetchData(endpoints)
+    },[]);
 
 
     //Boton de ver mas y ver menos
@@ -131,12 +111,25 @@ const PortfolioProvider = ({children}) => {
             case "expanded-info": setMoreInfo2Button("hidden-info");break;
         }
     };
+
+    // Screen Width
+    const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+    React.useEffect(() => {
+        function handleResize() {
+            setWindowWidth(window.innerWidth);
+        }
+    
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     
     return(
         <PortfolioContext.Provider
             value={{
                 loading,
                 error,
+
+                responseData,
 
                 isHomeActive,
                 setIsHomeActive,
@@ -152,21 +145,16 @@ const PortfolioProvider = ({children}) => {
                 navbarTimer,
                 setNavbarTimer,
 
-                skillsCard,
-                illustrationsCard,
                 isMouseInCard,
                 handleMouseEnter,
                 handleMouseOver,
-
-                webPagesCard,
-                frontMentorCard,
-
-                videos,
 
                 handleMoreInfo1Button,
                 moreInfo1Button,
                 handleMoreInfo2Button,
                 moreInfo2Button,
+
+                windowWidth,
             }}
         >
             {children}
