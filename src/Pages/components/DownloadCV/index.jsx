@@ -3,7 +3,6 @@ import "./styles.css";
 
 const DownloadCV = () =>{
     const handleDounwload = () => {
-        // const pdfUrl = "public/Portada-Ilustraciones.png";
         const pdfUrl = "/Santiago-Arias-CV.pdf";
         const link = document.createElement("a");
 

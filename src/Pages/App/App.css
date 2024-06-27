@@ -1,1 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --border-color: rgba(255,255,255, 0.5);
+    --projects-background: linear-gradient(70deg, rgba(18,0,39,1) 15%, rgba(0,0,0,1) 100%);
+    --button-color: white;
+    
+    --skills-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(34,12,35,1) 80%);
+    --button-color: white;
+
+    --skills-container-width: 75%;
+    --background-width: 80%;
+    --ImgNameWidth: 92%;
+    --button-width: 150px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}

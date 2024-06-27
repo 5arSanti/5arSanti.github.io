@@ -63,15 +63,15 @@ const NavOptions = () => {
         else if (context.isWebPagesActive){
             return(
                 <div className="navbar-right flex gap-6 text-sm">
-                    <HashLink to="/paginas-web/#web-pages-home" className="animacion flex gap-1 items-center cursor-pointer">
+                    <HashLink to="/development/#web-pages-home" className="animacion flex gap-1 items-center cursor-pointer">
                         <p>Home</p>
                         <HiChevronRight/>
                     </HashLink>
-                    <HashLink to="/paginas-web/#web-pages" className="animacion flex gap-1 items-center cursor-pointer">
+                    <HashLink to="/development/#web-pages" className="animacion flex gap-1 items-center cursor-pointer">
                         <p>Web Pages</p>
                         <HiChevronRight/>
                     </HashLink>
-                    <HashLink to="/paginas-web/#front-mentor" className="animacion flex gap-1 items-center cursor-pointer">
+                    <HashLink to="/development/#front-mentor" className="animacion flex gap-1 items-center cursor-pointer">
                         <p>Frontend Mentor</p>
                         <HiChevronRight/>
                     </HashLink>

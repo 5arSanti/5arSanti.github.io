@@ -6,12 +6,12 @@ import {useRoutes, useLocation, HashRouter} from "react-router-dom";
 import { PortfolioProvider } from '../../Context';
 
 //Paginas
-import {Home} from "../Screens/Home";
-import { Illustrations } from "../Screens/Illustrations";
-import { WebPages } from "../Screens/WebPages";
+import { HomeScreen } from "../Screens/HomeScreen";
+import { IllustrationsScreen } from "../Screens/Illustrations";
+import { DevelopmentScreen } from "../Screens/DevelopmentScreen";
 
 //COMPONENTES
-import {Navbar} from "../components/Navbar";
+import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { NavBarResponsive } from "../components/NavBarResponsive";
 import { TopButton } from "../components/TopButton";
@@ -30,9 +30,9 @@ const Wrapper = ({children}) => {
 
 const AppRoutes = () => {
     let routes = useRoutes([
-        {path: "/", element: <Home/>},
-        {path: "/ilustraciones", element: <Illustrations/>},
-        {path: "/paginas-web", element: <WebPages/>}
+        {path: "/", element: <HomeScreen/>},
+        {path: "/ilustraciones", element: <IllustrationsScreen/>},
+        {path: "/development", element: <DevelopmentScreen/>}
     ]);
     
     return routes;
@@ -43,7 +43,6 @@ const App = () => {
         <PortfolioProvider>
             <HashRouter>
                 <Wrapper>
-                    <section id="top"></section>
                     <Navbar/>
                     <NavBarResponsive/>
                     <AppRoutes/>

@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { skills } from "../utils/skillsList.js";
-import { illustrations } from "../utils/illustrationsList.js"
-import { webPagesList } from "../utils/webPagesList.js";
-import { frontMentorList } from "../utils/frontMentorList.js";
+import { skills } from "../utils/lists/skillsList.js";
+import { illustrations } from "../utils/lists/illustrationsList.js"
+import { webPagesList } from "../utils/lists/webPagesList.js";
+import { frontMentorList } from "../utils/lists/frontMentorList.js";
 
 
 export const PortfolioContext = React.createContext();

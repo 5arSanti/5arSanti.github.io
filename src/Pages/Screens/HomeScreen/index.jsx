@@ -8,7 +8,7 @@ import { ContactMe } from "../../components/Home/ContactMe";
 import { Projects } from "../../components/Home/Projects";
 import { Skills } from "../../components/Home/Skills";
 
-const Home = () => {
+const HomeScreen = () => {
     const context = React.useContext(PortfolioContext);
     React.useEffect(() => {
         context.setIsHomeActive(true);
@@ -26,4 +26,4 @@ const Home = () => {
         </>
     );
 }
-export {Home};
+export { HomeScreen };

@@ -24,7 +24,7 @@ const Projects = () => {
                 />
                 <ProjectsCard
                     title={"Web Development"}
-                    link={"paginas-web"}
+                    link={"development"}
                     image={Portada2}
                     text={"FullStack and FrontEnd projects created with JS and other tools."}
                     icon={<MdWeb/>}

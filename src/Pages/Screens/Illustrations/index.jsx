@@ -4,7 +4,7 @@ import { IllustrationsHome } from "../../components/Illustrations/IllustrationsH
 import { IllustrationsGrid } from  "../../components/Illustrations/IllustrationsGrid"
 import { VideosGrid } from "../../components/Illustrations/VideosGrid";
 
-const Illustrations = () => {
+const IllustrationsScreen = () => {
     const context = React.useContext(PortfolioContext);
     React.useEffect(() => {
         context.setIsHomeActive(false);
@@ -20,4 +20,4 @@ const Illustrations = () => {
         </>
     );
 }
-export { Illustrations };
+export { IllustrationsScreen };

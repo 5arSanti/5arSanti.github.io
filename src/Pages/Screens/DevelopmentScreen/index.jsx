@@ -4,7 +4,7 @@ import { WebPagesHome } from "../../components/WebPages/WebPagesHome";
 import { WebPagesGrid } from "../../components/WebPages/WebPagesGrid";
 import { FrontMentorGrid } from "../../components/WebPages/FrontMentorGrid";
 
-const WebPages = () => {
+const DevelopmentScreen = () => {
     const context = React.useContext(PortfolioContext);
     React.useEffect(() => {
         context.setIsHomeActive(false);
@@ -20,4 +20,4 @@ const WebPages = () => {
         </>
     );
 }
-export { WebPages };
+export { DevelopmentScreen };
