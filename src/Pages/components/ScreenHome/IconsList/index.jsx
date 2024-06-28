@@ -4,8 +4,9 @@ import { FaDeviantart } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 
-import "./styles.css"
 import { WrapperContainer2 } from "../../WrapperContainers";
+
+import "./styles.css"
 
 const IconsList = ({color="#FFFFFF", flexDirection="row", padding=20}) => {
     return(
@@ -13,6 +14,7 @@ const IconsList = ({color="#FFFFFF", flexDirection="row", padding=20}) => {
             <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/santiago-ariasb/">
                 <FaLinkedin fill={color}/>
             </a>
+
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/5arSanti">
                 <FaGithub fill={color}/>
             </a>
@@ -23,8 +25,9 @@ const IconsList = ({color="#FFFFFF", flexDirection="row", padding=20}) => {
                 <BsTwitterX fill={color}/>
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@5ar_santi">
-                <FaYoutube fill={color}/>
+                <FaYoutube fill={color}/>   
             </a>
+
         </WrapperContainer2>
     );
 }

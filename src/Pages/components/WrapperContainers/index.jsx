@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import "./styles.css";
 
 const WrapperContainer1 = ({children, flexDirection = "column", padding = 30, gap = 15, justifyContent="start", alignItems="center"}) => {
@@ -74,9 +75,12 @@ const SectionWrapper = ({children, id="", border=true, flexDirection = "column",
             alignItems: alignItems
         }}>
             {border && <div className="section-decoration"></div>}
-            
-            {children}
+
+            <Fade style={{width: "100%"}} cascade={true} damping={1} delay={100}>
+                {children}
+            </Fade>
         </section>
+
     );
 }
 

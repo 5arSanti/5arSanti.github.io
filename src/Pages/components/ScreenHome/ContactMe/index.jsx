@@ -8,8 +8,7 @@ import { getColorValue } from "../../../../utils/getColorValue";
 
 const ContactMe = () => {
     return(
-
-        <SectionWrapper>
+        <SectionWrapper id="contact-me">
             <WrapperContainer2 padding={50}>
                 <AllInfoGridContainer className="grid-075-125">
                     <WrapperContainer2 padding={0}>
