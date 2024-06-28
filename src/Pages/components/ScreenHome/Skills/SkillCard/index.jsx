@@ -1,5 +1,6 @@
+import { formatExperience } from "../../../../../utils/formatExperience";
 import { SpanCard, TextCard } from "../../../TextComponents";
-import { WrapperContainer1, WrapperContainer2, WrapperContainer3, WrapperContainer4 } from "../../../WrapperContainers";
+import { WrapperContainer2, WrapperContainer3, WrapperContainer4 } from "../../../WrapperContainers";
 import "./styles.css";
 
 const SkillCard = ({item={}}) => {
@@ -12,12 +13,7 @@ const SkillCard = ({item={}}) => {
 
                 <TextCard textAlign="center"><SpanCard>{item?.name}</SpanCard></TextCard>
 
-                {item?.experience != 1 ? 
-                    <TextCard textAlign="center">{item?.experience} años de experiencia</TextCard> 
-                    : 
-                    <TextCard textAlign="center">{item?.experience} año de experiencia</TextCard> 
-                }
-
+                <TextCard textAlign="center">{formatExperience(item?.year, item?.month)}</TextCard>
 
             </WrapperContainer3>
         </WrapperContainer2>

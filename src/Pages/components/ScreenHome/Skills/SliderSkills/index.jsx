@@ -5,8 +5,11 @@ import { WrapperContainer2 } from "../../../WrapperContainers";
 import { PortfolioContext } from "../../../../../Context";
 import { NextArrowCard, PrevArrowCard } from "./ArrowsCard";
 
-const SliderSkills = ({array=[]}) => {
+const SliderSkills = () => {
     const context = React.useContext(PortfolioContext);
+
+    const { skills } = context.responseData || [];
+
 
     const options = {
         infinite: true,
@@ -44,7 +47,7 @@ const SliderSkills = ({array=[]}) => {
     return(
         <WrapperContainer2 justifyContent="center" alignItems="center" padding={context.windowWith <= 450 ? 0 : 30}>
             <Slider {...options}>
-                {array?.map((item, index) => (
+                {skills?.map((item, index) => (
                     <SkillCard key={index} item={item}/>
                 ))}
             </Slider>

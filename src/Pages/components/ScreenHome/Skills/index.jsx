@@ -9,14 +9,12 @@ import { SliderSkills } from "./SliderSkills";
 const Skills = () => {
     const context = React.useContext(PortfolioContext);
 
-    const { skills } = context.responseData || [];
-
     return (
         <SectionWrapper id="skills">
             <WrapperContainer2>
                 <Title>Skills</Title>
 
-                <SliderSkills array={skills}/>
+                <SliderSkills/>
             </WrapperContainer2>
         </SectionWrapper>
     );
