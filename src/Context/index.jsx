@@ -88,7 +88,7 @@ const PortfolioProvider = ({children}) => {
         const endpoints = [
             {
                 uri: API,
-                headers: {'x-rapidapi-key': '**f398d6f9ebmsh8a25ce537b8d773p12eddfjsn63c97481e808**', 'x-rapidapi-host': 'youtube138.p.rapidapi.com'}
+                headers: {'x-rapidapi-key': 'f398d6f9ebmsh8a25ce537b8d773p12eddfjsn63c97481e808', 'x-rapidapi-host': 'youtube-v31.p.rapidapi.com'}
             },
         ];
 

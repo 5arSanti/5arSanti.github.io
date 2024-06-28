@@ -1,8 +1,8 @@
+import React from "react";
 import Slider from "react-slick";
 import { SkillCard } from "../SkillCard";
 import { WrapperContainer2 } from "../../../WrapperContainers";
 import { PortfolioContext } from "../../../../../Context";
-import React from "react";
 import { NextArrowCard, PrevArrowCard } from "./ArrowsCard";
 
 const SliderSkills = ({array=[]}) => {
@@ -10,16 +10,18 @@ const SliderSkills = ({array=[]}) => {
 
     const options = {
         infinite: true,
+		speed: 1250,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2500,
         dots: true,
         arrows: true,
         nextArrow: <NextArrowCard/>,
 		prevArrow: <PrevArrowCard/>,
 		style: { width: "100%",},
-		focusOnSelect: true,
+		focusOnSelect: false,
+		pauseOnHover: false,
 		responsive: [
 			{
 			breakpoint: 1150,

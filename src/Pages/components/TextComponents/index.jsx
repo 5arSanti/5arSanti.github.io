@@ -18,4 +18,17 @@ const SpanCard = ({children, className}) => {
     );
 }
 
-export { TextCard, SpanCard }
+const AnchorCard = ({children, uri="", className="", padding=0, width="100%", fontSize=16}) => {
+    return(
+        <a href={uri} target="_blank" rel="noopener noreferrer" className={`anchor-card ${className}`} style={{
+            padding: padding,
+            width: width,
+            fontSize: fontSize,
+
+        }}>
+            {children}
+        </a>
+    );
+}
+
+export { TextCard, SpanCard, AnchorCard }

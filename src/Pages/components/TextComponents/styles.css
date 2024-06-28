@@ -11,6 +11,19 @@
 
     transition: all 0.1s ease;
 }
+.anchor-card {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+
+    transition: all 0.1s ease;
+}
+.anchor-card svg {
+    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+    color: var(--lines-color);
+}
 .bold {
     font-weight: bold;
 }
