@@ -74,7 +74,8 @@ const PortfolioProvider = ({children}) => {
             }));
         } 
         catch (err) {
-            handleNotifications("error", err.message)
+            setError(true)
+            // handleNotifications("error", err.message)
         } 
         finally {
             setLoading(false);
@@ -82,16 +83,20 @@ const PortfolioProvider = ({children}) => {
     }
 
     //API
-    const API = 'https://youtube138.p.rapidapi.com/channel/videos/?id=UCD7cKAQQNzzYQeZ7Pm7-fwg&filter=videos_latest&hl=en&gl=US';
+    const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCD7cKAQQNzzYQeZ7Pm7-fwg&part=snippet%2Cid&order=date&maxResults=3';
 
     React.useEffect(() => {
         const endpoints = [
             {
                 uri: API,
-                headers: {'x-rapidapi-key': 'f398d6f9ebmsh8a25ce537b8d773p12eddfjsn63c97481e808', 'x-rapidapi-host': 'youtube-v31.p.rapidapi.com'}
+                headers: {
+                    'X-RapidAPI-Key': 'f398d6f9ebmsh8a25ce537b8d773p12eddfjsn63c97481e808',
+                    'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
+                }
             },
         ];
 
+        handleNotifications("info", "In maintenance")
         fetchData(endpoints)
     },[]);
 
