@@ -1,3 +1,19 @@
+.nav-container {
+    width: 100%;
+    padding: 20px 30px;
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #FFF;
+}
+
 nav ul li{
     transition: transform .75s ease;
 }
@@ -5,6 +21,10 @@ nav ul li{
 .icon-responsive{
     display: none;
     transition: transform 1s ease;
+}
+
+nav a p, nav ul li {
+    color: #FFF;
 }
 
 .navbar-right ul{
