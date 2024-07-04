@@ -1,6 +1,5 @@
 .text-card {
     width: 100%;
-    color: var(--text-color);
 
     transition: all 0.1s ease;
 }

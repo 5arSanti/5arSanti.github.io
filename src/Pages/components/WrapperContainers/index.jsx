@@ -1,9 +1,9 @@
 import { Fade } from "react-awesome-reveal";
 import "./styles.css";
 
-const WrapperContainer1 = ({children, flexDirection = "column", padding = 30, gap = 15, justifyContent="start", alignItems="center"}) => {
+const WrapperContainer1 = ({children, flexDirection = "column", padding = 30, gap = 15, justifyContent="start", alignItems="center", className="", border=true}) => {
     return(
-        <div className="wrapper-container1 shadow-style border-left-style" style={{
+        <div className={`wrapper-container1 shadow-style ${border && "border-left-style"} ${className}`} style={{
             flexDirection: flexDirection,
             padding: padding,
             gap: gap,

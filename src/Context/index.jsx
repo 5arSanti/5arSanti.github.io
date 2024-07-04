@@ -49,11 +49,6 @@ const PortfolioProvider = ({children}) => {
         }
     }
 
-
-    const [isMouseInCard, setIsMouseInCard] = React.useState(null);
-    const handleMouseEnter = (index) => setIsMouseInCard(index);
-    const handleMouseOver = () => setIsMouseInCard(null);
-
     //-------------------------
     //Llamado de los arrays
     const [responseData, setResponseData] = React.useState({
@@ -70,12 +65,12 @@ const PortfolioProvider = ({children}) => {
             const data = await fetchAllData(endpoints);
             setResponseData((prevData) => ({
                 ...prevData,
-                data,
+                videos: data.items,
             }));
         } 
         catch (err) {
             setError(true)
-            // handleNotifications("error", err.message)
+            handleNotifications("error", err.message)
         } 
         finally {
             setLoading(false);
@@ -83,15 +78,15 @@ const PortfolioProvider = ({children}) => {
     }
 
     //API
-    const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCD7cKAQQNzzYQeZ7Pm7-fwg&part=snippet%2Cid&order=date&maxResults=3';
+    const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCD7cKAQQNzzYQeZ7Pm7-fwg&part=snippet%2Cid&order=date&maxResults=4';
 
     React.useEffect(() => {
         const endpoints = [
             {
                 uri: API,
                 headers: {
-                    'X-RapidAPI-Key': 'f398d6f9ebmsh8a25ce537b8d773p12eddfjsn63c97481e808',
-                    'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
+                    'x-rapidapi-key': '057c40ebd6msh17b09cc542709b7p1f1e62jsnb08427648734',
+                    'x-rapidapi-host': 'youtube-v31.p.rapidapi.com'
                 }
             },
         ];
@@ -149,10 +144,6 @@ const PortfolioProvider = ({children}) => {
                 toggleNavbarMenuResponsive,
                 navbarTimer,
                 setNavbarTimer,
-
-                isMouseInCard,
-                handleMouseEnter,
-                handleMouseOver,
 
                 handleMoreInfo1Button,
                 moreInfo1Button,

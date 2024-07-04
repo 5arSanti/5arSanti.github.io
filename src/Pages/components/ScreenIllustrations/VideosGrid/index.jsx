@@ -1,68 +1,53 @@
 import React from "react";
-import { VideoCard } from "../VideoCard";
-import { PortfolioContext } from "../../../../Context";
+import Slider from "react-slick";
 
-import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
-
-import "./styles.css";
-
-import { LoadingVideos } from "../../LoadingAndError/LoadingVideos";
-import { Error } from "../../LoadingAndError/Error";
+import { VideoCard } from "./VideoCard";
+import { PortfolioContext } from "../../../../Context"
 import { Title } from "../../Title";
+import { SectionWrapper, WrapperContainer2 } from "../../WrapperContainers";
+import { NextArrowCard, PrevArrowCard } from "../../ScreenHome/Skills/SliderSkills/ArrowsCard";
 
 const VideosGrid = () => {
     const context = React.useContext(PortfolioContext);
 
     const { videos } = context.responseData || [];
 
-    const [indexOfVideo, setIdexOfVideo] = React.useState("ml-0");
-    const handlePreviousVideo = () => {
-        switch(indexOfVideo){
-            case "ml-0": setIdexOfVideo("ml-200");break
-            case "ml-100": setIdexOfVideo("ml-0");break
-            case "ml-200": setIdexOfVideo("ml-100");break
-        }
-    }
-    const handleNextVideo = () => {
-        switch(indexOfVideo){
-            case "ml-0": setIdexOfVideo("ml-100");break
-            case "ml-100": setIdexOfVideo("ml-200");break
-            case "ml-200": setIdexOfVideo("ml-0");break
-        }
+    const options = {
+        infinite: true,
+		speed: 1250,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+        autoplaySpeed: 5000,
+        dots: true,
+        arrows: true,
+        nextArrow: <NextArrowCard/>,
+		prevArrow: <PrevArrowCard/>,
+		style: { width: "95%",},
+		focusOnSelect: false,
+		pauseOnHover: true,
     }
 
 
     return(
-        <div className="videos" id="time-lapses">
-            <Title>Time lapses</Title>
-            <div className="videos-container">
-                <button className="previous-button" title="Ver anterior video" onClick={() => handlePreviousVideo()}><HiChevronLeft/></button>
-                <div className="video-card-container">
-                    <div className={`video-card-container-carrousel ${indexOfVideo}`}>
-                        {context.loading && (
-                            <>
-                                <LoadingVideos/>
-                            </>
-                        )}
-                        {context.error && (
-                            <>
-                                <Error/>
-                                <Error/>
-                                <Error/>
-                            </>
-                        )}
+        <SectionWrapper border={false} id="time-lapses">
+            <WrapperContainer2 gap={0}>
+                <Title>Time lapses</Title>
+
+                <WrapperContainer2 padding={0} justifyContent="center" alignItems="center">
+                    <Slider {...options}>
                         {videos?.map((item, index) => (
                             <VideoCard
                                 key={index}
-                                data={item} 
+                                item={item} 
                             />
                         ))}
-                    </div>
-                </div>
-                <button className="next-button" title="Ver siguiente video" onClick={() => handleNextVideo()}><HiChevronRight/></button>
-            </div>
+                    </Slider>
+                </WrapperContainer2>
 
-        </div>
+            </WrapperContainer2>
+        </SectionWrapper>
+
     );
 }
 export { VideosGrid };

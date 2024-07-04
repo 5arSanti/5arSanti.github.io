@@ -2,7 +2,7 @@ const fetchData = async (endpoint) => {
     try {
         const response = await fetch(`${endpoint.uri}`, {
             method: "GET",
-            ...endpoint.headers
+            headers: endpoint.headers
         });
 
         if (!(response.status == 200)) {
