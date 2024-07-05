@@ -14,6 +14,8 @@ import { NavOptions } from "../NavOptions";
 const Navbar = () => {
     const context = React.useContext(PortfolioContext);
 
+    const { isNavbarMenuOpen, setIsNavbarMenuOpen} = context;
+
     const renderIconView = () => {
         if(!context.isNavbarMenuOpen){
             return(
@@ -29,20 +31,21 @@ const Navbar = () => {
 
     return (
         <nav className="nav-container animacion-nav">
-            <NavLink to="/">
-                <ul className="flex">
-                    <li className="animacion">Santiago Arias</li>
-                </ul>
+            <NavLink to="/" className={"animacion"}>
+                Santiago Arias
             </NavLink>
 
-            
-            <ul className="icon-responsive cursor-pointer" onClick={() => {context.toggleNavbarMenuResponsive()}}>
-                <li>{renderIconView()}</li>
-            </ul>
-
-            <div className="navbar-right">
+            {context.windowWidth <= 800 ?
+                <div className="icon-responsive" onClick={() => {setIsNavbarMenuOpen(!isNavbarMenuOpen)}}>
+                    {isNavbarMenuOpen ?
+                        <HiXMark className="close-button"/>
+                        :
+                        <HiBars3BottomRight className="h-6 w-6"/>
+                    }
+                </div>
+                :
                 <NavOptions/>
-            </div>
+            }
         </nav>
     );
 }

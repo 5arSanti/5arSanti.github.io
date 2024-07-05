@@ -4,27 +4,29 @@
 
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 11;
     background-color: transparent;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    color: #FFF;
+    color: #FFF !important;
+
+    transition: all 0.75s ease;
 }
 
-nav ul li{
-    transition: transform .75s ease;
-}
+.icon-responsive {
+    width: 30px;
+    height: 30px;
 
-.icon-responsive{
-    display: none;
-    transition: transform 1s ease;
+    cursor: pointer;
+    transition: all 1s ease;
 }
-
-nav a p, nav ul li {
-    color: #FFF;
+.icon-responsive svg{
+    fill: var(--white);
+    height: 100%;
+    width: 100%;
 }
 
 .navbar-right ul{

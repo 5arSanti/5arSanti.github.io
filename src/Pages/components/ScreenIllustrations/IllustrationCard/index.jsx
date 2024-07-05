@@ -7,6 +7,7 @@ import { getColorValue } from "../../../../utils/getColorValue";
 
 import "./styles.css";
 import { TextCard } from "../../TextComponents";
+import { Fade } from "react-awesome-reveal";
 
 const IllustrationCard = ({item={}}) => {
     const context = React.useContext(PortfolioContext);
@@ -15,7 +16,9 @@ const IllustrationCard = ({item={}}) => {
 
     return(
         <WrapperContainer1 border={false} padding={0} gap={0} justifyContent="center" alignItems="center" className={`illustration-card-container ${item?.size}`}>
-            <img src={item?.image} alt={item?.name}/>
+            <Fade style={{width: "100%", height: "100%"}}>
+                <img src={item?.image} alt={item?.name}/>
+            </Fade>
 
             {context.windowWidth >= 800 ?
                 <div className="background-illustration-card-info">

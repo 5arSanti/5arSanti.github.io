@@ -158,4 +158,4 @@ const PortfolioProvider = ({children}) => {
     );
 }
 
-export {PortfolioProvider};
+export { PortfolioProvider };

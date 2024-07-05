@@ -1,6 +1,14 @@
-.navbar-right{
+.navbar-right {
     display: flex;
+    
     gap: 24px;
     font-size: 14px;
     line-height: 20px;
+}
+.navbar-right a {
+    display: flex;
+    align-items: center;
+
+    color: var(--white);
+    cursor: pointer;
 }
