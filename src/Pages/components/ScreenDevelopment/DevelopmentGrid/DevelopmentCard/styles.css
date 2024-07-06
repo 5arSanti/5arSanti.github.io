@@ -1,3 +1,18 @@
+.border-30 {
+    border: 1px solid var(--lines-color);
+    border-radius: 30px;
+}
+.svg-50 svg {
+    fill: var(--lines-color);
+    height: 50px;
+    width: 50px;
+}
+.svg-40 svg, .svg-40 a {
+    fill: var(--lines-color);
+    height: 35px;
+    width: 35px;
+}
+
 .web-pages-card{
     width: 80%;
     background: rgba(27, 27, 27, 0.5);

@@ -25,8 +25,8 @@ const NavOptions = () => {
         },
         "webPages": {
             "Home": "development/#web-pages-home",
-            "Web Pages": "development/#web-pages",
-            "Frontend Mentor": "development/#front-mentor",
+            "Development": "development/#development",
+            // "Frontend Mentor": "development/#front-mentor",
         } 
     };
 

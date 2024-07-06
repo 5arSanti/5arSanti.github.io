@@ -25,6 +25,8 @@
     transition: all 0.2s ease;
 
     position: relative;
+
+    border: 0px solid var(--lines-color);
 }
 
 .wrapper-container3 {

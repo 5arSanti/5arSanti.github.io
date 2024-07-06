@@ -24,10 +24,10 @@ const Projects = () => {
                     icon={<IoMdColorPalette/>}
                 />
                 <ProjectsCard
-                    title={"Web Development"}
+                    title={"Development"}
                     link={"development"}
                     image={Portada2}
-                    text={"FullStack and FrontEnd projects created with JS and other tools."}
+                    text={"Development projects created with all my skills."}
                     icon={<MdWeb/>}
                 />
 

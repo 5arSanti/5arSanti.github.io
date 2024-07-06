@@ -1,5 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import "./styles.css";
+import { BsBorderWidth } from "react-icons/bs";
 
 const WrapperContainer1 = ({children, flexDirection = "column", padding = 30, gap = 15, justifyContent="start", alignItems="center", className="", border=true}) => {
     return(
@@ -15,7 +16,17 @@ const WrapperContainer1 = ({children, flexDirection = "column", padding = 30, ga
     );
 }
 
-const WrapperContainer2 = ({children, flexDirection = "column", padding = 30, paddingVertical=null, gap = 30, justifyContent="start", alignItems="center", className=""}) => {
+const WrapperContainer2 = ({
+        children, 
+        flexDirection = "column", 
+        padding = 30, 
+        paddingVertical=null, 
+        gap = 30, 
+        justifyContent="start", 
+        alignItems="center", 
+        className="",
+    }) => {
+
     return(
         <div className={`wrapper-container2 ${className}`} style={{
             flexDirection: flexDirection,
@@ -24,7 +35,7 @@ const WrapperContainer2 = ({children, flexDirection = "column", padding = 30, pa
             paddingBottom: paddingVertical || padding,
             gap: gap,
             justifyContent: justifyContent,
-            alignItems: alignItems
+            alignItems: alignItems,
         }}>
             {children}
         </div>
@@ -47,9 +58,9 @@ const WrapperContainer3 = ({children, flexDirection = "column", padding = 30, pa
     );
 }
 
-const WrapperContainer4 = ({children, flexDirection = "column", padding = 30, paddingVertical=50, paddingHorizontal=30, gap = 15, justifyContent="start", alignItems="start"}) => {
+const WrapperContainer4 = ({children, flexDirection = "column", padding = 30, paddingVertical=50, paddingHorizontal=30, gap = 15, justifyContent="start", alignItems="start", className=""}) => {
     return(
-        <div className="wrapper-container4" style={{
+        <div className={`wrapper-container4 ${className}`} style={{
             flexDirection: flexDirection,
             padding: padding,
             paddingTop: paddingVertical || padding,

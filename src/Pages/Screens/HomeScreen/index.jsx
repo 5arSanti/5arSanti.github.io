@@ -15,7 +15,7 @@ const HomeScreen = () => {
         context.setIsHomeActive(true);
         context.setIsIllustrationsActive(false);
         context.setIsWebPagesActive(false);
-    }, [context]);
+    }, []);
 
     return(
         <WrapperContainer2 padding={0} gap={0}>

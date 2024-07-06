@@ -1,6 +1,6 @@
 import React from "react";
 import { PortfolioContext } from "../../../../Context";
-import { WebPagesCard } from "../WebPagesCard";
+import { WebPagesCard } from "../DevelopmentGrid/WebPagesCard";
 
 import "./styles.css";
 import { Title } from "../../Title";

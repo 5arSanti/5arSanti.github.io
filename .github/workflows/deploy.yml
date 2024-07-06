@@ -35,8 +35,10 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+
       - name: Install dependencies
         run: npm install
+
       - name: Build
         run: npm run build
       - name: Setup Pages
@@ -45,7 +47,12 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload dist repository
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           path: './dist'
+        
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
+      - name: Set environment variables
+        run: echo "VITE_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV

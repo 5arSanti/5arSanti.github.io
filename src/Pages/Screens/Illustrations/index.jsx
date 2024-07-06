@@ -10,7 +10,7 @@ const IllustrationsScreen = () => {
         context.setIsHomeActive(false);
         context.setIsIllustrationsActive(true);
         context.setIsWebPagesActive(false);
-    }, [context]);
+    }, []);
 
     return(
         <>

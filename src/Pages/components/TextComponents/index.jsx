@@ -14,14 +14,17 @@ const TextCard = ({children, textAlign="start", width="100%", className="", font
     );
 }
 
-const SpanCard = ({children, className}) => {
+const SpanCard = ({children, className, fontSize=16}) => {
     return(
-        <span className={`span-card ${className}`}>{children}</span>
+        <span className={`span-card ${className}`} style={{
+            fontSize: fontSize,
+
+        }}>{children}</span>
     );
 }
 
 const AnchorCard = ({children, uri="", className="", padding=0, width="100%", fontSize=16}) => {
-    if (uri === "") {
+    if (uri === "" || uri == null) {
         return;
     }
     

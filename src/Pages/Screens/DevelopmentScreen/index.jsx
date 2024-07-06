@@ -1,8 +1,7 @@
 import React from "react";
 import { PortfolioContext } from "../../../Context";
 import { WebPagesHome } from "../../components/ScreenDevelopment/WebPagesHome";
-import { WebPagesGrid } from "../../components/ScreenDevelopment/WebPagesGrid";
-import { FrontMentorGrid } from "../../components/ScreenDevelopment/FrontMentorGrid";
+import { DevelopmentGrid } from "../../components/ScreenDevelopment/DevelopmentGrid";
 
 const DevelopmentScreen = () => {
     const context = React.useContext(PortfolioContext);
@@ -10,13 +9,13 @@ const DevelopmentScreen = () => {
         context.setIsHomeActive(false);
         context.setIsIllustrationsActive(false);
         context.setIsWebPagesActive(true);
-    }, [context]);
+    }, []);
 
     return(
         <>
             <WebPagesHome/>
-            <WebPagesGrid/>
-            <FrontMentorGrid/>
+            <DevelopmentGrid/>
+            {/* <FrontMentorGrid/> */}
         </>
     );
 }

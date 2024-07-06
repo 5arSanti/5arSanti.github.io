@@ -10,7 +10,7 @@ import { NextArrowCard, PrevArrowCard } from "../../ScreenHome/Skills/SliderSkil
 const VideosGrid = () => {
     const context = React.useContext(PortfolioContext);
 
-    const { videos } = context.responseData || [];
+    const { items } = context.responseData.videos || [];
 
     const options = {
         infinite: true,
@@ -36,7 +36,7 @@ const VideosGrid = () => {
 
                 <WrapperContainer2 padding={0} justifyContent="center" alignItems="center">
                     <Slider {...options}>
-                        {videos?.map((item, index) => (
+                        {items?.map((item, index) => (
                             <VideoCard
                                 key={index}
                                 item={item} 

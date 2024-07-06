@@ -3,8 +3,7 @@ import PropTypes from "prop-types";
 
 import { skills } from "../utils/lists/skillsList.js";
 import { illustrations } from "../utils/lists/illustrationsList.js"
-import { webPages } from "../utils/lists/webPagesList.js";
-import { frontMentorList } from "../utils/lists/frontMentorList.js";
+import { webPages } from "../utils/lists/webPagesList.jsx";
 import { handleNotifications } from "../utils/handleNotifications.js";
 import { fetchAllData } from "../utils/handleData/handleFetchData.js";
 
@@ -55,17 +54,17 @@ const PortfolioProvider = ({children}) => {
         skills,
         illustrations,
         webPages,
-        frontMentorList,
     });
 
 
-    const fetchData = async (endpoints) => {
+    const fetchData = async (endpoints, setState=setResponseData) => {
         try {
             setLoading(true);
             const data = await fetchAllData(endpoints);
-            setResponseData((prevData) => ({
+
+            setState((prevData) => ({
                 ...prevData,
-                videos: data.items,
+                ...data,
             }));
         } 
         catch (err) {
@@ -78,20 +77,28 @@ const PortfolioProvider = ({children}) => {
     }
 
     //API
-    const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCD7cKAQQNzzYQeZ7Pm7-fwg&part=snippet%2Cid&order=date&maxResults=4';
 
     React.useEffect(() => {
         const endpoints = [
             {
-                uri: API,
+                responseName: "videos",
+                uri: "https://youtube-v31.p.rapidapi.com/search?channelId=UCD7cKAQQNzzYQeZ7Pm7-fwg&part=snippet%2Cid&order=date&maxResults=4",
                 headers: {
                     'x-rapidapi-key': '057c40ebd6msh17b09cc542709b7p1f1e62jsnb08427648734',
                     'x-rapidapi-host': 'youtube-v31.p.rapidapi.com'
                 }
             },
+            {
+                responseName: "projects",
+                uri: "https://api.github.com/users/5arSanti/repos?type=public&sort=updated&per_page=50",
+                headers: {
+                    "Authorization": `token ${import.meta.env.VITE_GITHUB_TOKEN}`,
+                },
+            }
         ];
 
         handleNotifications("info", "In maintenance")
+
         fetchData(endpoints)
     },[]);
 
@@ -151,6 +158,8 @@ const PortfolioProvider = ({children}) => {
                 moreInfo2Button,
 
                 windowWidth,
+
+                fetchData,
             }}
         >
             {children}
