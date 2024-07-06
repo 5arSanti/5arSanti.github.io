@@ -11,9 +11,13 @@
     justify-content: space-between;
     align-items: center;
 
-    color: #FFF !important;
+    color: #FFFFFF;
 
     transition: all 0.75s ease;
+}
+
+.nav-container a {
+    color: var(--white);
 }
 
 .icon-responsive {
