@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <nav className="nav-container animacion-nav">
-            <NavLink to="/" className={"animacion"}>
+            <NavLink to="/" className="animacion">
                 Santiago Arias
             </NavLink>
 
