@@ -39,11 +39,11 @@ jobs:
 
       - name: Build
         env:
-          VITE_GITHUB_TOKEN: ${{ secrets.VITE_GITHUB_TOKEN }}
+          VITE_GITHUB_TOKEN: ${{ env.VITE_GITHUB_TOKEN }}
         run: | 
           npm install
           npm run build
-          echo "My token is ${{ secrets.VITE_GITHUB_TOKEN }}"
+          echo "My token is ${{ env.VITE_GITHUB_TOKEN }}"
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
