@@ -39,7 +39,7 @@ jobs:
 
       - name: Build
         env:
-          VITE_GITHUB_TOKEN: ${{ env.VITE_GITHUB_TOKEN }}
+          VITE_GITHUB_TOKEN: ${{ secrets.VITE_GITHUB_TOKEN }}
         run: | 
           npm install
           npm run build
