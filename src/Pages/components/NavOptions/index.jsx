@@ -5,6 +5,7 @@ import { DownloadCV } from "../DownloadCV";
 import { PortfolioContext } from "../../../Context";
 import { HashLink } from "react-router-hash-link";
 
+import "./styles.css";
 
 const NavOptions = () => {
     const context = React.useContext(PortfolioContext);
@@ -42,7 +43,7 @@ const NavOptions = () => {
     }
 
     return(
-        <div className="navbar-right flex gap-6 text-sm">
+        <div className="navbar-right">
             { context.isHomeActive && mapOptions(home) }
 
             { context.isIllustrationsActive &&  mapOptions(illustrations)}
