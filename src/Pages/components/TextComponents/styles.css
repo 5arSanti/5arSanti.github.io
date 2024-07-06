@@ -2,6 +2,7 @@
     width: 100%;
 
     transition: all 0.1s ease;
+    margin: 0;
 }
 .span-card {
     font-weight: bold;

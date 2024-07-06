@@ -102,23 +102,6 @@ const PortfolioProvider = ({children}) => {
         fetchData(endpoints)
     },[]);
 
-
-    //Boton de ver mas y ver menos
-    const [moreInfo1Button, setMoreInfo1Button] = React.useState("hidden-info");
-    const handleMoreInfo1Button = () => {
-        switch(moreInfo1Button){
-            case "hidden-info": setMoreInfo1Button("expanded-info");break;
-            case "expanded-info": setMoreInfo1Button("hidden-info");break;
-        }
-    };
-    const [moreInfo2Button, setMoreInfo2Button] = React.useState("hidden-info");
-    const handleMoreInfo2Button = () => {
-        switch(moreInfo2Button){
-            case "hidden-info": setMoreInfo2Button("expanded-info");break;
-            case "expanded-info": setMoreInfo2Button("hidden-info");break;
-        }
-    };
-
     // Screen Width
     const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
     React.useEffect(() => {
@@ -151,11 +134,6 @@ const PortfolioProvider = ({children}) => {
                 toggleNavbarMenuResponsive,
                 navbarTimer,
                 setNavbarTimer,
-
-                handleMoreInfo1Button,
-                moreInfo1Button,
-                handleMoreInfo2Button,
-                moreInfo2Button,
 
                 windowWidth,
 
