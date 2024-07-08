@@ -1,6 +1,6 @@
 .wrapper-container1 {
     width: 100%;
-    background-color: transparent;
+    background-color: var(--all-info-container-color);
     box-sizing: border-box;
 
     display: flex;
@@ -32,7 +32,7 @@
 .wrapper-container3 {
     width: 100%;
 
-    background-color: transparent;
+    background-color: var(--all-info-container-color);
     box-sizing: border-box;
     
     border-radius: 0px;

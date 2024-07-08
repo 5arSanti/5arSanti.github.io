@@ -1,9 +1,9 @@
-
-import logo from "/Logo-Profesional-Santiago-V3.png";
-import "./styles.css";
+import logo from "/Logo-Profesional-Santiago-White.png";
 import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { IconsList } from "../IconsList";
+
+import "./styles.css";
 
 const Footer = () => {
     const date = new Date();
@@ -39,7 +39,7 @@ const Footer = () => {
             <div className="footer-copy-container">
                 <p>&copy; {date.getFullYear()} Santiago Arias</p>
                 <div className="footer-icons">
-                    <IconsList/>
+                    <IconsList white={true}/>
                 </div>
             </div>
         </footer>

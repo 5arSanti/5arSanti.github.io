@@ -4,6 +4,11 @@
     transition: all 0.1s ease;
     margin: 0;
 }
+
+.text-color {
+    color: var(--text-color);
+}
+
 .span-card {
     font-weight: bold;
     color: var(--lines-color);

@@ -4,7 +4,7 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 
 const AboutMe = () => {
     return(
-        <section id="home" className="relative bg-black">
+        <section id="home" className="about-me-home">
             <div className="about-me-home-container">
                 <div className="about-me-home-info-container">
                     <figure className="logo-container">

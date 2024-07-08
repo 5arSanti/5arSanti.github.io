@@ -58,7 +58,7 @@ const DevelopmentCard = ({item={}}) => {
             <WrapperContainer2 padding={0} flexDirection="column">
                 <SubTitle>{item?.name}</SubTitle>
 
-                <ScrollableWrapper maxHeight={500}>
+                <ScrollableWrapper maxHeight={100}>
                     <TextCard>{item?.description}</TextCard>
                 </ScrollableWrapper>
 

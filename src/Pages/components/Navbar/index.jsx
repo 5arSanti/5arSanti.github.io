@@ -16,19 +16,6 @@ const Navbar = () => {
 
     const { isNavbarMenuOpen, setIsNavbarMenuOpen} = context;
 
-    const renderIconView = () => {
-        if(!context.isNavbarMenuOpen){
-            return(
-                <HiBars3BottomRight className="h-6 w-6"/>
-            );
-        }
-        else{
-            return(
-                <HiXMark className="close-button"/>
-            );
-        }
-    }
-
     return (
         <nav className="nav-container animacion-nav">
             <NavLink to="/" className="animacion">

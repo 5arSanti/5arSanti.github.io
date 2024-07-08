@@ -36,7 +36,7 @@ const AllInfoAbboutMe = () => {
 
                     <DownloadCV/>
 
-                    <IconsList padding={0} color={getColorValue("--lines-color")}/>
+                    <IconsList padding={0}/>
                 </WrapperContainer1>
 
                 <WrapperContainer2 padding={0}>

@@ -4,6 +4,8 @@
     gap: 24px;
     font-size: 14px;
     line-height: 20px;
+
+    align-items: center;
 }
 .navbar-right a {
     display: flex;

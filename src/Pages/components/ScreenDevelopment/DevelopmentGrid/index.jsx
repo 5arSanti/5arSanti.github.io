@@ -2,10 +2,10 @@ import React from "react";
 import { PortfolioContext } from "../../../../Context";
 import { DevelopmentCard } from "./DevelopmentCard";
 
-import "./styles.css";
 import { Title } from "../../Title";
 import { SectionWrapper, WrapperContainer2 } from "../../WrapperContainers";
 import { AllInfoGridContainer } from "../../AllInfoContainer";
+import { TextCard } from "../../TextComponents";
 
 const DevelopmentGrid = () => {
     const context = React.useContext(PortfolioContext);
@@ -14,11 +14,13 @@ const DevelopmentGrid = () => {
 
     return(
         <SectionWrapper border={false} id="development">
-            <WrapperContainer2>
+            <WrapperContainer2 gap={10}>
                 <Title>Development Projects</Title>
 
+                <TextCard textAlign="center" fontSize={12}>Showing the last {projects?.length} projects ordered by update date</TextCard>
+
                 <AllInfoGridContainer className="grid-1-1" gap={50} padding={30}>
-                    {projects?.filter(item => item.private !== true).map((item, index) => (
+                    {projects?.map((item, index) => (
                         <DevelopmentCard
                             key={index}
                             item={item}

@@ -6,6 +6,7 @@ import { PortfolioContext } from "../../../Context";
 import { HashLink } from "react-router-hash-link";
 
 import "./styles.css";
+import { ColorButton } from "../ColorButton";
 
 const NavOptions = () => {
     const context = React.useContext(PortfolioContext);
@@ -49,6 +50,8 @@ const NavOptions = () => {
             { context.isIllustrationsActive &&  mapOptions(illustrations)}
             
             { context.isWebPagesActive && mapOptions(webPages) }
+
+            <ColorButton/>
 
             <DownloadCV/>
         </div>

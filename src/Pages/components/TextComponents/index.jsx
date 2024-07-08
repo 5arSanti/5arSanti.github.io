@@ -1,16 +1,15 @@
 import { getColorValue } from "../../../utils/getColorValue";
 import "./styles.css";
 
-const TextCard = ({children, textAlign="start", width="100%", className="", fontSize=16, color=getColorValue("--text-color")}) => {
+const TextCard = ({children, textAlign="start", width="100%", className="", fontSize=16, white=false}) => {
     return(
         <p 
             style={{
                 textAlign: textAlign, 
                 width: width,
                 fontSize: fontSize,
-                color: color,
             }} 
-            className={`text-card ${className}`}>{children}</p>
+            className={`text-card ${className} ${white ? "white-color" : "text-color"}`}>{children}</p>
     );
 }
 

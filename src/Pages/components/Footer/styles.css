@@ -1,7 +1,7 @@
 .footer{
     width: 100%;
 
-    background-color: rgb(14, 2, 26); 
+    background-color: var(--lines-color); 
     box-sizing: border-box;
     padding: 50px 150px;
 
@@ -36,8 +36,10 @@
 .footer-info-image-container img{
     width: 30%;
     object-fit: cover;
-    opacity: .5;
-    transition: opacity .25s ease;
+    transition: all .25s ease;
+}
+.footer-info-image-container:hover img{
+    transform: scale(1.1);
 }
 
 
@@ -113,11 +115,5 @@
         flex-direction: column;
         justify-content: center;
         gap: 10px;
-    }
-}
-
-@media (hover: hover) {
-    .footer-info-image-container:hover img{
-        opacity: 1;
     }
 }

@@ -14,11 +14,11 @@ const formatExperience = (startYear, startMonth) => {
 
     const yearValue = years;
 
-    return `${validateValue(yearValue, "year", "years") ? validateValue(yearValue, "year", "years") + " and" : ""}  ${validateValue(months, "month", "months")} of experience`;
+    return `${validateValue(yearValue, "year", "years")} ${validateValue(months, "month", "months")} of experience`;
 }
 
 const validateValue = (value, text, texts) => {
-    if (value === 0) { return false; }
+    if (value === 0) { return ""; }
     if (value === 1) { return `${value} ${text}`; }
 
     return `${value} ${texts}`;

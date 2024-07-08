@@ -3,7 +3,6 @@ import { SectionWrapper, WrapperContainer1, WrapperContainer2 } from "../../Wrap
 import { AllInfoGridContainer } from "../../AllInfoContainer";
 import { AnchorCard, SpanCard, TextCard } from "../../TextComponents";
 import { SubTitle } from "../../SubTitle";
-import { getColorValue } from "../../../../utils/getColorValue";
 import { IconsList } from "../../IconsList";
 
 const ContactMe = () => {
@@ -35,7 +34,7 @@ const ContactMe = () => {
                             <TextCard><SpanCard>Phone number:</SpanCard></TextCard>
                             <TextCard>+ 57 314 401 3931</TextCard>
 
-                            <IconsList color={getColorValue("--lines-color")} padding={0}/>
+                            <IconsList padding={0}/>
                         </WrapperContainer2>
 
                     </WrapperContainer1>

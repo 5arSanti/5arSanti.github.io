@@ -112,6 +112,13 @@ const PortfolioProvider = ({children}) => {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    //Colors
+    const [activeHighContrast, setActiveHighContrast] = React.useState(() => {
+        const savedMode = localStorage.getItem('night');
+        return savedMode === 'true';
+    });
+
     
     return(
         <PortfolioContext.Provider
@@ -138,6 +145,9 @@ const PortfolioProvider = ({children}) => {
                 windowWidth,
 
                 fetchData,
+
+                activeHighContrast,
+                setActiveHighContrast
             }}
         >
             {children}

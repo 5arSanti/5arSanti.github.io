@@ -1,8 +1,14 @@
+.lines-color {
+    color: var(--lines-color);
+}
+.white-color {
+    color: var(--white);
+}
+
 .icons a svg {
     width: 28px;
     height: 28px;
     transition: all 0.3s ease; 
-
 }
 
 .icons a:hover svg {
