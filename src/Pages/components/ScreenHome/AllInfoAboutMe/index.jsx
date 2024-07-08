@@ -4,7 +4,7 @@ import { DownloadCV } from "../../DownloadCV";
 import { SubTitle } from "../../SubTitle";
 import { TextCard } from "../../TextComponents";
 import { SectionWrapper, WrapperContainer1, WrapperContainer2 } from "../../WrapperContainers";
-import { IconsList } from "../IconsList";
+import { IconsList } from "../../IconsList";
 import "./styles.css"
 
 const AllInfoAbboutMe = () => {

@@ -8,3 +8,10 @@
 .icons a:hover svg {
     transform: scale(1.1);
 }
+
+.icon-scale svg {
+    transition: all 0.2s ease;
+}
+.icon-scale:hover svg {
+    transform: scale(1.1);
+}

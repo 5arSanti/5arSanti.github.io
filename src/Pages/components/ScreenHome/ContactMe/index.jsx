@@ -1,10 +1,10 @@
-import { IconsList } from "../IconsList";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import { SectionWrapper, WrapperContainer1, WrapperContainer2 } from "../../WrapperContainers";
 import { AllInfoGridContainer } from "../../AllInfoContainer";
 import { AnchorCard, SpanCard, TextCard } from "../../TextComponents";
 import { SubTitle } from "../../SubTitle";
 import { getColorValue } from "../../../../utils/getColorValue";
+import { IconsList } from "../../IconsList";
 
 const ContactMe = () => {
     return(

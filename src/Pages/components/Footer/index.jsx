@@ -1,8 +1,9 @@
-import { IconsList } from "../ScreenHome/IconsList";
+
 import logo from "/Logo-Profesional-Santiago-V3.png";
 import "./styles.css";
 import { HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import { IconsList } from "../IconsList";
 
 const Footer = () => {
     const date = new Date();

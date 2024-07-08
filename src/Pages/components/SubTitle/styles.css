@@ -16,6 +16,7 @@
     color: var(--text-color);
 
     font-weight: 600;
+    font-size: 18px;
 }
 .sub-title h2::before {
     content: '';

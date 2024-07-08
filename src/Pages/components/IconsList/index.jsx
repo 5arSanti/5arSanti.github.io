@@ -4,7 +4,7 @@ import { FaDeviantart } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa";
 
-import { WrapperContainer2 } from "../../WrapperContainers";
+import { WrapperContainer2 } from "../WrapperContainers";
 
 import "./styles.css"
 
