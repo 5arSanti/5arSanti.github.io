@@ -23,6 +23,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { WrapperContainer2 } from "../components/WrapperContainers";
 
 const Wrapper = ({children}) => {
     const location = useLocation();
@@ -48,8 +49,9 @@ const App = () => {
         <PortfolioProvider>
             <HashRouter>
                 <Wrapper>
-                    <Navbar/>
                     <NavBarResponsive/>
+
+                    <Navbar/>
                     <AppRoutes/>
                     <TopButton/>
                     <Footer/>

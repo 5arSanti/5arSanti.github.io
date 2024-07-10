@@ -7,39 +7,25 @@ import { HashLink } from "react-router-hash-link";
 
 import "./styles.css";
 import { ColorButton } from "../ColorButton";
+import { navOptions } from "../../../utils/navOptions";
 
 const NavOptions = () => {
     const context = React.useContext(PortfolioContext);
 
-    const { home, illustrations, webPages } =  {
-        "home": {
-            "Home": "#home",
-            "About Me": "#about-me",
-            "Projects": "#projects",
-            "Skills": "#skills",
-            "Contact Me": "#contact-me"
-        },
-        "illustrations": {
-            "Home": "ilustraciones/#illustrations-home",
-            "Time Lapses": "ilustraciones/#time-lapses",
-            "Illustrations": "ilustraciones/#illustrations",
-        },
-        "webPages": {
-            "Home": "development/#web-pages-home",
-            "Development": "development/#development",
-            // "Frontend Mentor": "development/#front-mentor",
-        } 
-    };
+    const { home, illustrations, webPages } = navOptions;
 
     const mapOptions = (options) => {
         const array = Object.keys(options) || [];
 
         return(
-            array.map((item, index) => (
-                <HashLink key={index} to={`/${options[item]}`} className="animacion">
-                    {item} <HiChevronRight/>
-                </HashLink>
-            ))
+            array.map((item, index) => {
+
+                return(
+                    <HashLink key={index} to={`/${options[item].link}`} className="animacion">
+                        {item} <HiChevronRight/>
+                    </HashLink>
+                );
+            })
         )
     }
 

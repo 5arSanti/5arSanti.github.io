@@ -95,6 +95,10 @@ button {
     transition: width .5s ease;
 }
 
+.relative {
+    position: relative;
+}
+
 
 @media (hover: hover) {
     .scrollable-cards::-webkit-scrollbar-thumb:hover {

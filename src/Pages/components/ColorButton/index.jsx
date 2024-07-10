@@ -8,7 +8,7 @@ import { handleColorsByFilters } from "../../../utils/handleColors";
 
 import "./styles.css";
 
-const ColorButton = () => {
+const ColorButton = ({text=false, icon=true}) => {
     const context = React.useContext(PortfolioContext);
 
     const { activeHighContrast, setActiveHighContrast } = context;
@@ -20,7 +20,8 @@ const ColorButton = () => {
 
     return(
         <button title={activeHighContrast ? "Day mode" : "Night mode"} className="color-button" onClick={() => {setActiveHighContrast(prevMode => !prevMode);}}>
-            {activeHighContrast ? <FiSun/> : <LuMoon/>}
+            {icon ? (activeHighContrast ? <FiSun/> : <LuMoon/>) : ""} 
+            {text ? (activeHighContrast ? " Day mode" : " Night mode") : ""}
         </button>
     ); 
 }

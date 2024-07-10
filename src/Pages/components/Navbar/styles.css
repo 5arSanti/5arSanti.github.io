@@ -2,8 +2,11 @@
     width: 100%;
     padding: 20px 30px;
 
+    box-sizing: border-box;
+
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 11;
     background-color: transparent;
 

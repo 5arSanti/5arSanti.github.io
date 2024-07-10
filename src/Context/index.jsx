@@ -31,22 +31,7 @@ const PortfolioProvider = ({children}) => {
 
     //Navbar
     const [isNavbarMenuOpen, setIsNavbarMenuOpen] = React.useState(false);
-    const [navbarTimer, setNavbarTimer] = React.useState(true);
 
-    const toggleNavbarMenuResponsive = () => {
-        if(!isNavbarMenuOpen){
-            setNavbarTimer(false);
-            setTimeout(() => {
-                setIsNavbarMenuOpen(true);
-            },1)
-        }
-        else{
-            setIsNavbarMenuOpen(false);
-            setTimeout(() =>{
-                setNavbarTimer(true);
-            }, 751);
-        }
-    }
 
     //-------------------------
     //Llamado de los arrays
@@ -113,6 +98,7 @@ const PortfolioProvider = ({children}) => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+
     //Colors
     const [activeHighContrast, setActiveHighContrast] = React.useState(() => {
         const savedMode = localStorage.getItem('night');
@@ -138,9 +124,6 @@ const PortfolioProvider = ({children}) => {
 
                 isNavbarMenuOpen,
                 setIsNavbarMenuOpen,
-                toggleNavbarMenuResponsive,
-                navbarTimer,
-                setNavbarTimer,
 
                 windowWidth,
 
