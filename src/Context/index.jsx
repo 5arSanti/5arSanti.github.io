@@ -82,8 +82,6 @@ const PortfolioProvider = ({children}) => {
             }
         ];
 
-        handleNotifications("info", "In maintenance")
-
         fetchData(endpoints)
     },[]);
 
