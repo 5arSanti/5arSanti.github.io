@@ -45,7 +45,7 @@ const illustrationsList = [
         timeLapse: "https://www.youtube.com/watch?v=Y677GY4YU78&t",
         deviantArt: "https://www.deviantart.com/santiari1/art/Pompompurin-1080916880",
         pixiv: "https://www.pixiv.net/en/artworks/121038046",
-        size: "",
+        size: "big",
     },
 ]
 
