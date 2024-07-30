@@ -39,6 +39,14 @@ const illustrationsList = [
         pixiv: "https://www.pixiv.net/en/artworks/111283460",
         size: "big",
     },
+    {
+        name: "Pompompurin",
+        image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da69dd39-50a4-4d6c-8947-8d66979f7287/dhvjssw-7b1f701b-b84e-454c-896d-048889a210b5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RhNjlkZDM5LTUwYTQtNGQ2Yy04OTQ3LThkNjY5NzlmNzI4N1wvZGh2anNzdy03YjFmNzAxYi1iODRlLTQ1NGMtODk2ZC0wNDg4ODlhMjEwYjUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.PQqGtXRbkA1QOR__cO3qR2Nrs4fBQVGK8laaIjdTBgQ",
+        timeLapse: "https://www.youtube.com/watch?v=Y677GY4YU78&t",
+        deviantArt: "https://www.deviantart.com/santiari1/art/Pompompurin-1080916880",
+        pixiv: "https://www.pixiv.net/en/artworks/121038046",
+        size: "",
+    },
 ]
 
 const illustrations = illustrationsList.reverse();
