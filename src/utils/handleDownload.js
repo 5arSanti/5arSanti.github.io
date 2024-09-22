@@ -1,7 +1,7 @@
 import { handleNotifications } from "./handleNotifications";
 
 const handleDownloadCV = () => {
-    const pdfUrl = "/Santiago-Arias-CV.pdf";
+    const pdfUrl = "/Hoja de Vida - Johel Santiago Arias.pdf";
     const link = document.createElement("a");
 
     link.href = pdfUrl;
